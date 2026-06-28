@@ -27,7 +27,7 @@ function defineCoreMetal(event, config) {
 
   var splashOutputs = [Item.of(nugget, 27)]
   if (washByproduct) {
-    splashOutputs.push(Item.of(washByproduct).withChance(washByproductChance))
+    splashOutputs.push(CreateItem.of(washByproduct, washByproductChance))
   }
 
   event.recipes.create.splashing(splashOutputs, crushed)

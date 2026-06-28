@@ -19,7 +19,7 @@ function defineSimpleMetal(event, config) {
 
   var splashOutputs = [Item.of(nugget, 27)]
   if (washByproduct) {
-    splashOutputs.push(Item.of(washByproduct).withChance(washByproductChance))
+    splashOutputs.push(CreateItem.of(washByproduct, washByproductChance))
   }
 
   event.recipes.create.splashing(splashOutputs, crushed)
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.splashing([
     Item.of('tfmg:lithium_nugget', 27),
-    Item.of('minecraft:water_bucket').withChance(0.15)
+    CreateItem.of('minecraft:water_bucket', 0.15)
   ], 'tfmg:crushed_raw_lithium')
     .id('kubejs:ore_processing/lithium_3x_splashing')
 
