@@ -1,0 +1,339 @@
+[modules]
+	#When false, NutritionDecayHandler does nothing
+	enableDecay = true
+	#When false, value-only application at full vanilla restore is disabled.
+	enableSourceApplication = true
+	#When true, prevents applying heavy sources at full vanilla restore. If Spice of Life: Onion is installed, uses property threshold (heavySourcePropertyThreshold). Otherwise requires items tagged nourished:heavy_source.
+	enableBlockHeavySources = false
+	#When true, prevents applying light sources at full vanilla restore. Requires items tagged nourished:light_source.
+	enableBlockLightSource = false
+	#FoodProperties nutrition at or above this counts as a heavy source when solonion is loaded and enableBlockHeavySources is true. Also used if mod_compat omits solonion's threshold.
+	# Default: 6
+	# Range: 1 ~ 20
+	heavySourcePropertyThreshold = 6
+	#When false, status effects from nutrition are not applied
+	enableEffects = true
+	#When false, the nutrition HUD overlay is hidden
+	enableHUD = true
+	#When false, NourishedToastManager never queues toasts
+	enableToasts = true
+	#When false, food tooltips do not show nutrient info
+	enableFoodTooltips = true
+	#When false, TrackingData.addTotal() is never called and calorie display is hidden
+	enableCalorieTracking = true
+	#When false, the keybind to open DietScreen does nothing
+	enableDietScreen = true
+	#Separate from enableToasts, controls only the critical-threshold toast specifically
+	enableCriticalToasts = true
+	#When true, sleeping with all nutrient bars above 50% grants Regeneration I for 30 seconds
+	enableSleepBonus = true
+	#When true, eating raw food applies potion effects and subtracts from nutrient bars
+	enableRawFoodPenalty = true
+	#When true, gut health is tracked and affects raw food sensitivity and recovery
+	enableGutHealth = true
+	#When false, Peak Stamina nutrition hook does not apply the stamina_usage attribute modifier
+	enablePSStaminaUsage = true
+	#When false, Peak Stamina nutrition hook does not apply the penalty_decay_multiplier attribute modifier
+	enablePSPenaltyDecay = true
+	#When false, Peak Stamina nutrition hook does not apply the exhaustion_duration_multiplier attribute modifier
+	enablePSExhaustionDuration = true
+	#When false, Spice of Life: Onion hook does not apply the high-diversity max health bonus on minecraft:max_health
+	enableSOLDiversityHealth = false
+	#When false, Spice of Life: Onion hook does not apply the low-diversity max health penalty on minecraft:max_health
+	enableSOLDiversityPenalty = true
+	#When true, nutrition level affects LSO thermal resistance attribute
+	enableLSOThermalResistance = true
+	#When true, high nutrition boosts LSO broken heart resilience
+	enableLSOBrokenHeartResilience = true
+	#When true, eating nutritious food adds a small LSO thirst saturation bonus
+	enableLSOThirstSaturation = true
+	#When false, nutrient and food synergy checks are skipped
+	enableSynergies = true
+	#When false, milestone checks are skipped
+	enableMilestones = true
+	#When false, season hook modifiers are ignored
+	enableSeasonHooks = true
+	#When false, absorption modifier hooks are ignored
+	enableAbsorptionModifiers = true
+
+[general]
+	#When false, welcome and beta notice chat messages are not sent on player join
+	showJoinMessage = true
+	#Second line of the join welcome message (after the NOURISHED header)
+	joinMessageLine1 = "Welcome to the nutrition engine."
+	#Beta or secondary notice shown on player join
+	joinMessageLine2 = "Beta NOTICE - features and balance may change."
+	#Base decay rate per interval for all nutrients
+	# Default: 0.0010000000474974513
+	# Range: 0.0 ~ 1.0
+	decayRate = 0.0010000000474974513
+	#Ticks between nutrient decay applications
+	# Default: 1200
+	# Range: > 1
+	decayIntervalTicks = 1200
+	#Initial fill (0-1) for every nutrient bar on new diet data, /nourished reset, and death when deathNutritionBehavior is reset_to_starting.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	startingNutrientValue = 0.5
+	#Tracking bar policy on death respawn: preserve (keep bars), reset_to_starting (use startingNutrientValue), vanilla_half (legacy 50% reset).
+	deathNutritionBehavior = "preserve"
+
+[thresholds]
+	#Nutrient level below which critical effects trigger
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 1.0
+	criticalThreshold = 0.10000000149011612
+	#Nutrient level below which low warnings appear
+	# Default: 0.30000001192092896
+	# Range: 0.0 ~ 1.0
+	lowThreshold = 0.30000001192092896
+	#Nutrient level above which excess warnings appear
+	# Default: 0.8999999761581421
+	# Range: 0.0 ~ 1.0
+	excessThreshold = 0.8999999761581421
+
+[effects]
+	#Nutrient level above which bonus effects are applied
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	bonusEffectThreshold = 0.75
+	#Nutrient level below which penalty effects are applied
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	penaltyEffectThreshold = 0.25
+	#Default duration in ticks for nutrition effects
+	# Default: 140
+	# Range: 20 ~ 72000
+	defaultEffectDurationTicks = 140
+
+[advanced]
+	#Maximum calorie value for display purposes
+	# Default: 2000
+	# Range: 100 ~ 100000
+	calorieDisplayMax = 2000
+	#When true, writes detailed nutrition diagnostics to config/nourished/debug/
+	enableDebugLogging = false
+
+[food_memory]
+	#How long (in minutes) before a food memory entry expires.
+	# Default: 60
+	# Range: 1 ~ 120
+	memoryWindowMinutes = 60
+	#Maximum number of distinct food entries tracked in memory.
+	# Default: 50
+	# Range: 1 ~ 200
+	memoryWindowCount = 50
+	#Minimum multiplier for heavily repeated foods. 0.15 = 15% credit floor.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	diminishingFloor = 0.15
+	#(Legacy) Multiplier curve by eat count. Ignored when using logistic curve.
+	diminishingSteps = [1.0, 0.7, 0.4, 0.15]
+	#Steepness of the logistic diminishing curve. Higher = sharper transition.
+	# Default: 0.8
+	# Range: 0.1 ~ 3.0
+	diminishingSteepness = 0.8
+	#Midpoint of the logistic curve (eat count where multiplier = 0.5).
+	# Default: 2.0
+	# Range: 1.0 ~ 10.0
+	diminishingMidpoint = 2.0
+	#Time window (ms) for streak detection. Eating same food within window increases penalty faster.
+	# Default: 600000
+	# Range: 10000 ~ 1800000
+	streakWindowMs = 600000
+	#Multiplier for eat count increment when within streak window (e.g., 2.0 = double penalty).
+	# Default: 2.0
+	# Range: 1.0 ~ 5.0
+	streakWeight = 2.0
+	#Maximum multiplier bonus for completely novel foods.
+	# Default: 1.25
+	# Range: 1.0 ~ 2.0
+	noveltyBonus = 1.25
+	#Decayed eat count at which novelty bonus fully disappears.
+	# Default: 5.0
+	# Range: 1.0 ~ 20.0
+	noveltyDecayCap = 5.0
+	#Category eat count threshold above which nutritional debt kicks in.
+	# Default: 4.0
+	# Range: 1.0 ~ 20.0
+	debtThreshold = 4.0
+	#Rate at which neglected categories decay when debt is triggered.
+	# Default: 0.003
+	# Range: 0.0 ~ 0.05
+	debtDecayRate = 0.003
+	#Enable detailed debug logging for food memory system (development only).
+	debugMemoryLogging = false
+
+[food_gains]
+	#Multiplies tag-based nutrient burst before per-bite cap. Lower = slower bar fill.
+	# Default: 5.0
+	# Range: 0.5 ~ 20.0
+	nutrientGainScale = 5.0
+	#Max fraction (0-1) one bite can add to a single bar from tag-based foods (not food overrides).
+	# Default: 0.2
+	# Range: 0.05 ~ 1.0
+	nutrientGainPerBiteMax = 0.2
+
+[nutrient_curves]
+	#When true, per-nutrient response curves scale tag-based gains. When false, legacy flat scale/clamp math is used.
+	enableNutrientCurves = false
+	#Global default curve preset for nutrients without an explicit entry in nutrient_curves.json.
+	defaultCurvePreset = "FLAT"
+
+[scanner]
+	#Enable recipe ingredient inheritance signal for food classification (requires server access)
+	enableRecipeInheritance = true
+	#Minimum spread between dominant and secondary scores for confident classification (higher = stricter)
+	# Default: 3.0
+	# Range: 0.0 ~ 20.0
+	confidenceSpreadThreshold = 3.0
+	#Minimum ratio (second / top) to trigger composite multi-nutrient output instead of single dominant
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	compositeRatioThreshold = 0.4
+	#Minimum fractional contribution (score / total) for a nutrient to qualify in recipe inheritance output
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	multiNutrientInheritanceThreshold = 0.1
+
+	[nutrients.fruits]
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		fruits_decayRate = -1.0
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		fruits_criticalThreshold = -1.0
+
+	[nutrients.vegetables]
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		vegetables_decayRate = -1.0
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		vegetables_criticalThreshold = -1.0
+
+	[nutrients.proteins]
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		proteins_decayRate = -1.0
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		proteins_criticalThreshold = -1.0
+
+	[nutrients.grains]
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		grains_decayRate = -1.0
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		grains_criticalThreshold = -1.0
+
+	[nutrients.dairy]
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		dairy_decayRate = -1.0
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		dairy_criticalThreshold = -1.0
+
+	[compat.farmersdelight]
+		#Enable special code-level behavior for farmersdelight
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from farmersdelight
+		enableTagCompat = true
+
+	[compat.sereneseasons]
+		#Enable special code-level behavior for sereneseasons
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from sereneseasons
+		enableTagCompat = true
+
+	[compat.tough_as_nails]
+		#Enable special code-level behavior for tough_as_nails
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from tough_as_nails
+		enableTagCompat = true
+
+	[compat.legendarysurvivaloverhaul]
+		#Enable special code-level behavior for legendarysurvivaloverhaul
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from legendarysurvivaloverhaul
+		enableTagCompat = true
+
+	[compat.farmers_croptopia]
+		#Enable special code-level behavior for farmers_croptopia
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from farmers_croptopia
+		enableTagCompat = true
+
+	[compat.endersdelight]
+		#Enable special code-level behavior for endersdelight
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from endersdelight
+		enableTagCompat = true
+
+	[compat.peakstamina]
+		#Enable special code-level behavior for peakstamina
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from peakstamina
+		enableTagCompat = true
+
+	[compat.croptopiadelight]
+		#Enable special code-level behavior for croptopiadelight
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from croptopiadelight
+		enableTagCompat = true
+
+	[compat.lendersdelight]
+		#Enable special code-level behavior for lendersdelight
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from lendersdelight
+		enableTagCompat = true
+
+	[compat.herbsandharvest]
+		#Enable special code-level behavior for herbsandharvest
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from herbsandharvest
+		enableTagCompat = true
+
+	[compat.solonion]
+		#Enable special code-level behavior for solonion
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from solonion
+		enableTagCompat = true
+
+	[compat.cold_sweat]
+		#Enable special code-level behavior for cold_sweat
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from cold_sweat
+		enableTagCompat = true
+
+	[compat.arsdelight]
+		#Enable special code-level behavior for arsdelight
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from arsdelight
+		enableTagCompat = true
+
+	[compat.farm_and_charm]
+		#Enable special code-level behavior for farm_and_charm
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from farm_and_charm
+		enableTagCompat = true
+
+	[compat.pamhc2foodcore]
+		#Enable special code-level behavior for pamhc2foodcore
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from pamhc2foodcore
+		enableTagCompat = true
+
+	[compat.croptopia]
+		#Enable special code-level behavior for croptopia
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from croptopia
+		enableTagCompat = true
+
+	[compat.autochefsdelight]
+		#Enable special code-level behavior for autochefsdelight
+		enableCodeCompat = true
+		#Enable nutrient tag classification for foods from autochefsdelight
+		enableTagCompat = true

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "protein_penalty",
+    "effect": "minecraft:mining_fatigue",
+    "nutrient": "proteins",
+    "trigger": "below",
+    "threshold": 0.25,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
+  },
+  {
+    "id": "carbs_penalty",
+    "effect": "minecraft:weakness",
+    "nutrient": "grains",
+    "trigger": "below",
+    "threshold": 0.25,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
+  },
+  {
+    "id": "vitamins_penalty",
+    "effect": "minecraft:unluck",
+    "nutrient": "fruits",
+    "trigger": "below",
+    "threshold": 0.25,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
+  },
+  {
+    "id": "hydration_penalty",
+    "effect": "minecraft:slowness",
+    "nutrient": "vegetables",
+    "trigger": "below",
+    "threshold": 0.25,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
+  },
+  {
+    "id": "all_high_health",
+    "effect": "minecraft:health_boost",
+    "nutrient": "all",
+    "trigger": "all_above",
+    "threshold": 0.75,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
+  },
+  {
+    "id": "all_high_regen",
+    "effect": "minecraft:regeneration",
+    "nutrient": "all",
+    "trigger": "all_above",
+    "threshold": 0.75,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
+  }
+]

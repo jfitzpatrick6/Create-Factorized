@@ -1,0 +1,22 @@
+[
+  {
+    "nutrient": "fruits",
+    "preset": "FLAT"
+  },
+  {
+    "nutrient": "vegetables",
+    "preset": "FLAT"
+  },
+  {
+    "nutrient": "proteins",
+    "preset": "FLAT"
+  },
+  {
+    "nutrient": "grains",
+    "preset": "FLAT"
+  },
+  {
+    "nutrient": "dairy",
+    "preset": "FLAT"
+  }
+]

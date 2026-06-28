@@ -1,0 +1,28 @@
+# Runtime / generated
+.mixin.out/
+.sable/
+.tmp_recipe_extract/
+local/
+downloads/
+dynamic-data-pack-cache/
+dynamic-resource-pack-cache/
+moonlight-global-datapacks/
+mcps/
+
+# Worlds and logs
+saves/
+logs/
+crash-reports/
+
+# Player-specific
+options.txt
+usercache.json
+usernamecache.json
+command_history.txt
+patchouli_data.json
+ponders_watched.json
+
+# Large personal data
+xaero/
+schematics/
+patchouli_books/
