@@ -18,8 +18,19 @@ var CANONICAL = {
   toast: 'farmersdelight_extended:toast',
   flour: 'create:wheat_flour',
   dough: 'create:dough',
-  bread: 'minecraft:bread'
+  bread: 'minecraft:bread',
+  experienceFluid: 'create_enchantment_industry:experience',
+  experienceBucket: 'create_enchantment_industry:experience_bucket'
 }
+
+var EXPERIENCE_FLUID_VARIANTS = [
+  'sophisticatedcore:xp_still',
+  'sophisticatedcore:xp_flow'
+]
+
+var EXPERIENCE_BUCKET_VARIANTS = [
+  'sophisticatedcore:xp_bucket'
+]
 
 var STEEL_VARIANTS = [
   'createbigcannons:steel_ingot',
@@ -109,6 +120,8 @@ ServerEvents.tags('item', event => {
   event.add('c:foods/dough/wheat', [C.dough])
   event.add('c:foods/dough', [C.dough])
 
+  event.add('c:experience_buckets', concat([C.experienceBucket], EXPERIENCE_BUCKET_VARIANTS))
+
   event.add('c:tools/knife', [
     'moredelight:wooden_knife',
     'moredelight:stone_knife',
@@ -121,6 +134,15 @@ ServerEvents.tags('item', event => {
     'ends_delight:purpur_knife',
     'ends_delight:dragon_tooth_knife'
   ])
+})
+
+ServerEvents.tags('fluid', event => {
+  var C = CANONICAL
+
+  event.add('c:experience', concat([
+    C.experienceFluid,
+    'create_enchantment_industry:flowing_experience'
+  ], EXPERIENCE_FLUID_VARIANTS))
 })
 
 ServerEvents.recipes(event => {
@@ -169,6 +191,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'farmersdelight:bread_from_smoking' })
 
   event.shapeless(C.dough, 'farmersdelight:wheat_dough').id('kubejs:convert/farmersdelight_wheat_dough')
+
+  unify(EXPERIENCE_BUCKET_VARIANTS, C.experienceBucket, 'experience_bucket')
 
   event.replaceInput({ mod: 'moredelight', input: 'moredelight:toast' }, 'moredelight:toast', C.toast)
   event.replaceInput({ mod: 'moredelight', input: 'moredelight:bread_slice' }, 'moredelight:bread_slice', C.breadSlice)

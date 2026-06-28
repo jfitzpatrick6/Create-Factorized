@@ -18,6 +18,7 @@ RecipeViewerEvents.removeEntries('item', event => {
     'cgs:sulfur',
     'cgs:niter',
     'farmersdelight:wheat_dough',
+    'sophisticatedcore:xp_bucket',
     'moredelight:bread_slice',
     'moredelight:toast',
     'moredelight:wooden_knife',
@@ -26,5 +27,16 @@ RecipeViewerEvents.removeEntries('item', event => {
 
   for (var i = 0; i < hidden.length; i++) {
     event.remove(hidden[i])
+  }
+})
+
+RecipeViewerEvents.removeEntries('fluid', event => {
+  var hiddenFluids = [
+    'sophisticatedcore:xp_still',
+    'sophisticatedcore:xp_flow'
+  ]
+
+  for (var j = 0; j < hiddenFluids.length; j++) {
+    event.remove(hiddenFluids[j])
   }
 })
