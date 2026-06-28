@@ -33,7 +33,7 @@ function defineCoreMetal(event, config) {
   event.recipes.create.splashing(splashOutputs, crushed)
     .id('kubejs:ore_processing/' + name + '_3x_splashing')
 
-  var mixInputs = [crushed, '#tfmg:flux']
+  var mixInputs = [crushed, '#tfmg:flux', Fluid.of('minecraft:water', 250)]
   if (washByproduct) {
     mixInputs.push(washByproduct)
   }

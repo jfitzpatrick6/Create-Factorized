@@ -79,7 +79,8 @@ ServerEvents.recipes(event => {
     mix5xInputs: [
       'create:crushed_raw_lead',
       '#tfmg:flux',
-      'tfmg:sulfur_dust'
+      'tfmg:sulfur_dust',
+      Fluid.of('minecraft:water', 250)
     ]
   })
 
@@ -107,7 +108,8 @@ ServerEvents.recipes(event => {
     mix5xInputs: [
       'create:crushed_raw_nickel',
       '#tfmg:flux',
-      'tfmg:sulfur_dust'
+      'tfmg:sulfur_dust',
+      Fluid.of('minecraft:water', 250)
     ]
   })
 
