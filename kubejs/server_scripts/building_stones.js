@@ -6,9 +6,13 @@
 // mud via create:mixing/mud_by_mixing). Downstream variants use stonecutter /
 // Chipped / Rechiseled once base blocks flow.
 //
-//   Phase 2: calcite, tuff, deepslate, dripstone_block, packed_mud
+//   Phase 2: calcite, tuff, cobbled_deepslate → deepslate (vanilla smelt), dripstone, packed_mud
+//   Phase 2b: tfmg galena, bauxite, lignite, fireclay
+//   Phase 2c: amethyst block + budding amethyst (renewable geode farms)
 //   Phase 3: create limestone, asurine, crimsite, scoria, scorchia, ochrum, veridium
 //   Phase 4: basalt, blackstone
+//
+// Polished deepslate: smelt/blast cobbled_deepslate (vanilla) — not synthesized directly.
 
 function defineStoneMix(event, config) {
   var recipe = event.recipes.create.mixing(config.output, config.inputs)
@@ -49,7 +53,10 @@ ServerEvents.tags('item', event => {
     'minecraft:sandstone',
     'minecraft:red_sandstone',
     'minecraft:calcite',
-    'create:limestone'
+    'create:limestone',
+    'tfmg:bauxite',
+    'tfmg:galena',
+    'tfmg:lignite'
   ])
 })
 
@@ -79,8 +86,8 @@ ServerEvents.recipes(event => {
   })
 
   defineStoneMix(event, {
-    id: 'deepslate_lithification',
-    output: '4x minecraft:deepslate',
+    id: 'cobbled_deepslate_lithification',
+    output: '4x minecraft:cobbled_deepslate',
     inputs: [
       '4x minecraft:stone',
       '2x minecraft:charcoal',
@@ -100,6 +107,13 @@ ServerEvents.recipes(event => {
     heat: 'heated'
   })
 
+  event.recipes.create.crushing([
+    Item.of('minecraft:pointed_dripstone', 4),
+    CreateItem.of('minecraft:clay_ball', 0.25)
+  ], 'minecraft:dripstone_block')
+    .processingTime(300)
+    .id('kubejs:building_stones/dripstone_to_pointed')
+
   defineStoneMix(event, {
     id: 'packed_mud_from_mud',
     output: '2x minecraft:packed_mud',
@@ -107,6 +121,84 @@ ServerEvents.recipes(event => {
       'minecraft:mud',
       'minecraft:wheat'
     ]
+  })
+
+  // --- Phase 2b: TFMG striated ore stones -----------------------------------
+
+  defineStoneMix(event, {
+    id: 'galena_lead_ore',
+    output: '2x tfmg:galena',
+    inputs: [
+      '2x minecraft:cobbled_deepslate',
+      '4x tfmg:lead_nugget',
+      'tfmg:sulfur_dust',
+      '#tfmg:flux'
+    ],
+    heat: 'heated'
+  })
+
+  defineStoneMix(event, {
+    id: 'bauxite_aluminum_ore',
+    output: '2x tfmg:bauxite',
+    inputs: [
+      '2x minecraft:cobbled_deepslate',
+      '2x minecraft:clay_ball',
+      '#c:ingots/aluminum',
+      Fluid.of('minecraft:water', 250)
+    ],
+    heat: 'heated'
+  })
+
+  defineStoneMix(event, {
+    id: 'lignite_coal_bed',
+    output: '2x tfmg:lignite',
+    inputs: [
+      'minecraft:cobbled_deepslate',
+      '2x minecraft:coal',
+      'minecraft:clay_ball'
+    ],
+    heat: 'heated'
+  })
+
+  defineStoneMix(event, {
+    id: 'fireclay_balls',
+    output: '4x tfmg:fireclay_ball',
+    inputs: [
+      '4x minecraft:clay_ball',
+      'minecraft:coal',
+      Fluid.of('minecraft:lava', 250)
+    ],
+    heat: 'heated'
+  })
+
+  defineStoneCompact(event, {
+    id: 'fireclay_from_balls',
+    output: 'tfmg:fireclay',
+    inputs: ['4x tfmg:fireclay_ball']
+  })
+
+  // --- Phase 2c: Amethyst renewability --------------------------------------
+
+  defineStoneMix(event, {
+    id: 'amethyst_block_crystallization',
+    output: 'minecraft:amethyst_block',
+    inputs: [
+      '4x minecraft:amethyst_shard',
+      '2x minecraft:calcite',
+      Fluid.of('minecraft:water', 500)
+    ],
+    heat: 'heated'
+  })
+
+  defineStoneMix(event, {
+    id: 'budding_amethyst_seed',
+    output: 'minecraft:budding_amethyst',
+    inputs: [
+      'minecraft:amethyst_block',
+      '2x minecraft:amethyst_shard',
+      'minecraft:calcite'
+    ],
+    heat: 'superheated'
   })
 
   // --- Phase 4a: Nether stones (before volcanic Create types) ---------------
