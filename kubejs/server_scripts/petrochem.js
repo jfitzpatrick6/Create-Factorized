@@ -19,6 +19,10 @@ ServerEvents.tags('fluid', event => {
     'tfmg:gasoline',
     'tfmg:flowing_gasoline'
   ])
+  event.add('c:liquid_asphalt', [
+    'tfmg:liquid_asphalt',
+    'tfmg:flowing_liquid_asphalt'
+  ])
 })
 
 ServerEvents.recipes(event => {
@@ -114,19 +118,10 @@ ServerEvents.recipes(event => {
     .heated()
     .id('kubejs:petrochem/mixing/liquid_asphalt')
 
-  // Basin fluid tank caps at 144 mB — 250 mB recipes never fire.
-  event.custom({
-    type: 'tfmg:casting',
-    ingredients: [
-      { type: 'neoforge:single', amount: 144, fluid: 'tfmg:liquid_asphalt' }
-    ],
-    processing_time: 100,
-    results: [
-      { id: 'tfmg:asphalt' }
-    ]
-  }).id('kubejs:petrochem/casting/asphalt')
+  // TFMG casting basin: kubejs/data/kubejs/recipe/petrochem/casting/asphalt.json
+  // (datapack JSON — event.custom can fail to bind fluidIngredients for tfmg:casting)
 
-  // Create Basin path (black basin + heat) — same fluid cost, no TFMG casting basin required.
+  // Create Basin fallback (black basin + heat below).
   event.recipes.create.compacting('tfmg:asphalt', Fluid.of('tfmg:liquid_asphalt', 144))
     .heated()
     .id('kubejs:petrochem/compacting/asphalt')
