@@ -1,0 +1,31 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "output": [
+    {
+      "id": "create_new_age:thorium"
+    },
+    {
+      "id": "minecraft:redstone",
+      "chance": 0.1
+    },
+    {
+      "id": "create:raw_zinc",
+      "chance": 0.05
+    },
+    {
+      "id": "minecraft:cobblestone",
+      "chance": 0.25
+    },
+    {
+      "id": "minecraft:gravel",
+      "chance": 0.1
+    }
+  ],
+  "priority": 0,
+  "stress": 256,
+  "ticks": 180,
+  "veinId": "coedeposits:thorium_vein"
+}

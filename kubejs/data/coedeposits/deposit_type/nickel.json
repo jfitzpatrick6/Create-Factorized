@@ -1,0 +1,23 @@
+{
+  "vein_recipe": "coedeposits:nickel_vein",
+  "dimensions": "minecraft:overworld",
+  "distance": {
+    "min": 800,
+    "max": 2147483647
+  },
+  "size_chunks": {
+    "min": 2,
+    "max": 12
+  },
+  "per_chunk_units": {
+    "min": 10000,
+    "max": 80000
+  },
+  "weight": 45,
+  "map_color": 9474192,
+  "biome_filter": [
+    "c:is_dripstone_caves",
+    "c:is_mountain",
+    "minecraft:is_taiga"
+  ]
+}

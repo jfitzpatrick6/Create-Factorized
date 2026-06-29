@@ -1,0 +1,17 @@
+{
+  "type": "createoreexcavation:vein",
+  "name": "{\"text\":\"Lithium Deposit\"}",
+  "priority": 0,
+  "finite": "always",
+  "amountMultiplierMin": 1.0,
+  "amountMultiplierMax": 12.0,
+  "placement": {
+    "salt": 1762100017,
+    "separation": 8,
+    "spacing": 256
+  },
+  "icon": {
+    "count": 1,
+    "id": "tfmg:raw_lithium"
+  }
+}

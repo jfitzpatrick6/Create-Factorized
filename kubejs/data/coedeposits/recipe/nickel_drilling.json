@@ -1,0 +1,31 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "output": [
+    {
+      "id": "tfmg:raw_nickel"
+    },
+    {
+      "id": "tfmg:sulfur_dust",
+      "chance": 0.25
+    },
+    {
+      "id": "tfmg:nickel_nugget",
+      "chance": 0.15
+    },
+    {
+      "id": "minecraft:cobbled_deepslate",
+      "chance": 0.3
+    },
+    {
+      "id": "minecraft:gravel",
+      "chance": 0.1
+    }
+  ],
+  "priority": 0,
+  "stress": 256,
+  "ticks": 120,
+  "veinId": "coedeposits:nickel_vein"
+}

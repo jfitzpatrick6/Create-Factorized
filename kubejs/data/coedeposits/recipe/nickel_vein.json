@@ -1,0 +1,17 @@
+{
+  "type": "createoreexcavation:vein",
+  "name": "{\"text\":\"Nickel Deposit\"}",
+  "priority": 0,
+  "finite": "always",
+  "amountMultiplierMin": 1.5,
+  "amountMultiplierMax": 16.0,
+  "placement": {
+    "salt": 1762100016,
+    "separation": 8,
+    "spacing": 256
+  },
+  "icon": {
+    "count": 1,
+    "id": "tfmg:raw_nickel"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "vein_recipe": "coedeposits:bauxite_vein",
+  "dimensions": "minecraft:overworld",
+  "distance": {
+    "min": 0,
+    "max": 2147483647
+  },
+  "size_chunks": {
+    "min": 3,
+    "max": 14
+  },
+  "per_chunk_units": {
+    "min": 12000,
+    "max": 90000
+  },
+  "weight": 55,
+  "map_color": 12037154,
+  "biome_filter": [
+    "minecraft:is_jungle",
+    "c:is_mountain",
+    "minecraft:is_hill",
+    "minecraft:is_badlands"
+  ]
+}
