@@ -3,9 +3,9 @@
 //
 // Baselines (CNA 1.2.0 / TFMG 1.2.0 defaults):
 //   generator_coil: 8x copper ingot + andesite alloy block
-//   energising/overcharged_iron: 1 iron (1000 FE)
-//   energising/overcharged_gold: 1 gold (2000 FE)
-//   energising/overcharged_diamond: 1 diamond (10000 FE)
+//   energising/overcharged_iron: 1 iron (1000 FE) — gated via energiser billet + mixing
+//   energising/overcharged_gold: 1 gold (2000 FE) — gated via energiser billet + mixing
+//   energising/overcharged_diamond: 1 diamond (10000 FE) — gated via energiser billet + mixing
 //   blank_circuit -> copper_circuit (CNA parallel path — removed)
 //   motor extensions: copper_circuit -> tfmg:circuit_board (pack redirect)
 //   deployer: electron_tube -> kubejs:control_unit (pack gate)
@@ -36,18 +36,29 @@ ServerEvents.recipes(event => {
     S: 'tfmg:copper_spool'
   }).id('kubejs:electronics/generator_coil')
 
+  // CNA energising accepts exactly one item input — prep materials via mixing first.
+  event.recipes.create.mixing('kubejs:iron_energiser_billet', [
+    '2x minecraft:iron_ingot',
+    '4x minecraft:redstone'
+  ]).id('kubejs:electronics/mixing/iron_energiser_billet')
+
+  event.recipes.create.mixing('kubejs:gold_energiser_billet', [
+    '2x minecraft:gold_ingot',
+    'tfmg:cooling_fluid_bottle',
+    '4x minecraft:redstone'
+  ]).id('kubejs:electronics/mixing/gold_energiser_billet')
+
+  event.recipes.create.mixing('kubejs:diamond_energiser_billet', [
+    'minecraft:diamond',
+    'tfmg:lithium_ingot',
+    'tfmg:cooling_fluid_bottle'
+  ]).id('kubejs:electronics/mixing/diamond_energiser_billet')
+
   event.remove({ id: 'create_new_age:energising/overcharged_iron' })
   event.custom({
     type: 'create_new_age:energising',
     energy_needed: 1000,
-    ingredients: [
-      { item: 'minecraft:iron_ingot' },
-      { item: 'minecraft:iron_ingot' },
-      { item: 'minecraft:redstone' },
-      { item: 'minecraft:redstone' },
-      { item: 'minecraft:redstone' },
-      { item: 'minecraft:redstone' }
-    ],
+    ingredients: [{ item: 'kubejs:iron_energiser_billet' }],
     results: [{ id: 'create_new_age:overcharged_iron' }]
   }).id('kubejs:electronics/energising/overcharged_iron')
 
@@ -55,15 +66,7 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'create_new_age:energising',
     energy_needed: 2000,
-    ingredients: [
-      { item: 'minecraft:gold_ingot' },
-      { item: 'minecraft:gold_ingot' },
-      { item: 'tfmg:cooling_fluid_bottle' },
-      { item: 'minecraft:redstone' },
-      { item: 'minecraft:redstone' },
-      { item: 'minecraft:redstone' },
-      { item: 'minecraft:redstone' }
-    ],
+    ingredients: [{ item: 'kubejs:gold_energiser_billet' }],
     results: [{ id: 'create_new_age:overcharged_gold' }]
   }).id('kubejs:electronics/energising/overcharged_gold')
 
@@ -71,11 +74,7 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'create_new_age:energising',
     energy_needed: 10000,
-    ingredients: [
-      { item: 'minecraft:diamond' },
-      { item: 'tfmg:lithium_ingot' },
-      { item: 'tfmg:cooling_fluid_bottle' }
-    ],
+    ingredients: [{ item: 'kubejs:diamond_energiser_billet' }],
     results: [{ id: 'create_new_age:overcharged_diamond' }]
   }).id('kubejs:electronics/energising/overcharged_diamond')
 

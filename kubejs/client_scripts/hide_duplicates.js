@@ -24,7 +24,10 @@ RecipeViewerEvents.removeEntries('item', event => {
     'moredelight:wooden_knife',
     'moredelight:stone_knife',
     'create_new_age:blank_circuit',
-    'create_new_age:copper_circuit'
+    'create_new_age:copper_circuit',
+    'kubejs:iron_energiser_billet',
+    'kubejs:gold_energiser_billet',
+    'kubejs:diamond_energiser_billet'
   ]
 
   for (var i = 0; i < hidden.length; i++) {
