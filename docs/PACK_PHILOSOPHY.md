@@ -11,9 +11,7 @@ Living design document for planning recipes, quests, and balance. Update this wh
 
 A **Create-first industrial modpack** for a **small friend server** (2–5 players) where the factory *is* the progression. Players scale from andesite machines through steel chemistry, oil refining, electronics, and full automation — while exploring Terralith/Tectonic terrain and building large, expressive bases over **endless play**.
 
-There is no hard “you win” screen. The intended long-term fantasy is a **sustainable megabase**: automated ore and stone, diesel/CNA power, pretty factories, and optional toys (guns, cannons, aircraft) as **complimentary sinks** — not survival requirements.
-
-**Candidate endgame milestone (not final):** CNA nuclear reactor online as a prestige power goal, with building and optimization continuing indefinitely after.
+**Official endgame milestone:** **CNA nuclear reactor online** — a prestige power goal marking the factory as “complete enough” to run indefinitely. Building, decoration, optimization, and optional toys continue forever after.
 
 **Pace:** Progressive and satisfying — **not grindy**. Each new line should feel like a meaningful step up, not a hours-long slog. Exact hour targets are TBD; tune during playtest.
 
@@ -26,14 +24,15 @@ There is no hard “you win” screen. The intended long-term fantasy is a **sus
 | Topic | Decision |
 |-------|----------|
 | **Audience** | Small server (2–5), cooperative factory/build focus |
+| **Endgame milestone** | **CNA nuclear reactor** operational (quest capstone in #8) |
+| **Post-endgame** | Endless building, decoration, logistics, optional projects |
 | **Grind** | Avoid grind; 5× ore processing is the right ceiling |
-| **Mining vs automation** | Manual mining should **not** beat automation for long — automate early, tune synthesis/deposits so bottlenecks shift to setup and throughput not strip-mining |
-| **Combat weight** | **Low** — optional flavor, not a core pillar |
-| **Infernal Mobs** | **Removing** — does not fit; needs a replacement plan (see below) |
+| **Mining vs automation** | Manual mining should **not** beat automation for long |
+| **Combat weight** | **Low** — see PvE model below |
+| **Infernal Mobs** | **Removed** (jar already absent; config removed) |
 | **PvP** | No design consideration |
-| **Quest book** | **Optional guide** for non-technical players to learn processes; never required to progress; rewards complimentary, **not overpowering** |
-| **Aeronautics** | **QoL transportation**; optional quest branch to teach basics for interested players |
-| **Endgame** | TBD; leaning **CNA nuclear reactor** as a milestone in an **endless building** sandbox |
+| **Quest book** | **Optional guide** for non-technical players; never required; modest rewards |
+| **Aeronautics** | **QoL transportation**; small optional quest chapter (#14) |
 
 ---
 
@@ -66,117 +65,124 @@ Core metals are **2× / 3× / 5×**; other systems should have comparable depth 
 | 3× | Washing + byproducts | Copper wire, lead nuggets, sulfur RNG |
 | 5× | Heated mixing + flux + fluid | Gold, lead/nickel endgame, electronics inputs |
 
-**Rule:** Remove or rework mod recipes that bypass tier investment (e.g. CGS iron→steel mixing, direct lead smelting).
-
 ### 3. Byproduct loops tie lines together
-
-Ore washing and secondary outputs feed downstream factories:
 
 ```
 Iron wash  → redstone      → energiser billets (#4)
-Zinc wash  → gunpowder     → early ammo (#11)
+Zinc wash  → gunpowder     → optional ammo (#11)
 Lead wash  → sulfur_dust   → propellant, rubber (#3, #11)
 Nickel wash→ sulfur_dust   → propellant
 Gold 5×    → ingot flood   → energising, CBC plates
 Lithium    → cooling fluid → petrochem + diamond billet (#4)
 ```
 
-**Rule:** When adding a new processing line, ask what ore byproduct it consumes and what it produces for another line.
-
 ### 4. Create-automated discovery
 
-Progression should be visible in **JEI/EMI** as chains of Create recipes (mixing, SA, mechanical crafting, pressing, blasting).
-
-FTB Quests chapters (#7, #8, #10, #12) help **non-technical players** follow factory chains in-game — they do **not** gate recipes, power, or items.
+Progression visible in **JEI/EMI**. FTB Quests (#7, #8, #10, #12, #14) guide non-technical players — **never gate** recipes or power.
 
 ### 5. TFMG-primary industry
-
-**TFMG** owns heavy industry: steel, oil, plastics, cooling fluid, asphalt, distillation. CNA and CGS **plug into** TFMG outputs; they do not run parallel steel/oil/circuit economies.
 
 | Domain | Primary mod | Pack role |
 |--------|-------------|-----------|
 | Ore → ingot tiers | Create + KubeJS | Foundation (#1) |
 | Oil / plastics / coke | TFMG | Power & chemistry (#3) |
 | Circuits / control | TFMG + custom items | Automation gates (#4) |
-| FE / nuclear | Create New Age | Power bridge + endgame milestone |
+| FE / **nuclear** | Create New Age | Power bridge + **endgame milestone** |
 | Firearms | CGS | Optional munitions sink (#11) |
 | Artillery | CBC | Optional heavy sink (#5) |
-| Transport | Create Aeronautics | QoL flight (#TBD quests) |
+| Transport | Create Aeronautics | QoL flight (#14) |
 
 ### 6. Automation beats mining quickly
 
-- **Early:** Short manual mining / exploration window to bootstrap first machines.
-- **Mid:** Ore Excavation + CoE deposits + 3×/5× lines should be the default metal source.
-- **Building:** Stone synthesis (#9) should unlock **soon after** steel/flux — not as a late afterthought — so megabases never depend on continent strip-mining.
-
-**Rule:** If players are still hand-mining bulk stone or ore past the mid-game milestone, the recipe timing is wrong.
+- **Early:** Short bootstrap mining window.
+- **Mid:** Ore Excavation + CoE + 3×/5× = default metal source.
+- **Building:** Stone synthesis (#9) unlocks soon after steel/flux — not late-game afterthought.
 
 ### 7. Building is a first-class sink
 
-Chipped, Rechiseled, Beautify, Supplementaries, Create Deco, asphalt — the pack exists for **large pretty factories**. Stone automation (#9) and architecture quests (#10) are core, not optional decoration.
+Chipped, Rechiseled, Beautify, Supplementaries, Create Deco, asphalt — the pack exists for **large pretty factories**.
 
 ---
 
 ## Progression model
 
 ```
-Early          Mid                 Late mid              Endless
-─────          ───                 ────────              ───────
-Andesite       Steel + brass       Diesel + plastic      CNA nuclear (milestone?)
-Crushing       Distillation        Cooling / lithium     Megabase optimization
-2× metals      3× wash + drill     5× flux metals        Building variety (#9/#10)
-Cobble/wood    TFMG circuits       Electronics SA        Optional CGS/CBC toys
-               Stone automation    Control units         Aeronautics QoL
+Early          Mid                 Late mid              Endgame milestone
+─────          ───                 ────────              ───────────────
+Andesite       Steel + brass       Diesel + plastic      CNA reactor online
+Crushing       Distillation        Cooling / lithium     (then: endless build)
+2× metals      3× wash + drill     5× flux metals        Aeronautics QoL
+Cobble/wood    TFMG circuits       Electronics SA        Optional munitions
+               Stone automation    Control units         Megabase polish
 ```
 
-**Unlock order (epic #2):**
-
-1. Ore processing (2×→5×) — **done** (#1)
-2. Oil / petrochem — **done** (#3)
-3. Electronics / CNA — **done** (#4)
-4. Building stone automation — planned (#9) — prioritize **before** late combat toys
-5. Gunsmithing integration — planned (#11) — **low priority**, optional sink
-6. Explosives / CBC — planned (#5) — **low priority**, optional sink
-7. Food / Nourished — planned (#6)
+**Core unlock order:** #1 → #3 → #4 → **nuclear (#8 capstone)** → #9 building stones → optional #11/#5 toys
 
 ---
 
-## Combat & munitions (low priority)
+## PvE model — “Industrial ecology” (replaces Infernal Mobs)
 
-Combat is **not** a survival pillar. CGS and CBC exist because they fit the Create factory theme and consume metals/chemistry — not because players need guns to survive.
+Combat is **low priority**. PvE should feel like **factory logistics and optional adventure**, not random elite mobs punishing builders.
 
-### Infernal Mobs — removed
+### Layer 1 — Safe factory floor (default)
 
-Infernal Mobs is being removed from the pack. It conflicted with the cooperative, low-combat, factory-first tone.
+- **FTB Chunks** claiming: cooperative bases are build zones, not siege maps.
+- Standard lighting + vanilla spawning rules outside claimed/work-lit areas.
+- **Gravestone** mod: deaths are recoverable, low stress for casual co-op.
 
-**Replacement direction (TBD — track in GitHub issue):**
+### Layer 2 — Mob infrastructure (factory “combat”)
 
-| Need | Proposal |
-|------|----------|
-| Why keep CGS/CBC at all? | Factory-themed **optional** production lines and build projects (ammo plants, cannon emplacements as set dressing) |
-| Any threat? | Vanilla mob difficulty only; no elite random modifiers |
-| Quest hooks | Teach ammo SA and cannon crafting as **factory challenges**, not kill quests |
-| Balance | Do not gate factory progress on weapons; soften #11 weapon gates vs original combat-focused draft |
+The main PvE interaction is **automating mobs as resources**, not fighting them manually:
+
+| System | Role |
+|--------|------|
+| Create mob farms | Deployer / fan / lava / crushing for drops |
+| Create Enchantment Industry | XP fluid from farms → tools (factory enchant pipeline) |
+| Farmer's Delight / Nourished | Mob drops → food buffs for long build sessions |
+| Washing / processing | Loot tables as secondary inputs |
+
+**Quest angle (#12 reframed):** “Security wing” — build a mob farm and CEI xp line, not kill elites.
+
+### Layer 3 — Optional adventure (opt-in challenge)
+
+| System | Role |
+|--------|------|
+| Terralith / Tectonic | Hazardous biomes as **co-op excursion** destinations for rare aesthetics or materials |
+| Vanilla bosses | Dragon / Wither as **optional ceremonies**, never recipe gates |
+| CGS / CBC | **Site clearance** when expanding into caves or new chunks — utility, not progression |
+| Future evaluate | Lightweight **structure/loot** mods (not random elite modifiers) if more adventure wanted |
+
+### What we explicitly reject
+
+- Random elite modifiers on everyday mobs (Infernal Mobs pattern)
+- Base raids or invasion timers disrupting builds
+- Combat-required recipe gates
+- PvP balancing
+
+### Munitions (#11 / #12 / #5) in this model
+
+Guns and cannons are **factory products and co-op toys**:
+
+- Ammo plants as sequenced-assembly showcases
+- Cannon emplacements as megabase decoration
+- Clearance runs before new construction sites
+
+**No main factory recipe should require killing anything.**
 
 ---
 
 ## Quest book philosophy
 
-| Chapter | Issue | Audience | Role |
-|---------|-------|----------|------|
-| Ore processing | (TBD) | Everyone | Teach 2×/3×/5× |
-| Petrochem / power | #7 | Non-technical | Oil → diesel → plastic |
-| Electronics | #8 | Non-technical | CNA + control unit |
-| Architecture | #10 | Builders | Stone + decoration |
-| Combat / munitions | #12 | Optional | CGS + CBC as factory lines |
-| Aeronautics | (TBD) | Optional | QoL flight tutorial |
+| Chapter | Issue | Role |
+|---------|-------|------|
+| Ore processing | (TBD) | 2×/3×/5× |
+| Petrochem / power | #7 | Oil → diesel → plastic |
+| Electronics / **nuclear** | #8 | CNA + **reactor capstone** |
+| Architecture | #10 | Stone + decoration |
+| Aeronautics | #14 | Optional flight QoL |
+| Munitions factory | #12 | Optional CGS/CBC + mob farm |
 
-**Principles:**
-
-- Quests are **never required** — all progression available via JEI and experimentation.
-- Written for players who do not want to read wikis or watch tutorials.
-- Rewards: small material bundles, tools, cosmetics — **never** skip tiers or hand out endgame gear in bulk.
-- Dependencies show **recommended order**, not hard locks.
+**Principles:** optional, non-technical friendly, modest rewards, recommended order not hard locks.
 
 ---
 
@@ -184,72 +190,60 @@ Infernal Mobs is being removed from the pack. It conflicted with the cooperative
 
 | Practice | Standard |
 |----------|----------|
-| Scripts | One file per line (`petrochem.js`, `electronics.js`, …), priority field for load order |
+| Scripts | One file per line; priority field for load order |
 | Recipe IDs | `kubejs:<line>/<type>/<name>` |
-| Reload safety | Item registration in `startup_scripts/`; server recipe changes in `server_scripts/` |
-| Fluids in Create | `Fluid.of('id', amount)` — not raw `fluid_stack` JSON |
-| CNA energising | **Single item input** — use mixing billets first |
-| TFMG vat | `{ tag: 'tfmg:flux' }` not `{ item: '#tfmg:flux' }`; no fluids in `tfmg:coking` |
-| Verification | `/reload` + check `logs/kubejs/server.log` for failed recipes |
+| CNA energising | Single item input — mixing billets first |
+| Verification | `/reload` + `logs/kubejs/server.log` |
 
 ---
 
-## Mod ecosystem roles (abbreviated)
+## Mod ecosystem roles
 
 | Category | Mods | Pack intent |
 |----------|------|-------------|
 | Core | Create, TFMG, KubeJS | Factory spine |
-| Power | CNA, TFMG engines | FE + rotation; CNA nuclear = endgame milestone candidate |
-| World | Terralith, Tectonic, Lithostitched | Exploration & aesthetics |
-| Ores | CoE Deposits, Ore Excavation | Veins + drilling — automation path |
-| Decoration | Chipped, Rechiseled, Beautify, … | Primary long-term sink |
-| Munitions | CGS, CBC | Optional factory lines (low combat weight) |
+| Endgame power | CNA | **Nuclear reactor milestone** |
+| World | Terralith, Tectonic, Lithostitched | Exploration & build palette |
+| Ores | CoE Deposits, Ore Excavation | Automated mining |
+| Decoration | Chipped, Rechiseled, Beautify, … | Primary endless sink |
+| Munitions | CGS, CBC | Optional factory toys |
+| PvE infra | CEI, Gravestone, FTB Chunks | Farms, recovery, safe bases |
+| Transport | Create Aeronautics | QoL flight |
 | Food | FD, Central Kitchen, Nourished | Session buffs (#6) |
-| QoL | JEI, Building Wands, FTB Chunks | Navigation & building |
-| Transport | Create Aeronautics | QoL flight; optional teach quests |
 
-**Removed / do not plan around:** Infernal Mobs
+**Removed:** Infernal Mobs
 
 ---
 
 ## Explicit non-goals
 
-- **Tin** — not a processable ore; do not plan tin gates without adding ore gen.
-- **Parallel cheap steel** from CGS or other mods.
-- **Quest-gated progression** — no recipe locked behind quest completion.
-- **Grind for grind's sake** — if a step feels like chores without factory payoff, redesign.
-- **PvP balance**
-- **Recipe-per-Chipped-variant** — automate base stones only (#9).
-- **Combat-required progression** — guns/cannons never mandatory.
+- Tin gates without ore gen
+- Parallel cheap steel
+- Quest-gated progression
+- Grind without factory payoff
+- PvP balance
+- Combat-required progression
+- Recipe-per-Chipped-variant
 
 ---
 
-## Issue roadmap map
+## Issue roadmap
 
-| # | Topic | Type | Priority |
-|---|-------|------|----------|
-| 1 | Ore processing | Implemented | Core |
-| 2 | Epic — processing lines | Tracking | Core |
-| 3 | Petrochem | Implemented | Core |
-| 4 | Electronics | Implemented | Core |
-| 5 | Explosives / CBC | Planned | Low |
-| 6 | Food / Nourished | Planned | Medium |
-| 7 | FTB Quests — petrochem | Quests | Medium |
-| 8 | FTB Quests — electronics | Quests | Medium |
-| 9 | Building stone automation | Planned | **High** |
-| 10 | FTB Quests — architecture | Quests | Medium |
-| 11 | CGS integration | Planned | Low |
-| 12 | FTB Quests — combat | Quests | Low |
-| 13 | Remove Infernal Mobs + combat redesign | Planned | Medium |
-
----
-
-## Still open (minor)
-
-- **Exact endgame milestone** — CNA reactor is the leading candidate; confirm after playtest.
-- **Pace targets** — playtest-derived hour markers for diesel / stone automation / nuclear.
-- **Aeronautics quest chapter** — create when flight basics are stable.
-- **Infernal replacement** — finalize in #13 (likely: vanilla mobs + optional munitions as factory toys only).
+| # | Topic | Priority |
+|---|-------|----------|
+| 1 | Ore processing | Core ✓ |
+| 3 | Petrochem | Core ✓ |
+| 4 | Electronics | Core ✓ |
+| 8 | FTB Quests — electronics + **nuclear capstone** | High |
+| 9 | Building stone automation | High |
+| 10 | FTB Quests — architecture | Medium |
+| 14 | FTB Quests — aeronautics | Medium |
+| 6 | Food / Nourished | Medium |
+| 7 | FTB Quests — petrochem | Medium |
+| 13 | Infernal removal + PvE model | Done (design) |
+| 11 | CGS integration | Low |
+| 12 | FTB Quests — munitions factory | Low |
+| 5 | CBC explosives | Low |
 
 ---
 
@@ -257,5 +251,6 @@ Infernal Mobs is being removed from the pack. It conflicted with the cooperative
 
 | Date | Change |
 |------|--------|
-| 2026-06-29 | Initial draft from implemented KubeJS lines and open GitHub issues |
-| 2026-06-29 | Locked audience, pace, combat, quests, automation, and endgame direction per owner input; Infernal Mobs marked for removal |
+| 2026-06-29 | Initial draft |
+| 2026-06-29 | Locked audience, pace, combat, quests per owner input |
+| 2026-06-29 | CNA reactor = official endgame; Industrial ecology PvE model; Infernal config removed; aero chapter #14 |
