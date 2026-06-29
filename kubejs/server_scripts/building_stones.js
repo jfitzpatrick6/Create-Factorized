@@ -1,14 +1,14 @@
 // priority: 4
 // Building stone automation — issue #9
 //
-// Coverage audit (base blocks only — variants via stonecutter / Chipped / Rechiseled):
-//   Phase 1: gravel/sand/sandstone, andesite supplement, bricks, stone bricks, terracotta
-//   Phase 2: calcite, tuff, deepslate, dripstone_block, mud, packed_mud
+// Synthesis for worldgen-only / uncraftable base stones only.
+// Does NOT duplicate existing Create routes (e.g. gravel → sand via crushing,
+// mud via create:mixing/mud_by_mixing). Downstream variants use stonecutter /
+// Chipped / Rechiseled once base blocks flow.
+//
+//   Phase 2: calcite, tuff, deepslate, dripstone_block, packed_mud
 //   Phase 3: create limestone, asurine, crimsite, scoria, scorchia, ochrum, veridium
 //   Phase 4: basalt, blackstone
-//
-// Create Deco colored bricks use create:stone + minecraft:brick (see createdeco jar);
-// brick automation here completes that chain once Create stones flow.
 
 function defineStoneMix(event, config) {
   var recipe = event.recipes.create.mixing(config.output, config.inputs)
@@ -54,67 +54,6 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
-  // --- Phase 1: Bulk foundation ---------------------------------------------
-
-  event.recipes.create.splashing('minecraft:sand', 'minecraft:gravel')
-    .id('kubejs:building_stones/gravel_washing')
-
-  defineStoneCompact(event, {
-    id: 'sandstone_from_gravel',
-    output: 'minecraft:sandstone',
-    inputs: ['4x minecraft:gravel', Fluid.of('minecraft:water', 250)],
-    heat: true
-  })
-
-  defineStoneCompact(event, {
-    id: 'sandstone_from_sand',
-    output: 'minecraft:sandstone',
-    inputs: ['4x minecraft:sand', Fluid.of('minecraft:water', 100)]
-  })
-
-  defineStoneMix(event, {
-    id: 'andesite_from_claystone',
-    output: '2x minecraft:andesite',
-    inputs: [
-      'minecraft:cobblestone',
-      'minecraft:clay_ball',
-      Fluid.of('minecraft:water', 250)
-    ],
-    heat: 'heated'
-  })
-
-  defineStoneMix(event, {
-    id: 'red_sandstone_from_sandstone',
-    output: '2x minecraft:red_sandstone',
-    inputs: [
-      'minecraft:sandstone',
-      'minecraft:red_sand',
-      Fluid.of('minecraft:water', 100)
-    ],
-    heat: 'heated'
-  })
-
-  defineStoneCompact(event, {
-    id: 'stone_bricks_from_stone',
-    output: '4x minecraft:stone_bricks',
-    inputs: ['4x minecraft:stone'],
-    heat: true
-  })
-
-  defineStoneCompact(event, {
-    id: 'bricks_from_clay',
-    output: '4x minecraft:brick',
-    inputs: ['4x minecraft:clay_ball'],
-    heat: true
-  })
-
-  defineStoneMix(event, {
-    id: 'terracotta_from_clay',
-    output: '8x minecraft:terracotta',
-    inputs: ['8x minecraft:clay_ball'],
-    heat: 'heated'
-  })
-
   // --- Phase 2: Rare overworld stones (flux / steel era) --------------------
 
   defineStoneMix(event, {
@@ -159,15 +98,6 @@ ServerEvents.recipes(event => {
       Fluid.of('minecraft:water', 1000)
     ],
     heat: 'heated'
-  })
-
-  defineStoneMix(event, {
-    id: 'mud_from_dirt',
-    output: '2x minecraft:mud',
-    inputs: [
-      'minecraft:dirt',
-      Fluid.of('minecraft:water', 500)
-    ]
   })
 
   defineStoneMix(event, {
