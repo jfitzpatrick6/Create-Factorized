@@ -1,0 +1,31 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "output": [
+    {
+      "id": "tfmg:raw_lead"
+    },
+    {
+      "id": "tfmg:sulfur_dust",
+      "chance": 0.25
+    },
+    {
+      "id": "tfmg:lead_nugget",
+      "chance": 0.2
+    },
+    {
+      "id": "minecraft:cobbled_deepslate",
+      "chance": 0.35
+    },
+    {
+      "id": "minecraft:gravel",
+      "chance": 0.12
+    }
+  ],
+  "priority": 0,
+  "stress": 256,
+  "ticks": 110,
+  "veinId": "coedeposits:lead_vein"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "createoreexcavation:vein",
+  "name": "{\"text\":\"Lead Deposit\"}",
+  "priority": 0,
+  "finite": "always",
+  "amountMultiplierMin": 2.0,
+  "amountMultiplierMax": 18.0,
+  "placement": {
+    "salt": 1762100015,
+    "separation": 8,
+    "spacing": 256
+  },
+  "icon": {
+    "count": 1,
+    "id": "tfmg:raw_lead"
+  }
+}

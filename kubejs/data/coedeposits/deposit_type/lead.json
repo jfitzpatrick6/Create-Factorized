@@ -1,0 +1,24 @@
+{
+  "vein_recipe": "coedeposits:lead_vein",
+  "dimensions": "minecraft:overworld",
+  "distance": {
+    "min": 0,
+    "max": 2147483647
+  },
+  "size_chunks": {
+    "min": 3,
+    "max": 16
+  },
+  "per_chunk_units": {
+    "min": 12000,
+    "max": 100000
+  },
+  "weight": 60,
+  "map_color": 5926010,
+  "biome_filter": [
+    "c:is_mountain",
+    "c:is_dripstone_caves",
+    "minecraft:is_taiga",
+    "minecraft:is_hill"
+  ]
+}
