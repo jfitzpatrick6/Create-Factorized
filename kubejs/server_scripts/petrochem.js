@@ -11,7 +11,7 @@
 // Pack tweaks:
 //   crude_oil distillation — diesel-biased split (+10 diesel, -10 gasoline, -10 lpg)
 //   heavy_oil 500 mB (vat, superheated) -> 1 coal_coke + 50 creosote + 40 CO2
-//   liquid_asphalt 250 mB (casting) -> 1 asphalt block
+//   liquid_asphalt 144 mB (casting / compacting) -> 1 asphalt block (basin tank max = 144 mB)
 //   liquid_asphalt mixing requires heat
 
 ServerEvents.tags('fluid', event => {
@@ -114,16 +114,22 @@ ServerEvents.recipes(event => {
     .heated()
     .id('kubejs:petrochem/mixing/liquid_asphalt')
 
+  // Basin fluid tank caps at 144 mB — 250 mB recipes never fire.
   event.custom({
     type: 'tfmg:casting',
     ingredients: [
-      { type: 'neoforge:single', amount: 250, fluid: 'tfmg:liquid_asphalt' }
+      { type: 'neoforge:single', amount: 144, fluid: 'tfmg:liquid_asphalt' }
     ],
     processing_time: 100,
     results: [
       { id: 'tfmg:asphalt' }
     ]
   }).id('kubejs:petrochem/casting/asphalt')
+
+  // Create Basin path (black basin + heat) — same fluid cost, no TFMG casting basin required.
+  event.recipes.create.compacting('tfmg:asphalt', Fluid.of('tfmg:liquid_asphalt', 144))
+    .heated()
+    .id('kubejs:petrochem/compacting/asphalt')
 
   // --- Cross-mod integration ------------------------------------------------
 

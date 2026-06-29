@@ -2,16 +2,19 @@
 
 ItemEvents.modifyTooltips(event => {
   event.add('tfmg:casting_basin', [
-    Text.of('Fill with ').append(Text.of('250 mB+ Liquid Asphalt').color(0x55AAFF)),
-    Text.of('(bucket or fluid pipe from a tank).'),
-    Text.of('Place a ').append(Text.of('hopper under').color(0xFFAA00)).append(Text.of(' the basin to collect Asphalt blocks.')),
-    Text.of('Not Create\u2019s basin — this is the TFMG Casting Basin.')
+    Text.of('TFMG block (fireproof bricks) — ').append(Text.of('not').color(0xFF5555)).append(Text.of(' Create\u2019s black Basin.')),
+    Text.of('Fill to ').append(Text.of('144 mB').color(0x55AAFF)).append(Text.of(' Liquid Asphalt (basin max).')),
+    Text.of('Hopper ').append(Text.of('under').color(0xFFAA00)).append(Text.of(' to collect asphalt blocks.'))
+  ])
+
+  event.add('create:basin', [
+    Text.of('Asphalt: pipe in ').append(Text.of('144 mB').color(0x55AAFF)).append(Text.of(' Liquid Asphalt + ')),
+    Text.of('heat below (blaze burner) \u2192 compacting recipe.')
   ])
 
   event.add('tfmg:liquid_asphalt_bucket', [
-    Text.of('Made in a ').append(Text.of('heated').color(0xFF5555)).append(Text.of(' Create Mixer:')),
-    Text.of('Asphalt Mixture + Water \u2192 Liquid Asphalt.'),
-    Text.of('Pour into a ').append(Text.of('TFMG Casting Basin').color(0xFFAA00)).append(Text.of(' (250 mB per block).'))
+    Text.of('Heated Create Mixer: Asphalt Mixture + Water.'),
+    Text.of('144 mB per asphalt block (Create Basin + heat, or TFMG Casting Basin + hopper).')
   ])
 
   event.add('tfmg:asphalt_mixture', [
