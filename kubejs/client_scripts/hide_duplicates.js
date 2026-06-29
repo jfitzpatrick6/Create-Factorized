@@ -22,7 +22,9 @@ RecipeViewerEvents.removeEntries('item', event => {
     'moredelight:bread_slice',
     'moredelight:toast',
     'moredelight:wooden_knife',
-    'moredelight:stone_knife'
+    'moredelight:stone_knife',
+    'create_new_age:blank_circuit',
+    'create_new_age:copper_circuit'
   ]
 
   for (var i = 0; i < hidden.length; i++) {
