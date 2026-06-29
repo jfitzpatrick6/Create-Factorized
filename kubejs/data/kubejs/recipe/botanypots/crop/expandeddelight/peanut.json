@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "expandeddelight:peanut_crop"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "expandeddelight:peanut_crop",
+  "input": {
+    "item": "expandeddelight:peanut"
+  }
+}

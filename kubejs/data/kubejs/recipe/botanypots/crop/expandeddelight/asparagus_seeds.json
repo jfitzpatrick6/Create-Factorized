@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "expandeddelight:asparagus_crop"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "expandeddelight:asparagus_crop",
+  "input": {
+    "item": "expandeddelight:asparagus_seeds"
+  }
+}

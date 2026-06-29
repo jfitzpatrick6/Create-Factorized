@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "expandeddelight:chili_pepper_crop"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "expandeddelight:chili_pepper_crop",
+  "input": {
+    "item": "expandeddelight:chili_pepper_seeds"
+  }
+}

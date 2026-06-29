@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "expandeddelight:cranberry_plant"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "expandeddelight:cranberry_plant",
+  "input": {
+    "item": "expandeddelight:cranberry_plant"
+  },
+  "soil": {
+    "tag": "botanypots:soil/water"
+  }
+}
