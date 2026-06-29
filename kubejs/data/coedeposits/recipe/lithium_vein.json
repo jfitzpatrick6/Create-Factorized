@@ -2,7 +2,7 @@
   "type": "createoreexcavation:vein",
   "name": "{\"text\":\"Lithium Deposit\"}",
   "priority": 0,
-  "finite": "always",
+  "finite": "never",
   "amountMultiplierMin": 1.0,
   "amountMultiplierMax": 12.0,
   "placement": {

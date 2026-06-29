@@ -2,7 +2,7 @@
   "type": "createoreexcavation:vein",
   "name": "{\"text\":\"Bauxite Deposit\"}",
   "priority": 0,
-  "finite": "always",
+  "finite": "never",
   "amountMultiplierMin": 2.0,
   "amountMultiplierMax": 18.0,
   "placement": {

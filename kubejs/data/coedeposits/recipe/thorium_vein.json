@@ -2,7 +2,7 @@
   "type": "createoreexcavation:vein",
   "name": "{\"text\":\"Thorium Deposit\"}",
   "priority": 0,
-  "finite": "always",
+  "finite": "never",
   "amountMultiplierMin": 1.0,
   "amountMultiplierMax": 10.0,
   "placement": {

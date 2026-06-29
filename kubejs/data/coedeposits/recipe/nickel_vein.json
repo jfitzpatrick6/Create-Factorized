@@ -2,7 +2,7 @@
   "type": "createoreexcavation:vein",
   "name": "{\"text\":\"Nickel Deposit\"}",
   "priority": 0,
-  "finite": "always",
+  "finite": "never",
   "amountMultiplierMin": 1.5,
   "amountMultiplierMax": 16.0,
   "placement": {
