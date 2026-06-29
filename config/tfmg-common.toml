@@ -139,7 +139,7 @@
 	#Sets the maximum oil reserves a deposit can have.
 	# Default: 10000
 	# Range: > 1000
-	depositMaxReserves = 10000
+	depositMaxReserves = 15000
 	#.
 	#Makes deposits bottomless.
 	infiniteDeposits = false
