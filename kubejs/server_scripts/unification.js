@@ -95,32 +95,51 @@ function concat(base, extra) {
   return extra ? base.concat(extra) : base
 }
 
+function stripFromTag(event, tag, variants) {
+  variants.forEach(function (variant) {
+    event.remove(tag, variant)
+  })
+}
+
+function canonicalTag(event, tag, canonical, variants) {
+  event.add(tag, canonical)
+  if (variants) {
+    stripFromTag(event, tag, variants)
+  }
+}
+
 ServerEvents.tags('item', event => {
   var C = CANONICAL
 
-  event.add('c:ingots/steel', concat([C.steelIngot], STEEL_VARIANTS))
-  event.add('c:nuggets/steel', concat([C.steelNugget], STEEL_NUGGET_VARIANTS))
-  event.add('c:storage_blocks/steel', concat([C.steelBlock], STEEL_BLOCK_VARIANTS))
-  event.add('c:plates/steel', concat([C.steelPlate], STEEL_PLATE_VARIANTS))
+  canonicalTag(event, 'c:ingots/steel', C.steelIngot, STEEL_VARIANTS)
+  canonicalTag(event, 'c:nuggets/steel', C.steelNugget, STEEL_NUGGET_VARIANTS)
+  canonicalTag(event, 'c:storage_blocks/steel', C.steelBlock, STEEL_BLOCK_VARIANTS)
+  canonicalTag(event, 'c:plates/steel', C.steelPlate, STEEL_PLATE_VARIANTS)
 
-  event.add('c:ingots/cast_iron', concat([C.castIronIngot], CAST_IRON_VARIANTS))
-  event.add('c:nuggets/cast_iron', concat([C.castIronNugget], CAST_IRON_NUGGET_VARIANTS))
-  event.add('c:storage_blocks/cast_iron', concat([C.castIronBlock], CAST_IRON_BLOCK_VARIANTS))
+  canonicalTag(event, 'c:ingots/cast_iron', C.castIronIngot, CAST_IRON_VARIANTS)
+  canonicalTag(event, 'c:nuggets/cast_iron', C.castIronNugget, CAST_IRON_NUGGET_VARIANTS)
+  canonicalTag(event, 'c:storage_blocks/cast_iron', C.castIronBlock, CAST_IRON_BLOCK_VARIANTS)
 
-  event.add('c:ingots/lead', concat([C.leadIngot], LEAD_INGOT_VARIANTS))
-  event.add('c:nuggets/lead', concat([C.leadNugget], LEAD_NUGGET_VARIANTS))
-  event.add('c:raw_materials/lead', concat([C.rawLead], RAW_LEAD_VARIANTS))
+  canonicalTag(event, 'c:ingots/lead', C.leadIngot, LEAD_INGOT_VARIANTS)
+  canonicalTag(event, 'c:nuggets/lead', C.leadNugget, LEAD_NUGGET_VARIANTS)
+  canonicalTag(event, 'c:raw_materials/lead', C.rawLead, RAW_LEAD_VARIANTS)
 
-  event.add('c:dusts/sulfur', concat([C.sulfurDust], SULFUR_DUST_VARIANTS))
-  event.add('c:dusts/saltpeter', concat([C.saltpeterDust], SALTPETER_DUST_VARIANTS))
+  canonicalTag(event, 'c:dusts/sulfur', C.sulfurDust, SULFUR_DUST_VARIANTS)
+  canonicalTag(event, 'c:dusts/saltpeter', C.saltpeterDust, SALTPETER_DUST_VARIANTS)
 
-  event.add('c:bread_slices/wheat', concat(concat([C.breadSlice], BREAD_SLICE_VARIANTS), [C.toast]))
-  event.add('c:bread_slices', concat(concat([C.breadSlice], BREAD_SLICE_VARIANTS), [C.toast]))
-  event.add('c:flours/wheat', [C.flour])
-  event.add('c:foods/dough/wheat', [C.dough])
-  event.add('c:foods/dough', [C.dough])
+  canonicalTag(event, 'c:bread_slices/wheat', C.breadSlice, BREAD_SLICE_VARIANTS)
+  event.add('c:bread_slices/wheat', C.toast)
+  stripFromTag(event, 'c:bread_slices/wheat', TOAST_VARIANTS)
 
-  event.add('c:experience_buckets', concat([C.experienceBucket], EXPERIENCE_BUCKET_VARIANTS))
+  canonicalTag(event, 'c:bread_slices', C.breadSlice, BREAD_SLICE_VARIANTS)
+  event.add('c:bread_slices', C.toast)
+  stripFromTag(event, 'c:bread_slices', TOAST_VARIANTS)
+
+  canonicalTag(event, 'c:flours/wheat', C.flour, [])
+  canonicalTag(event, 'c:foods/dough/wheat', C.dough, ['farmersdelight:wheat_dough'])
+  canonicalTag(event, 'c:foods/dough', C.dough, ['farmersdelight:wheat_dough'])
+
+  canonicalTag(event, 'c:experience_buckets', C.experienceBucket, EXPERIENCE_BUCKET_VARIANTS)
 
   event.add('c:tools/knife', [
     'moredelight:wooden_knife',
@@ -139,10 +158,11 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('fluid', event => {
   var C = CANONICAL
 
-  event.add('c:experience', concat([
+  event.add('c:experience', [
     C.experienceFluid,
     'create_enchantment_industry:flowing_experience'
-  ], EXPERIENCE_FLUID_VARIANTS))
+  ])
+  stripFromTag(event, 'c:experience', EXPERIENCE_FLUID_VARIANTS)
 })
 
 ServerEvents.recipes(event => {
@@ -204,8 +224,18 @@ ServerEvents.recipes(event => {
   event.replaceInput({ mod: 'cgs', input: 'cgs:sulfur' }, 'cgs:sulfur', '#c:dusts/sulfur')
   event.replaceInput({ mod: 'cgs', input: 'cgs:niter' }, 'cgs:niter', '#c:dusts/saltpeter')
 
+  event.replaceInput({ mod: 'createbigcannons', input: 'createbigcannons:steel_ingot' }, 'createbigcannons:steel_ingot', '#c:ingots/steel')
+  event.replaceInput({ mod: 'createbigcannons', input: 'createbigcannons:steel_scrap' }, 'createbigcannons:steel_scrap', '#c:nuggets/steel')
+  event.replaceInput({ mod: 'createbigcannons', input: 'createbigcannons:cast_iron_ingot' }, 'createbigcannons:cast_iron_ingot', '#c:ingots/cast_iron')
+  event.replaceInput({ mod: 'createbigcannons', input: 'createbigcannons:cast_iron_nugget' }, 'createbigcannons:cast_iron_nugget', '#c:nuggets/cast_iron')
+
   event.replaceOutput({ mod: 'cgs', output: 'cgs:steel_ingot' }, 'cgs:steel_ingot', C.steelIngot)
   event.replaceOutput({ mod: 'cgs', output: 'cgs:lead_ingot' }, 'cgs:lead_ingot', C.leadIngot)
+
+  event.replaceOutput({ mod: 'createbigcannons', output: 'createbigcannons:steel_ingot' }, 'createbigcannons:steel_ingot', C.steelIngot)
+  event.replaceOutput({ mod: 'createbigcannons', output: 'createbigcannons:steel_scrap' }, 'createbigcannons:steel_scrap', C.steelNugget)
+  event.replaceOutput({ mod: 'createbigcannons', output: 'createbigcannons:cast_iron_ingot' }, 'createbigcannons:cast_iron_ingot', C.castIronIngot)
+  event.replaceOutput({ mod: 'createbigcannons', output: 'createbigcannons:cast_iron_nugget' }, 'createbigcannons:cast_iron_nugget', C.castIronNugget)
 
   event.remove({ id: 'moredelight:cutting/bread_slice' })
   event.remove({ id: 'moredelight:cutting/bread_to_bread_slices' })
