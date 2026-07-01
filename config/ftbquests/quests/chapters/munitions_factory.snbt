@@ -73,7 +73,7 @@
 				""
 				"Claim the area around your main machines so chunk loaders and builds stay protected on the friend server."
 			]
-			icon: "ftbchunks:chunk"
+			icon: "minecraft:filled_map"
 			id: "7F00M00000000012"
 			rewards: [{
 				count: 4
