@@ -51,6 +51,24 @@
 		}
 		{
 			dependencies: ["8F01D00000000012"]
+			id: "8F01D0000000001B"
+			rewards: [{
+				count: 8
+				id: "8F01D00000000208"
+				item: { count: 1, id: "minecraft:end_stone" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "8F01D0000000010B"
+				item: { count: 1, id: "aeronautics:end_stone_powder" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01D00000000012"]
 			id: "8F01D00000000013"
 			rewards: [{
 				count: 4
@@ -83,11 +101,15 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01D00000000014"]
+			dependencies: [
+				"8F01D00000000014"
+				"8F01D0000000001B"
+			]
 			id: "8F01D00000000015"
 			rewards: [{
+				count: 4
 				id: "8F01D00000000203"
-				item: { count: 1, id: "tfmg:kerosene_bucket" }
+				item: { count: 1, id: "create:zinc_nugget" }
 				type: "item"
 			}]
 			tasks: [{
@@ -96,6 +118,23 @@
 				type: "item"
 			}]
 			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01D00000000014"]
+			id: "8F01D0000000001C"
+			rewards: [{
+				count: 4
+				id: "8F01D00000000209"
+				item: { count: 1, id: "rechiseled:stone_smooth_large_tiles" }
+				type: "item"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				id: "8F01D0000000010C"
+				type: "checkmark"
+			}]
+			x: 0.0d
 			y: 4.0d
 		}
 		{

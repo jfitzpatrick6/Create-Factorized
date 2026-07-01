@@ -8,10 +8,10 @@ Living follow-up to issues #7, #8, #10, #12, #14, and #6. First-pass chapters ar
 |---------|------|--------|-------|--------|
 | Factory Canteen | `factory_kitchen.snbt` | 21 | Factory Support | ✓ #6 |
 | Munitions | `munitions_factory.snbt` | 24 | Factory Support | ✓ #12 |
-| Petrochem | `petrochem_factory.snbt` | 23 | Petrochemicals | ✓ #7 first pass |
+| Petrochem | `petrochem_factory.snbt` | 26 | Petrochemicals | ✓ #7 Phase 3 gaps |
 | Electronics / CNA | `electronics_factory.snbt` | 28 | Electronics & Power | ✓ #8 first pass |
-| Architecture | `architecture_factory.snbt` | 23 | Architecture & Stone | ✓ #10 first pass |
-| Aeronautics | `aeronautics_factory.snbt` | 11 | Aeronautics (Optional) | ✓ #14 first pass |
+| Architecture | `architecture_factory.snbt` | 35 | Architecture & Stone | ✓ #10 Phase 3 gaps |
+| Aeronautics | `aeronautics_factory.snbt` | 13 | Aeronautics (Optional) | ✓ #14 Phase 3 gaps |
 
 Lang: `config/ftbquests/quests/lang/en_us.snbt` — all quest IDs have title, subtitle, and multi-line `quest_desc`.
 
@@ -85,23 +85,23 @@ Optional cross-chapter pointer
 
 ---
 
-## Phase 3 — Coverage gaps vs GitHub issues (fill in)
+## Phase 3 — Coverage gaps vs GitHub issues (fill in) ✓
 
 ### Architecture (#10) — issue lists 7 groups; first pass covers spine only
-- [ ] Add: sandstone/brick/terracotta shaped-stone quests (`8F01C` 27–29).
-- [ ] Add: dripstone, mud, blackstone, ochrum/asurine/veridium individual quests.
-- [ ] Add: “8 Chipped variants” observation quest.
-- [ ] Add: Main Street place-32-blocks quest (use checkmark + screenshot honor or low-count place task).
-- [ ] Add: Palette Master checklist (10 stone families).
+- [x] Add: sandstone/brick/terracotta shaped-stone quests (`8F01C` 28–2A).
+- [x] Add: dripstone, mud, blackstone, ochrum/asurine/veridium individual quests (`2B`–`2D`, `2E`–`2F`, `33`).
+- [x] Add: Chipped variants honor quest (`8F01C` 27 — A Thousand Faces).
+- [x] Add: Main Street place-32-blocks quest (`8F01C` 31 — honor checkmark).
+- [x] Add: Palette Master checklist (`8F01C` 32 — 10 stone family item tasks).
 
 ### Petrochem (#7)
-- [ ] Add: explicit “Flux Cracker” checkmark with vat size note.
-- [ ] Add: second-pass heavy oil distillation quest.
-- [ ] Add: propane/LPG mention in intro (optional sidebar text).
+- [x] Add: explicit “Flux Cracker” checkmark with vat size note (`8F01A` 27).
+- [x] Add: second-pass heavy oil distillation quest (`8F01A` 28 — lubrication oil).
+- [x] Add: propane/LPG mention in intro + optional LPG collector quest (`8F01A` 29).
 
 ### Aeronautics (#14)
-- [ ] Add: Rechiseled Aeronautics skin quest (compat mod).
-- [ ] Audit `levitite_blend_bucket` vs kerosene — align task with actual mod fuel recipe after JEI test.
+- [x] Add: Rechiseled Aeronautics skin quest (`8F01D` 1C — compat mod).
+- [x] Audit `levitite_blend_bucket` — recipe is end_stone_powder + zinc + water; added `8F01D` 1B, fixed copy and reward.
 
 ---
 

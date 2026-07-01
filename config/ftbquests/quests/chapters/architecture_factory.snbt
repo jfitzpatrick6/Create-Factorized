@@ -99,6 +99,48 @@
 		}
 		{
 			dependencies: ["8F01C00000000013"]
+			id: "8F01C00000000029"
+			tasks: [{
+				count: 8L
+				id: "8F01C00000000118"
+				item: { count: 1, id: "minecraft:stone_bricks" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8F01C00000000015"]
+			id: "8F01C00000000028"
+			tasks: [{
+				count: 8L
+				id: "8F01C00000000119"
+				item: { count: 1, id: "minecraft:sandstone" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8F01C00000000015"]
+			id: "8F01C0000000002A"
+			rewards: [{
+				count: 8
+				id: "8F01C0000000020D"
+				item: { count: 1, id: "minecraft:terracotta" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "8F01C0000000011A"
+				item: { count: 1, id: "minecraft:terracotta" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8F01C00000000013"]
 			id: "8F01C00000000016"
 			tasks: [{
 				id: "8F01C00000000106"
@@ -170,6 +212,30 @@
 		}
 		{
 			dependencies: ["8F01C00000000018"]
+			id: "8F01C0000000002B"
+			tasks: [{
+				count: 4L
+				id: "8F01C0000000011B"
+				item: { count: 1, id: "minecraft:dripstone_block" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8F01C00000000012"]
+			id: "8F01C0000000002C"
+			tasks: [{
+				count: 4L
+				id: "8F01C0000000011C"
+				item: { count: 1, id: "minecraft:packed_mud" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8F01C00000000018"]
 			id: "8F01C0000000001B"
 			rewards: [{
 				count: 8
@@ -185,6 +251,42 @@
 			}]
 			x: 8.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["8F01C0000000001B"]
+			id: "8F01C0000000002E"
+			tasks: [{
+				count: 4L
+				id: "8F01C0000000011D"
+				item: { count: 1, id: "create:asurine" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["8F01C0000000001B"]
+			id: "8F01C0000000002F"
+			tasks: [{
+				count: 4L
+				id: "8F01C0000000011E"
+				item: { count: 1, id: "create:ochrum" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["8F01C0000000001B"]
+			id: "8F01C00000000033"
+			tasks: [{
+				count: 4L
+				id: "8F01C0000000011F"
+				item: { count: 1, id: "create:veridium" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["8F01C0000000001B"]
@@ -250,7 +352,7 @@
 				item: { count: 1, id: "rechiseled:chisel" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 10.0d
 			y: 6.0d
 		}
 		{
@@ -333,6 +435,34 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["8F01C00000000024"]
+			id: "8F01C0000000002D"
+			tasks: [{
+				count: 8L
+				id: "8F01C00000000120"
+				item: { count: 1, id: "minecraft:blackstone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["8F01C00000000023"]
+			id: "8F01C00000000031"
+			rewards: [{
+				count: 16
+				id: "8F01C0000000020E"
+				item: { count: 1, id: "minecraft:lantern" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01C00000000121"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
 			dependencies: [
 				"8F01C00000000022"
 				"8F01C00000000023"
@@ -354,6 +484,68 @@
 		}
 		{
 			dependencies: ["8F01C00000000025"]
+			id: "8F01C00000000032"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "8F01C00000000122"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					id: "8F01C00000000123"
+					item: { count: 1, id: "minecraft:stone" }
+					type: "item"
+				}
+				{
+					id: "8F01C00000000124"
+					item: { count: 1, id: "minecraft:andesite" }
+					type: "item"
+				}
+				{
+					id: "8F01C00000000125"
+					item: { count: 1, id: "minecraft:calcite" }
+					type: "item"
+				}
+				{
+					id: "8F01C00000000126"
+					item: { count: 1, id: "minecraft:cobbled_deepslate" }
+					type: "item"
+				}
+				{
+					id: "8F01C00000000127"
+					item: { count: 1, id: "minecraft:tuff" }
+					type: "item"
+				}
+				{
+					id: "8F01C00000000128"
+					item: { count: 1, id: "create:limestone" }
+					type: "item"
+				}
+				{
+					id: "8F01C00000000129"
+					item: { count: 1, id: "minecraft:basalt" }
+					type: "item"
+				}
+				{
+					id: "8F01C0000000012A"
+					item: { count: 1, id: "create:scoria" }
+					type: "item"
+				}
+				{
+					id: "8F01C0000000012B"
+					item: { count: 1, id: "create:cut_limestone" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"8F01C00000000025"
+				"8F01C00000000032"
+			]
 			id: "8F01C00000000026"
 			rewards: [
 				{
