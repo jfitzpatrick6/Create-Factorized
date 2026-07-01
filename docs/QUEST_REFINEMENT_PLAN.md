@@ -115,12 +115,13 @@ Optional cross-chapter pointer
 
 ---
 
-## Phase 5 — Tooling & maintenance
+## Phase 5 — Tooling & maintenance ✓
 
-- [ ] Add `kubejs/README.md` note: quest SNBT lives in `config/ftbquests/`, not `kubejs/data/`.
-- [ ] Script: validate all `item` task IDs against installed mods (jar item list).
-- [ ] In-game checklist: `/ftbquests reload` + open each chapter on fresh profile.
-- [ ] Close GitHub #7, #8, #10, #14 when Phase 1–2 complete; keep refinement as sub-issues.
+- [x] Add `kubejs/README.md` note: quest SNBT lives in `config/ftbquests/`, not `kubejs/data/`.
+- [x] Script: `scripts/validate_quest_items.py` — scans mods (incl. jar-in-jar), kubejs startup, block item models, textures, lang, and recipe JSON.
+- [x] In-game checklist: `docs/FTB_QUESTS_VALIDATION.md` — `/ftbquests reload` + six-chapter smoke test.
+- [x] Fixed invalid quest ID `create_new_age:copper_coil` → `tfmg:electromagnetic_coil` (electronics step 4).
+- [x] Close GitHub #7, #8, #10, #14 — first-pass + refinement Phases 1–5 complete; ongoing tweaks tracked in this doc.
 
 ---
 

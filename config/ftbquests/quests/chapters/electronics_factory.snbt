@@ -91,7 +91,7 @@
 			id: "8F01B00000000014"
 			tasks: [{
 				id: "8F01B00000000104"
-				item: { count: 1, id: "create_new_age:copper_coil" }
+				item: { count: 1, id: "tfmg:electromagnetic_coil" }
 				type: "item"
 			}]
 			x: 6.0d

@@ -827,9 +827,9 @@
 	quest.8F01B00000000013.quest_subtitle: "Step 3 — wire bus"
 	quest.8F01B00000000013.title: "Copper Wire Stockpile"
 	quest.8F01B00000000014.quest_desc: [
-		"Wind a &ecreate_new_age:copper_coil&r on a lathe or appropriate CNA station."
+		"Wind an &etfmg:electromagnetic_coil&r on a TFMG &ewinding machine&r using &ftfmg:copper_spool&r."
 		""
-		"Coils stack into layered magnets and generator coils — the heart of FE generation."
+		"Coils feed layered magnets and &ecreate_new_age:generator_coil&r — the heart of FE generation."
 	]
 	quest.8F01B00000000014.quest_subtitle: "Step 4 — first coil"
 	quest.8F01B00000000014.title: "Copper Coil"
