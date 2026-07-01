@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "square"
 	filename: "architecture_factory"
 	group: "8F01C00000000002"
@@ -225,6 +225,8 @@
 		{
 			dependencies: ["8F01C00000000012"]
 			id: "8F01C0000000002C"
+			optional: true
+			shape: "pentagon"
 			tasks: [{
 				count: 4L
 				id: "8F01C0000000011C"
@@ -303,6 +305,7 @@
 		{
 			dependencies: ["8F01C0000000001C"]
 			id: "8F01C0000000001D"
+			shape: "diamond"
 			rewards: [{
 				count: 4
 				id: "8F01C00000000205"
@@ -337,6 +340,8 @@
 		{
 			dependencies: ["8F01C0000000001E"]
 			id: "8F01C00000000027"
+			optional: true
+			shape: "pentagon"
 			tasks: [{
 				id: "8F01C00000000117"
 				type: "checkmark"
@@ -449,6 +454,7 @@
 		{
 			dependencies: ["8F01C00000000023"]
 			id: "8F01C00000000031"
+			shape: "diamond"
 			rewards: [{
 				count: 16
 				id: "8F01C0000000020E"

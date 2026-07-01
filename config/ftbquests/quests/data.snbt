@@ -13,6 +13,7 @@
 	grid_scale: 0.75d
 	hide_excluded_quests: false
 	lock_message: ""
+	title: "NeoForge Factory"
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600

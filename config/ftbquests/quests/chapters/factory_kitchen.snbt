@@ -33,7 +33,7 @@
 				}
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				id: "7F00D00000000101"
 				type: "checkmark"
@@ -318,7 +318,7 @@
 				}
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				count: 4L
 				id: "7F00D00000000111"
@@ -462,7 +462,7 @@
 				}
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				count: 4L
 				id: "7F00D00000000118"

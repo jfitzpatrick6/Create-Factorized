@@ -498,6 +498,8 @@
 	quest.8F01A00000000010.quest_desc: [
 		"&ePetrochemicals unlock diesel power&r — TFMG crude oil, distillation towers, and the asphalt road line."
 		""
+		"&7Tip:&r Use &fPin Quest&r on this welcome node to keep oil steps on your HUD."
+		""
 		"This chapter walks &aoil discovery → pumpjack → distillation → diesel engines&r, then branches into plastics, coke, and a &f5-step asphalt chain&r for factory roads."
 		""
 		"&7Light fractions:&r crude distillation also yields &fLPG&r and &fpropylene&r — useful for tanks, reforming, and late chemistry side routes."
@@ -792,6 +794,8 @@
 	quest.8F01A00000000029.title: "LPG Collector"
 	quest.8F01B00000000010.quest_desc: [
 		"&eCreate New Age (CNA)&r is your power progression — wires, magnets, energising, and the nuclear reactor."
+		""
+		"&7Tip:&r Pin this quest and &fGrid Online&r from the quest screen for quick HUD tracking."
 		""
 		"This chapter follows the &apack CNA path&r: TFMG etched boards + copper spools, not the removed blank-circuit chain."
 		""

@@ -105,13 +105,13 @@ Optional cross-chapter pointer
 
 ---
 
-## Phase 4 — Visual & UX polish (low effort, high readability)
+## Phase 4 — Visual & UX polish (low effort, high readability) ✓
 
-- [ ] Color-code quest shapes: `rsquare` intro, `diamond` milestones, `hexagon` capstones, `pentagon` optional.
-- [ ] Use `size: 1.2d` on all capstones; `1.1d` on chapter intros.
-- [ ] Set chapter `icon` to capstone output item where possible.
-- [ ] Enable `default_hide_dependency_lines: true` on dense chapters after layout stabilizes.
-- [ ] Pin “Grid Online” and “Welcome” quests via `data.snbt` defaults (if desired).
+- [x] Color-code quest shapes: `rsquare` intro, `diamond` milestones, `hexagon` capstones, `pentagon` optional (+ `optional: true` on side branches).
+- [x] Use `size: 1.2d` on all capstones; `1.1d` on chapter intros (electronics Grid Online normalized from 1.3d).
+- [x] Set chapter `icon` to capstone output: petrochem `diesel_bucket`, electronics `nuclear_fuel`, aero `aviators_goggles` (others already aligned).
+- [x] Enable `default_hide_dependency_lines: true` on petrochem, electronics, architecture, munitions, aeronautics.
+- [x] Quest book title in `data.snbt` (`NeoForge Factory`). Pinning is per-player in FTB Quests UI — pin Welcome + Grid Online manually on first open.
 
 ---
 

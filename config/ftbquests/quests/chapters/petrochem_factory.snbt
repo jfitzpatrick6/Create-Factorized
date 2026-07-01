@@ -1,10 +1,10 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "square"
 	filename: "petrochem_factory"
 	group: "8F01A00000000002"
 	icon: {
-		id: "tfmg:crude_oil_bucket"
+		id: "tfmg:diesel_bucket"
 	}
 	id: "8F01A00000000001"
 	order_index: 1
@@ -126,6 +126,7 @@
 		{
 			dependencies: ["8F01A00000000016"]
 			id: "8F01A00000000017"
+			shape: "diamond"
 			rewards: [{
 				count: 4
 				id: "8F01A00000000205"
@@ -264,6 +265,7 @@
 		{
 			dependencies: ["8F01A0000000001E"]
 			id: "8F01A0000000001F"
+			shape: "diamond"
 			rewards: [{
 				count: 4
 				id: "8F01A0000000020D"
@@ -350,6 +352,7 @@
 		{
 			dependencies: ["8F01A00000000023"]
 			id: "8F01A00000000024"
+			shape: "diamond"
 			rewards: [{
 				count: 8
 				id: "8F01A00000000212"
@@ -385,6 +388,7 @@
 		{
 			dependencies: ["8F01A00000000018"]
 			id: "8F01A00000000027"
+			optional: true
 			shape: "pentagon"
 			tasks: [{
 				id: "8F01A00000000117"
@@ -396,6 +400,8 @@
 		{
 			dependencies: ["8F01A00000000018"]
 			id: "8F01A00000000028"
+			optional: true
+			shape: "pentagon"
 			rewards: [{
 				id: "8F01A00000000216"
 				item: { count: 1, id: "tfmg:lubrication_oil_bucket" }
@@ -412,6 +418,7 @@
 		{
 			dependencies: ["8F01A00000000016"]
 			id: "8F01A00000000029"
+			optional: true
 			rewards: [{
 				id: "8F01A00000000217"
 				item: { count: 1, id: "tfmg:lpg_bucket" }

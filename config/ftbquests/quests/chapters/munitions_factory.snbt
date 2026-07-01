@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "square"
 	filename: "munitions_factory"
 	group: "7F00D00000000002"

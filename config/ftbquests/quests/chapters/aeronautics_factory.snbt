@@ -1,10 +1,10 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "square"
 	filename: "aeronautics_factory"
 	group: "8F01D00000000002"
 	icon: {
-		id: "aeronautics:gyroscopic_propeller_bearing"
+		id: "aeronautics:aviators_goggles"
 	}
 	id: "8F01D00000000001"
 	order_index: 5
@@ -123,6 +123,7 @@
 		{
 			dependencies: ["8F01D00000000014"]
 			id: "8F01D0000000001C"
+			optional: true
 			rewards: [{
 				count: 4
 				id: "8F01D00000000209"
@@ -140,6 +141,7 @@
 		{
 			dependencies: ["8F01D00000000015"]
 			id: "8F01D00000000016"
+			shape: "diamond"
 			tasks: [{
 				id: "8F01D00000000106"
 				type: "checkmark"

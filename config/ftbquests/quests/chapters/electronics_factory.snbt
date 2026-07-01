@@ -1,10 +1,10 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "square"
 	filename: "electronics_factory"
 	group: "8F01B00000000002"
 	icon: {
-		id: "create_new_age:reactor_casing"
+		id: "create_new_age:nuclear_fuel"
 	}
 	id: "8F01B00000000001"
 	order_index: 2
@@ -257,6 +257,7 @@
 		{
 			dependencies: ["8F01B0000000001F"]
 			id: "8F01B00000000020"
+			shape: "diamond"
 			tasks: [{
 				id: "8F01B00000000110"
 				item: { count: 1, id: "kubejs:control_unit" }
@@ -307,6 +308,7 @@
 		{
 			dependencies: ["8F01B00000000010"]
 			id: "8F01B0000000002C"
+			optional: true
 			rewards: [{
 				count: 4
 				id: "8F01B0000000020F"
@@ -408,7 +410,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.3d
+			size: 1.2d
 			tasks: [{
 				id: "8F01B00000000119"
 				type: "checkmark"
@@ -419,12 +421,14 @@
 		{
 			dependencies: ["8F01B00000000029"]
 			id: "8F01B0000000002A"
+			optional: true
 			rewards: [{
 				count: 8
 				id: "8F01B0000000020D"
 				item: { count: 1, id: "create:experience_nugget" }
 				type: "item"
 			}]
+			shape: "pentagon"
 			tasks: [{
 				id: "8F01B0000000011A"
 				type: "checkmark"
@@ -435,11 +439,13 @@
 		{
 			dependencies: ["8F01B00000000029"]
 			id: "8F01B0000000002B"
+			optional: true
 			rewards: [{
 				id: "8F01B0000000020E"
 				item: { count: 1, id: "supplementaries:sign_post" }
 				type: "item"
 			}]
+			shape: "pentagon"
 			tasks: [{
 				id: "8F01B0000000011B"
 				type: "checkmark"
