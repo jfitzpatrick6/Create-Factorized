@@ -7,8 +7,15 @@
 		id: "create:cut_limestone"
 	}
 	id: "8F01C00000000001"
-	order_index: 4
-	quest_links: [ ]
+	order_index: 3
+	quest_links: [
+		{
+			id: "8F01C00000000030"
+			linked_quest: "8F01A00000000024"
+			x: 4.0d
+			y: 9.0d
+		}
+	]
 	quests: [
 		{
 			id: "8F01C00000000010"
@@ -283,7 +290,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01C0000000001C"]
+			dependencies: [
+				"8F01C0000000001C"
+				"8F01A00000000024"
+			]
 			id: "8F01C00000000023"
 			rewards: [{
 				count: 8

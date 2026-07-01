@@ -31,22 +31,22 @@ Lang: `config/ftbquests/quests/lang/en_us.snbt` — all quest IDs have title, su
 ## Phase 1 — Structure & dependencies (high impact)
 
 ### 1.1 Munitions chapter cleanup
-- [ ] Add explicit `dependencies` to security-wing quests (currently position-only).
-- [ ] Fix overlapping nodes (`783AA06A` / `5A62058E` both at 4,4).
-- [ ] Split CGS weapon branch onto a dedicated row below CBC shells.
-- [ ] Add `dependency_requirement: "one_completed"` on tier-3 weapon forks (nailgun vs gatling).
+- [x] Add explicit `dependencies` to security-wing quests (currently position-only).
+- [x] Fix overlapping nodes (`783AA06A` / `5A62058E` both at 4,4).
+- [x] Split CGS weapon branch onto a dedicated row below CBC shells.
+- [x] Add `dependency_requirement: "one_completed"` on tier-3 weapon forks (nailgun vs gatling) — quest `5A8EFF9FDCA38A6E`.
 
 ### 1.2 Petrochem ↔ Architecture asphalt dedup
-- [ ] Architecture quest `8F01C00000000023` (8× asphalt) should **depend on** petrochem `8F01A00000000024` OR use shared quest link.
-- [ ] Add `quest_links` SNBT between chapters (FTB cross-chapter arrows) for asphalt and coke dust.
+- [x] Architecture quest `8F01C00000000023` (8× asphalt) should **depend on** petrochem `8F01A00000000024` OR use shared quest link.
+- [x] Add `quest_links` SNBT between chapters (FTB cross-chapter arrows) for asphalt and coke dust.
 
 ### 1.3 Electronics prerequisites
-- [ ] Soft-link petrochem plastic/cooling quests via `quest_links` (not hard deps) into nuclear branch.
-- [ ] Add optional side quest for `tfmg:firebrick_lined_vat` before heavy-oil coking mention.
+- [x] Soft-link petrochem plastic/cooling quests via `quest_links` (not hard deps) into nuclear branch.
+- [x] Add optional side quest for `tfmg:firebrick_lined_vat` before heavy-oil coking mention.
 
 ### 1.4 Global chapter order
-- [ ] Re-index `order_index`: Canteen (0) → Petrochem (1) → Electronics (2) → Architecture (3) → Munitions (4) → Aeronautics (5).
-- [ ] Align with intended player journey: ore → oil → power → build → optional combat/flight.
+- [x] Re-index `order_index`: Canteen (0) → Petrochem (1) → Electronics (2) → Architecture (3) → Munitions (4) → Aeronautics (5).
+- [x] Align with intended player journey: ore → oil → power → build → optional combat/flight.
 
 ---
 

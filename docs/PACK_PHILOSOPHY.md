@@ -258,3 +258,4 @@ Guns and cannons are **factory products and co-op toys**:
 | 2026-07-01 | Issue #12 Munitions Factory FTB Quests chapter |
 | 2026-07-01 | Issue #11 CGS gunsmithing integration (`gunsmithing.js`) |
 | 2026-07-01 | Issues #7/#8/#10/#14 FTB Quests chapters (first pass); `docs/QUEST_REFINEMENT_PLAN.md` |
+| 2026-07-01 | Quest refinement Phase 1 — deps, cross-links, chapter order |

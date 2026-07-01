@@ -470,6 +470,27 @@
 	task.7F00D00000000100.title: "Read the canteen briefing"
 	task.7F00D00000000101.title: "I know how Nourished works"
 	task.7F00D00000000114.title: "I ran a session with factory meals + Nourished"
+	quest.5A8EFF9FDCA38A6E.quest_desc: [
+		"&eTier 3 personal weapons&r — pick your factory sidearm path."
+		""
+		"Complete &fone&r of:"
+		"&7• &fControl-Unit Nailgun&r — electronics-gated pneumatic tool"
+		"&7• &fGatling Battery&r — steel-mechanism sustained fire"
+		""
+		"Both branch from &fRevolver Round Plant&r. Artillery (breech + capstone) does not require this milestone."
+	]
+	quest.5A8EFF9FDCA38A6E.quest_subtitle: "Nailgun or gatling — your pick"
+	quest.5A8EFF9FDCA38A6E.title: "Personal Weapons Fork"
+	quest.8F01B0000000002C.quest_desc: [
+		"&eOptional&r — the &ftfmg:fireproof_chemical_vat&r unlocks superheated petrochemical recipes in a multiblock vat."
+		""
+		"Heavy-oil &fcoke coking&r (petrochem chapter) and several cracking routes need this block before you scale late fuels."
+		""
+		"&7Not required for the reactor capstone&r — craft when you are ready to run vat chemistry beside your distillation tower."
+	]
+	quest.8F01B0000000002C.quest_subtitle: "Optional — vat multiblock"
+	quest.8F01B0000000002C.title: "Fireproof Chemical Vat"
+	task.290146DF57385BB1.title: "I built nailgun or gatling — personal weapons fork"
 	chapter_group.8F01A00000000002.title: "Petrochemicals"
 	chapter_group.8F01B00000000002.title: "Electronics & Power"
 	chapter_group.8F01C00000000002.title: "Architecture & Stone"

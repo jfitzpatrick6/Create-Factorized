@@ -7,8 +7,27 @@
 		id: "create_new_age:reactor_casing"
 	}
 	id: "8F01B00000000001"
-	order_index: 3
-	quest_links: [ ]
+	order_index: 2
+	quest_links: [
+		{
+			id: "8F01B00000000030"
+			linked_quest: "8F01A0000000001A"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			id: "8F01B00000000031"
+			linked_quest: "8F01A0000000001B"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			id: "8F01B00000000032"
+			linked_quest: "8F01A0000000001D"
+			x: 0.0d
+			y: 9.0d
+		}
+	]
 	quests: [
 		{
 			id: "8F01B00000000010"
@@ -283,6 +302,24 @@
 				type: "item"
 			}]
 			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01B00000000010"]
+			id: "8F01B0000000002C"
+			rewards: [{
+				count: 4
+				id: "8F01B0000000020F"
+				item: { count: 1, id: "tfmg:fireclay_ball" }
+				type: "item"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				id: "8F01B0000000011C"
+				item: { count: 1, id: "tfmg:fireproof_chemical_vat" }
+				type: "item"
+			}]
+			x: 12.0d
 			y: 8.0d
 		}
 		{

@@ -7,8 +7,21 @@
 		id: "createbigcannons:ap_shell"
 	}
 	id: "4F034AC551FDF0D9"
-	order_index: 1
-	quest_links: [ ]
+	order_index: 4
+	quest_links: [
+		{
+			id: "4F034AC551FDF0DA"
+			linked_quest: "8F01A0000000001D"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			id: "4F034AC551FDF0DB"
+			linked_quest: "8F01B00000000020"
+			x: 0.0d
+			y: 8.0d
+		}
+	]
 	quests: [
 		{
 			id: "728C8681F84E44B2"
@@ -22,6 +35,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["728C8681F84E44B2"]
 			id: "58A6ACDB12ED5279"
 			rewards: [{
 				count: 16
@@ -42,6 +56,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["58A6ACDB12ED5279"]
 			id: "3E9C12C3A1A77329"
 			rewards: [{
 				count: 4
@@ -60,6 +75,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["3E9C12C3A1A77329"]
 			id: "484E0D6E17F78761"
 			rewards: [{
 				count: 4
@@ -80,6 +96,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["484E0D6E17F78761"]
 			id: "052E8E06FC254C16"
 			shape: "diamond"
 			tasks: [{
@@ -90,6 +107,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["052E8E06FC254C16"]
 			id: "0656D6CC15EE2E94"
 			rewards: [{
 				count: 8
@@ -110,6 +128,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0656D6CC15EE2E94"]
 			id: "4DE4F6EEF8FB78A1"
 			rewards: [{
 				count: 16
@@ -130,6 +149,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["4DE4F6EEF8FB78A1"]
 			id: "4829C15DE34003C9"
 			rewards: [{
 				count: 8
@@ -150,6 +170,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["4829C15DE34003C9"]
 			id: "747AD5FD60562407"
 			rewards: [{
 				count: 2
@@ -170,26 +191,28 @@
 			y: 0.0d
 		}
 		{
-			id: "650F4EBEB6D3CFE0"
+			dependencies: ["4829C15DE34003C9"]
+			id: "342A419A922CE71B"
 			rewards: [{
-				count: 8
-				id: "28671652065839B7"
+				count: 4
+				id: "2C041BAB3A92127C"
 				item: {
 					count: 1
-					id: "tfmg:lead_nugget"
+					id: "tfmg:coal_coke_dust"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				count: 8L
-				id: "00F09EDE26F79CA9"
-				item: { count: 1, id: "cgs:paper_cartridge" }
+				id: "2C3425FDC9A931DF"
+				item: { count: 1, id: "kubejs:factory_propellant" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
+			dependencies: ["4829C15DE34003C9"]
 			id: "22A247E65899B24C"
 			rewards: [{
 				count: 4
@@ -218,6 +241,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["22A247E65899B24C"]
 			id: "6743B591C2ADB6E6"
 			rewards: [{
 				count: 4
@@ -234,10 +258,32 @@
 				item: { count: 1, id: "createbigcannons:congealed_nitro" }
 				type: "item"
 			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["342A419A922CE71B"]
+			id: "650F4EBEB6D3CFE0"
+			rewards: [{
+				count: 8
+				id: "28671652065839B7"
+				item: {
+					count: 1
+					id: "tfmg:lead_nugget"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "00F09EDE26F79CA9"
+				item: { count: 1, id: "cgs:paper_cartridge" }
+				type: "item"
+			}]
 			x: 10.0d
 			y: 2.0d
 		}
 		{
+			dependencies: ["0656D6CC15EE2E94", "4829C15DE34003C9"]
 			id: "5A62058E551370BB"
 			rewards: [{
 				count: 4
@@ -258,6 +304,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["5A62058E551370BB", "22A247E65899B24C"]
 			id: "246C43CEF7D0586A"
 			rewards: [{
 				count: 4
@@ -277,6 +324,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["246C43CEF7D0586A"]
 			id: "6C2EAD8E97B99B45"
 			rewards: [{
 				count: 4
@@ -296,6 +344,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["747AD5FD60562407", "5A62058E551370BB"]
 			id: "43F4B75443DAFACA"
 			rewards: [{
 				count: 4
@@ -315,26 +364,27 @@
 			y: 4.0d
 		}
 		{
-			id: "342A419A922CE71B"
+			dependencies: ["342A419A922CE71B"]
+			id: "0FBB2583A25871DF"
 			rewards: [{
 				count: 4
-				id: "2C041BAB3A92127C"
+				id: "4C589A38020FE9E0"
 				item: {
 					count: 1
-					id: "tfmg:coal_coke_dust"
+					id: "create:experience_nugget"
 				}
 				type: "item"
 			}]
 			tasks: [{
-				count: 8L
-				id: "2C3425FDC9A931DF"
-				item: { count: 1, id: "kubejs:factory_propellant" }
+				id: "736ED37F894A2371"
+				item: { count: 1, id: "cgs:revolver" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
+			dependencies: ["0FBB2583A25871DF"]
 			id: "783AA06A6CFFF511"
 			rewards: [{
 				count: 16
@@ -352,28 +402,10 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
-			id: "0FBB2583A25871DF"
-			rewards: [{
-				count: 4
-				id: "4C589A38020FE9E0"
-				item: {
-					count: 1
-					id: "create:experience_nugget"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "736ED37F894A2371"
-				item: { count: 1, id: "cgs:revolver" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
+			dependencies: ["783AA06A6CFFF511"]
 			id: "42AC290DBC86C2C3"
 			rewards: [{
 				count: 4
@@ -390,10 +422,11 @@
 				item: { count: 1, id: "cgs:round_revolver_piercing" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
+			dependencies: ["342A419A922CE71B"]
 			id: "41C2F3AF2B91FC12"
 			rewards: [{
 				id: "2721A287491E1D10"
@@ -409,10 +442,11 @@
 				item: { count: 1, id: "cgs:round_shotgun_incendiary" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
+			dependencies: ["783AA06A6CFFF511"]
 			id: "316AD3397418B28B"
 			rewards: [{
 				count: 4
@@ -429,10 +463,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
-			dependency_requirement: "one_completed"
+			dependencies: ["783AA06A6CFFF511"]
 			id: "2F37B9F6D54887BD"
 			rewards: [{
 				count: 8
@@ -449,10 +483,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
-			dependency_requirement: "one_completed"
+			dependencies: ["43F4B75443DAFACA"]
 			id: "54F7EE91311D9472"
 			rewards: [{
 				count: 4
@@ -469,9 +503,25 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
+			dependencies: [
+				"316AD3397418B28B"
+				"2F37B9F6D54887BD"
+			]
+			dependency_requirement: "one_completed"
+			id: "5A8EFF9FDCA38A6E"
+			shape: "diamond"
+			tasks: [{
+				id: "290146DF57385BB1"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["484E0D6E17F78761"]
 			id: "5CD29C41A6D1A26F"
 			rewards: [{
 				count: 8
@@ -488,9 +538,13 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 8.0d
+			y: 10.0d
 		}
 		{
+			dependencies: [
+				"052E8E06FC254C16"
+				"54F7EE91311D9472"
+			]
 			id: "5A8EFF9FDCA38A6F"
 			rewards: [
 				{
@@ -518,7 +572,7 @@
 				type: "checkmark"
 			}]
 			x: 6.0d
-			y: 8.0d
+			y: 10.0d
 		}
 	]
 }
