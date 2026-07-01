@@ -16,6 +16,7 @@ crash-reports/
 
 # Player-specific
 options.txt
+!defaultoptions/options.txt
 usercache.json
 usernamecache.json
 command_history.txt
