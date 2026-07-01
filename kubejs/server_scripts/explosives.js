@@ -69,12 +69,14 @@ ServerEvents.recipes(event => {
     .id('kubejs:explosives/mixing/congealed_nitro')
 
   // --- Tier 3: shell fabrication (Create SA) --------------------------------
+  // Deploy steps must use concrete items — KubeJS tag inputs serialize with
+  // amount:1000 and Create treats them as fluid inputs in deployer recipes.
 
   event.recipes.create.sequenced_assembly([
     Item.of('createbigcannons:solid_shot')
-  ], '#c:ingots/iron', [
+  ], 'minecraft:iron_ingot', [
     event.recipes.create.deploying('minecraft:iron_ingot', [
-      '#c:ingots/iron',
+      'minecraft:iron_ingot',
       '4x tfmg:lead_nugget'
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
@@ -83,7 +85,7 @@ ServerEvents.recipes(event => {
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
       'minecraft:iron_ingot',
-      '#minecraft:wooden_slabs'
+      'minecraft:oak_slab'
     ]),
     event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
@@ -93,10 +95,10 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.sequenced_assembly([
     Item.of('createbigcannons:ap_shell')
-  ], '#c:ingots/iron', [
+  ], 'minecraft:iron_ingot', [
     event.recipes.create.deploying('minecraft:iron_ingot', [
-      '#c:ingots/iron',
-      '#c:ingots/cast_iron'
+      'minecraft:iron_ingot',
+      'tfmg:cast_iron_ingot'
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
       'minecraft:iron_ingot',
@@ -104,7 +106,7 @@ ServerEvents.recipes(event => {
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
       'minecraft:iron_ingot',
-      '#minecraft:wooden_slabs'
+      'minecraft:oak_slab'
     ]),
     event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
@@ -114,14 +116,14 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.sequenced_assembly([
     Item.of('createbigcannons:he_shell')
-  ], '#c:ingots/iron', [
+  ], 'minecraft:iron_ingot', [
     event.recipes.create.deploying('minecraft:iron_ingot', [
-      '#c:ingots/iron',
+      'minecraft:iron_ingot',
       'createbigcannons:packed_guncotton'
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
       'minecraft:iron_ingot',
-      '#minecraft:wooden_slabs'
+      'minecraft:oak_slab'
     ]),
     event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
@@ -131,9 +133,9 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.sequenced_assembly([
     Item.of('createbigcannons:shrapnel_shell')
-  ], '#c:ingots/iron', [
+  ], 'minecraft:iron_ingot', [
     event.recipes.create.deploying('minecraft:iron_ingot', [
-      '#c:ingots/iron',
+      'minecraft:iron_ingot',
       'createbigcannons:shot_balls'
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
@@ -142,7 +144,7 @@ ServerEvents.recipes(event => {
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
       'minecraft:iron_ingot',
-      '#minecraft:wooden_slabs'
+      'minecraft:oak_slab'
     ]),
     event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
