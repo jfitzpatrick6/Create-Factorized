@@ -234,6 +234,16 @@
 		}
 		{
 			dependencies: ["8F01C0000000001E"]
+			id: "8F01C00000000027"
+			tasks: [{
+				id: "8F01C00000000117"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01C00000000027"]
 			id: "8F01C0000000001F"
 			tasks: [{
 				id: "8F01C0000000010F"

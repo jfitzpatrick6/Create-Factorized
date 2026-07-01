@@ -50,7 +50,7 @@ Lang: `config/ftbquests/quests/lang/en_us.snbt` — all quest IDs have title, su
 
 ---
 
-## Phase 2 — Verbosity & beginner copy (medium impact)
+## Phase 2 — Verbosity & beginner copy (medium impact) ✓
 
 ### 2.1 Standard description template
 Every `quest_desc` should follow this block order:
@@ -72,15 +72,16 @@ Optional cross-chapter pointer
 | Energising | `8F01B` 19–1E | Billet mixing first, then energiser; FE costs |
 | Reactor SA | `8F01B` 25–27 | Plastic + lithium steps; JEI IDs `kubejs:electronics/reactor_casing` |
 | Rare stone | `8F01C` 18–1C | Flux source (#1 ore), superheated gate for deepslate |
-| Chipped variants | `8F01C` 1E | Observation task + manual submit instead of 8 variant items |
+| Chipped variants | `8F01C` 27 | Honor checkmark after workbench browse (quest `A Thousand Faces`) |
 | Aeronautics flight | `8F01D` 16–19 | Honor-system checkmarks → add `ftbquests:observation` if mod supports distance |
 
 ### 2.3 Task title pass
-- [ ] Every `checkmark` task gets a plain-English `task.<id>.title` (petrochem/electronics/aero done; audit munitions).
-- [ ] Item tasks: use `task.<id>.title` when count > 1 to explain *why* the count.
+- [x] Every `checkmark` task gets a plain-English `task.<id>.title` (all six chapters).
+- [x] Item tasks: munitions count > 1 tasks have `task.<id>.title` explaining the batch size.
 
 ### 2.4 Remove internal IDs from player text
-- [ ] Grep `en_us.snbt` for hex quest IDs in `quest_desc` and replace with chapter + quest title references.
+- [x] Grep `en_us.snbt` for hex quest IDs in `quest_desc` — none found; post-game pointers use chapter names.
+- [x] Fixed wrong GitHub issue numbers in electronics post-game task titles (#7 petrochem, #10 architecture).
 
 ---
 
