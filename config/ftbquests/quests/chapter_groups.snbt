@@ -1,11 +1,24 @@
 {
 	chapter_groups: [
 		{
+			icon: { id: "create:wrench" }
 			id: "7F00D00000000002"
-			title: "Factory Support"
-			icon: {
-				id: "create:wrench"
-			}
+		}
+		{
+			icon: { id: "tfmg:crude_oil_bucket" }
+			id: "8F01A00000000002"
+		}
+		{
+			icon: { id: "create_new_age:reactor_casing" }
+			id: "8F01B00000000002"
+		}
+		{
+			icon: { id: "create:cut_limestone" }
+			id: "8F01C00000000002"
+		}
+		{
+			icon: { id: "aeronautics:gyroscopic_propeller_bearing" }
+			id: "8F01D00000000002"
 		}
 	]
 }

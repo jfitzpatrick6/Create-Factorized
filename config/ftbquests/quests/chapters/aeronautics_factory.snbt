@@ -1,0 +1,182 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "aeronautics_factory"
+	group: "8F01D00000000002"
+	icon: {
+		id: "aeronautics:gyroscopic_propeller_bearing"
+	}
+	id: "8F01D00000000001"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "8F01D00000000010"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "8F01D00000000100"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8F01D00000000010"]
+			id: "8F01D00000000011"
+			rewards: [{
+				count: 4
+				id: "8F01D00000000200"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01D00000000101"
+				item: { count: 1, id: "create:brass_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01D00000000011"]
+			id: "8F01D00000000012"
+			tasks: [{
+				id: "8F01D00000000102"
+				item: { count: 1, id: "create:hand_crank" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01D00000000012"]
+			id: "8F01D00000000013"
+			rewards: [{
+				count: 4
+				id: "8F01D00000000201"
+				item: { count: 1, id: "minecraft:compass" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01D00000000103"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01D00000000013"]
+			id: "8F01D00000000014"
+			rewards: [{
+				count: 4
+				id: "8F01D00000000202"
+				item: { count: 1, id: "aeronautics:wooden_propeller" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01D00000000104"
+				item: { count: 1, id: "aeronautics:gyroscopic_propeller_bearing" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01D00000000014"]
+			id: "8F01D00000000015"
+			rewards: [{
+				id: "8F01D00000000203"
+				item: { count: 1, id: "tfmg:kerosene_bucket" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01D00000000105"
+				item: { count: 1, id: "aeronautics:levitite_blend_bucket" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01D00000000015"]
+			id: "8F01D00000000016"
+			tasks: [{
+				id: "8F01D00000000106"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01D00000000016"]
+			id: "8F01D00000000017"
+			rewards: [{
+				count: 16
+				id: "8F01D00000000204"
+				item: { count: 1, id: "minecraft:smooth_stone" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01D00000000107"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01D00000000017"]
+			id: "8F01D00000000018"
+			rewards: [{
+				count: 4
+				id: "8F01D00000000205"
+				item: { count: 1, id: "minecraft:chest" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01D00000000108"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01D00000000018"]
+			id: "8F01D00000000019"
+			tasks: [{
+				id: "8F01D00000000109"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"8F01D00000000019"
+				"8F01D00000000017"
+			]
+			id: "8F01D0000000001A"
+			rewards: [
+				{
+					count: 8
+					id: "8F01D00000000206"
+					item: { count: 1, id: "create:experience_nugget" }
+					type: "item"
+				}
+				{
+					id: "8F01D00000000207"
+					item: { count: 1, id: "aeronautics:aviators_goggles" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "8F01D0000000010A"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+	]
+}

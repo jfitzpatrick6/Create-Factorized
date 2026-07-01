@@ -1,0 +1,361 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "architecture_factory"
+	group: "8F01C00000000002"
+	icon: {
+		id: "create:cut_limestone"
+	}
+	id: "8F01C00000000001"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "8F01C00000000010"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "8F01C00000000100"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8F01C00000000010"]
+			id: "8F01C00000000011"
+			rewards: [{
+				count: 32
+				id: "8F01C00000000200"
+				item: { count: 1, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "8F01C00000000101"
+				item: { count: 1, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01C00000000011"]
+			id: "8F01C00000000012"
+			tasks: [{
+				id: "8F01C00000000102"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01C00000000011"]
+			id: "8F01C00000000013"
+			rewards: [{
+				id: "8F01C00000000201"
+				item: { count: 1, id: "minecraft:stonecutter" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "8F01C00000000103"
+				item: { count: 1, id: "minecraft:stone" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01C00000000013"]
+			id: "8F01C00000000014"
+			tasks: [{
+				count: 16L
+				id: "8F01C00000000104"
+				item: { count: 1, id: "minecraft:gravel" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01C00000000014"]
+			id: "8F01C00000000015"
+			tasks: [{
+				count: 16L
+				id: "8F01C00000000105"
+				item: { count: 1, id: "minecraft:sand" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01C00000000013"]
+			id: "8F01C00000000016"
+			tasks: [{
+				id: "8F01C00000000106"
+				item: { count: 1, id: "minecraft:stonecutter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01C00000000016"]
+			id: "8F01C00000000017"
+			rewards: [{
+				count: 16
+				id: "8F01C00000000202"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "8F01C00000000107"
+				item: { count: 1, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01C00000000017"]
+			id: "8F01C00000000018"
+			rewards: [{
+				count: 4
+				id: "8F01C00000000203"
+				item: { count: 1, id: "minecraft:bone_meal" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "8F01C00000000108"
+				item: { count: 1, id: "minecraft:calcite" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01C00000000018"]
+			id: "8F01C00000000019"
+			tasks: [{
+				count: 8L
+				id: "8F01C00000000109"
+				item: { count: 1, id: "minecraft:cobbled_deepslate" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01C00000000019"]
+			id: "8F01C0000000001A"
+			tasks: [{
+				count: 8L
+				id: "8F01C0000000010A"
+				item: { count: 1, id: "minecraft:tuff" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01C00000000018"]
+			id: "8F01C0000000001B"
+			rewards: [{
+				count: 8
+				id: "8F01C00000000204"
+				item: { count: 1, id: "create:limestone" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "8F01C0000000010B"
+				item: { count: 1, id: "create:limestone" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01C0000000001B"]
+			id: "8F01C0000000001C"
+			tasks: [{
+				count: 8L
+				id: "8F01C0000000010C"
+				item: { count: 1, id: "create:scoria" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01C0000000001C"]
+			id: "8F01C0000000001D"
+			rewards: [{
+				count: 4
+				id: "8F01C00000000205"
+				item: { count: 1, id: "create:cut_limestone" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01C0000000010D"
+				item: { count: 1, id: "create:cut_limestone" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01C00000000017"]
+			id: "8F01C0000000001E"
+			rewards: [{
+				count: 8
+				id: "8F01C00000000206"
+				item: { count: 1, id: "minecraft:stone" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01C0000000010E"
+				item: { count: 1, id: "chipped:botanist_workbench" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01C0000000001E"]
+			id: "8F01C0000000001F"
+			tasks: [{
+				id: "8F01C0000000010F"
+				item: { count: 1, id: "rechiseled:chisel" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01C0000000001F"]
+			id: "8F01C00000000020"
+			rewards: [{
+				count: 8
+				id: "8F01C00000000207"
+				item: { count: 1, id: "createdeco:dean_bricks" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "8F01C00000000110"
+				item: { count: 1, id: "createdeco:dean_bricks" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01C00000000020"]
+			id: "8F01C00000000021"
+			tasks: [{
+				count: 4L
+				id: "8F01C00000000111"
+				item: { count: 1, id: "beautify:bookstack" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01C00000000021"]
+			id: "8F01C00000000022"
+			rewards: [{
+				id: "8F01C00000000208"
+				item: { count: 1, id: "wands:stone_wand" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01C00000000112"
+				item: { count: 1, id: "wands:iron_wand" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01C0000000001C"]
+			id: "8F01C00000000023"
+			rewards: [{
+				count: 8
+				id: "8F01C00000000209"
+				item: { count: 1, id: "tfmg:asphalt" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "8F01C00000000113"
+				item: { count: 1, id: "tfmg:asphalt" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01C0000000001C"]
+			id: "8F01C00000000024"
+			tasks: [{
+				count: 16L
+				id: "8F01C00000000114"
+				item: { count: 1, id: "minecraft:basalt" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"8F01C00000000022"
+				"8F01C00000000023"
+				"8F01C00000000024"
+			]
+			id: "8F01C00000000025"
+			rewards: [{
+				id: "8F01C0000000020A"
+				item: { count: 1, id: "supplementaries:sign_post" }
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "8F01C00000000115"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["8F01C00000000025"]
+			id: "8F01C00000000026"
+			rewards: [
+				{
+					count: 16
+					id: "8F01C0000000020B"
+					item: { count: 1, id: "create:experience_nugget" }
+					type: "item"
+				}
+				{
+					id: "8F01C0000000020C"
+					item: { count: 1, id: "minecraft:painting" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "8F01C00000000116"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+	]
+}

@@ -2,666 +2,508 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
 	filename: "factory_kitchen"
-	group: "Factory Support"
+	group: "7F00D00000000002"
 	icon: {
 		id: "kubejs:factory_lunchbox"
 	}
 	id: "7F00D00000000001"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"&eFood in this pack is optional&r — it never gates recipes, power, or progression."
-				""
-				"The goal is simple: &afuel long factory sessions&r with light buffs that &bhelp&r mining and building, not replace them."
-				""
-				"This chapter walks you from a basic wheat farm through Create-powered meal production and the &dNourished&r nutrition system."
-				""
-				"&7Tip: Open JEI and search &f@kubejs&7 anytime to see custom factory meals."
-			]
-			icon: "farmersdelight:beef_stew"
 			id: "7F00D00000000010"
 			shape: "rsquare"
 			size: 1.1d
-			subtitle: "Optional canteen progression"
 			tasks: [{
 				id: "7F00D00000000100"
-				title: "Read the canteen briefing"
 				type: "checkmark"
 			}]
-			title: "Welcome to the Factory Canteen"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F00D00000000010"]
-			description: [
-				"&dNourished&r tracks five nutrient bars: &cProteins&r, &aVegetables&r, &6Grains&r, &dFruits&r, and &9Dairy&r."
-				""
-				"Eat varied foods to fill them. Bars slowly decay over time — keep eating during long builds."
-				""
-				"&aAbove 75%&r on a nutrient: bonus effects kick in."
-				"&cBelow 25%&r: light penalties (e.g. mining fatigue when protein is low)."
-				""
-				"&bPack bonuses at 75%+:&r"
-				"&7• Proteins → Haste (mining speed)"
-				"&7• Grains → Speed (movement)"
-				"&7• All nutrients high → Regeneration + Health Boost"
-				""
-				"Press your &dNourished diet key&r (check Controls) to open the nutrition screen."
-			]
-			icon: "minecraft:cooked_beef"
 			id: "7F00D00000000011"
 			rewards: [{
 				count: 8
 				id: "7F00D00000000200"
-				item: "minecraft:bread"
+				item: {
+					count: 1
+					id: "minecraft:bread"
+				}
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "Understand your nutrition HUD"
 			tasks: [{
 				id: "7F00D00000000101"
-				title: "I know how Nourished works"
 				type: "checkmark"
 			}]
-			title: "Nourished — Session Buffs"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7F00D00000000011"]
-			description: [
-				"Every food line starts with &astaple crops&r. You can hand-farm at first — automation comes next."
-				""
-				"Wheat becomes &ecanonical flour and dough&r via Create (not duplicate FD items)."
-				"Carrots and potatoes feed hearty broths and stews later."
-				""
-				"&7Canonical items in this pack:&r"
-				"&7• Flour → &fcreate:wheat_flour"
-				"&7• Dough → &fcreate:dough"
-				"&7• Bread slices / toast → &ffarmersdelight_extended&7 variants"
-			]
-			icon: "minecraft:wheat"
 			id: "7F00D00000000012"
 			rewards: [{
 				count: 16
 				id: "7F00D00000000201"
-				item: "minecraft:bone_meal"
+				item: {
+					count: 1
+					id: "minecraft:bone_meal"
+				}
 				type: "item"
 			}]
-			subtitle: "Stock the pantry"
 			tasks: [
 				{
 					count: 32L
 					id: "7F00D00000000102"
-					item: "minecraft:wheat"
+					item: { count: 1, id: "minecraft:wheat" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "7F00D00000000103"
-					item: "minecraft:carrot"
+					item: { count: 1, id: "minecraft:carrot" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "7F00D00000000104"
-					item: "minecraft:potato"
+					item: { count: 1, id: "minecraft:potato" }
 					type: "item"
 				}
 			]
-			title: "Staple Crop Stockpile"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F00D00000000012"]
-			description: [
-				"Route wheat through a &eCreate Millstone&r (or crushing wheels) to get &fcreate:wheat_flour&r."
-				""
-				"This is the &aonly flour&r you need — other mod flours convert to it automatically."
-				""
-				"&7JEI: search &fcreate:wheat_flour&7 to see all routes."
-			]
-			icon: "create:wheat_flour"
 			id: "7F00D00000000013"
 			rewards: [{
 				count: 16
 				id: "7F00D00000000202"
-				item: "minecraft:wheat"
+				item: {
+					count: 1
+					id: "minecraft:wheat"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 1 — milling"
 			tasks: [{
 				count: 16L
 				id: "7F00D00000000105"
-				item: "create:wheat_flour"
+				item: { count: 1, id: "create:wheat_flour" }
 				type: "item"
 			}]
-			title: "Mill to Flour"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F00D00000000013"]
-			description: [
-				"Combine flour and water in a &eMechanical Mixer&r to produce &fcreate:dough&r."
-				""
-				"Dough is the base for bread, battered foods, and many FD Extended recipes."
-			]
-			icon: "create:dough"
 			id: "7F00D00000000014"
 			rewards: [{
 				count: 4
 				id: "7F00D00000000203"
-				item: "minecraft:egg"
+				item: {
+					count: 1
+					id: "minecraft:egg"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 1 — mixing"
 			tasks: [{
 				count: 16L
 				id: "7F00D00000000106"
-				item: "create:dough"
+				item: { count: 1, id: "create:dough" }
 				type: "item"
 			}]
-			title: "Knead the Dough"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F00D00000000014"]
-			description: [
-				"Farmer's Delight prep starts at the &eCutting Board&r with any knife from the unified knife tag."
-				""
-				"Slice meat, fish, and veg here before they go into the cooking pot."
-				""
-				"&7Pack unifies knives from FD, MoreDelight, and Ends Delight into one tag."
-			]
-			icon: "farmersdelight:cutting_board"
 			id: "7F00D00000000015"
 			rewards: [{
 				id: "7F00D00000000204"
-				item: "farmersdelight:flint_knife"
+				item: {
+					count: 1
+					id: "farmersdelight:flint_knife"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — manual prep"
 			tasks: [
 				{
 					id: "7F00D00000000107"
-					item: "farmersdelight:cutting_board"
+					item: { count: 1, id: "farmersdelight:cutting_board" }
 					type: "item"
 				}
 				{
 					id: "7F00D00000000108"
-					item: "farmersdelight:flint_knife"
+					item: { count: 1, id: "farmersdelight:flint_knife" }
 					type: "item"
 				}
 			]
-			title: "Cutting Board Prep"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F00D00000000015"]
-			description: [
-				"&eSlice and Dice&r adds a Create &aSlicer&r — automate cutting board recipes on a contraption."
-				""
-				"Place a cutting board under the slicer, feed ingredients on a belt, and let deployers do the prep."
-				""
-				"&7Knife durability applies — keep a spare knife in the system."
-			]
-			icon: "sliceanddice:slicer"
 			id: "7F00D00000000016"
 			rewards: [{
 				count: 2
 				id: "7F00D00000000205"
-				item: "minecraft:iron_ingot"
+				item: {
+					count: 1
+					id: "minecraft:iron_ingot"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — automated prep"
 			tasks: [{
 				id: "7F00D00000000109"
-				item: "sliceanddice:slicer"
+				item: { count: 1, id: "sliceanddice:slicer" }
 				type: "item"
 			}]
-			title: "Slicer Station"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F00D00000000016"]
-			description: [
-				"The &eCooking Pot&r is the heart of Farmer's Delight meal crafting."
-				""
-				"Toss ingredients in, add a container (bowl/plate), and cook over heat."
-				""
-				"&eCreate Central Kitchen&r lets you automate pot recipes with deployers and blaze burners on moving contraptions — check JEI for your target meal."
-			]
-			icon: "farmersdelight:cooking_pot"
 			id: "7F00D00000000017"
 			rewards: [{
 				count: 4
 				id: "7F00D00000000206"
-				item: "minecraft:bowl"
+				item: {
+					count: 1
+					id: "minecraft:bowl"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — hot meals"
 			tasks: [{
 				id: "7F00D0000000010A"
-				item: "farmersdelight:cooking_pot"
+				item: { count: 1, id: "farmersdelight:cooking_pot" }
 				type: "item"
 			}]
-			title: "Cooking Pot Online"
 			x: 12.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F00D00000000017"]
-			description: [
-				"&eBotany Pots&r grow crops on demand — perfect for spice ingredients beside your factory."
-				""
-				"&aExpanded Delight&r crops used in this pack:"
-				"&7• Chili pepper — desert/savanna heat"
-				"&7• Cinnamon — tree crop (Botany Trees)"
-				"&7• Cranberries — needs water soil"
-				"&7• Asparagus, peanuts — mid-game veg/protein"
-				""
-				"Plant one spice crop to unlock the seasoning line later."
-			]
-			icon: "botanypots:botany_pot"
 			id: "7F00D00000000018"
 			rewards: [
 				{
 					count: 4
 					id: "7F00D00000000207"
-					item: "expandeddelight:chili_pepper_seeds"
+					item: {
+						count: 1
+						id: "expandeddelight:chili_pepper_seeds"
+					}
 					type: "item"
 				}
 				{
 					id: "7F00D00000000208"
-					item: "expandeddelight:cinnamon_sapling"
+					item: {
+						count: 1
+						id: "expandeddelight:cinnamon_sapling"
+					}
 					type: "item"
 				}
 			]
-			subtitle: "Tier 3 — spice inputs"
 			tasks: [
 				{
 					id: "7F00D0000000010B"
-					item: "botanypots:botany_pot"
+					item: { components: { "ftbquests:missing_item": "botanypots:botany_pot" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "7F00D0000000010C"
-					item: "expandeddelight:chili_pepper_seeds"
+					item: { count: 1, id: "expandeddelight:chili_pepper_seeds" }
 					type: "item"
 				}
 			]
-			title: "Spice Garden (Botany Pots)"
 			x: 12.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7F00D00000000018"]
-			description: [
-				"Mount a &eMechanical Harvester&r on a contraption to automate crop collection."
-				""
-				"Pair with a deployer cobblegen or a simple flooded farm — wheat, carrots, and potatoes all work."
-				""
-				"Mob farms (deployer + fan) also feed protein lines for stews."
-			]
-			icon: "create:mechanical_harvester"
 			id: "7F00D00000000019"
 			rewards: [{
 				count: 8
 				id: "7F00D00000000209"
-				item: "create:andesite_alloy"
+				item: {
+					count: 1
+					id: "create:andesite_alloy"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 1 — farm automation"
 			tasks: [{
 				id: "7F00D0000000010D"
-				item: "create:mechanical_harvester"
+				item: { count: 1, id: "create:mechanical_harvester" }
 				type: "item"
 			}]
-			title: "Harvester Contraption"
 			x: 10.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7F00D00000000014"]
-			description: [
-				"Toast and bread slices are &acanonical&r through FD Extended."
-				""
-				"Route bread through a smoker or campfire, or use Create smokers on belts."
-				""
-				"Toast is an ingredient in the &eVein Scout Snack&r and &eFactory Lunchbox&r later."
-			]
-			icon: "farmersdelight_extended:toast"
 			id: "7F00D0000000001A"
 			rewards: [{
 				count: 8
 				id: "7F00D0000000020A"
-				item: "farmersdelight_extended:bread_slice"
+				item: {
+					count: 1
+					id: "farmersdelight_extended:bread_slice"
+				}
 				type: "item"
 			}]
-			subtitle: "Side route — bakery"
 			tasks: [{
 				count: 8L
 				id: "7F00D0000000010E"
-				item: "farmersdelight_extended:toast"
+				item: { count: 1, id: "farmersdelight_extended:toast" }
 				type: "item"
 			}]
-			title: "Toast Production"
 			x: 6.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7F00D00000000019"]
-			description: [
-				"Automate cheese with a &eheated mixer&r: 1000 mB milk → Fresh Cheese."
-				""
-				"This pack fixes broken FD Extended Create recipes — battered foods, cheese, ice cream, and mochi all work in JEI now."
-				""
-				"Fresh cheese feeds the &aaged cheese&r luxury line."
-			]
-			icon: "farmersdelight_extended:fresh_cheese"
 			id: "7F00D0000000001B"
 			rewards: [{
 				id: "7F00D0000000020B"
-				item: "minecraft:milk_bucket"
+				item: {
+					count: 1
+					id: "minecraft:milk_bucket"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — dairy automation"
 			tasks: [{
 				count: 4L
 				id: "7F00D0000000010F"
-				item: "farmersdelight_extended:fresh_cheese"
+				item: { count: 1, id: "farmersdelight_extended:fresh_cheese" }
 				type: "item"
 			}]
-			title: "Fresh Cheese (Create Mixer)"
 			x: 8.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7F00D0000000001B", "7F00D00000000018"]
-			description: [
-				"Combine automation-era ingredients into &efortified seasoning&r:"
-				""
-				"&7• 1× chili pepper"
-				"&7• 1× cinnamon stick"
-				"&7• 50 mB lubrication oil (petrochem byproduct)"
-				""
-				"Heated mixing. This is the &aspice gate&r for factory worker meals — one batch seasons many stews."
+			dependencies: [
+				"7F00D0000000001B"
+				"7F00D00000000018"
 			]
-			icon: "kubejs:fortified_seasoning"
 			id: "7F00D0000000001C"
 			rewards: [{
 				count: 2
 				id: "7F00D0000000020C"
-				item: "expandeddelight:chili_pepper"
+				item: {
+					count: 1
+					id: "expandeddelight:chili_pepper"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — spice processing"
 			tasks: [{
 				count: 4L
 				id: "7F00D00000000110"
-				item: "kubejs:fortified_seasoning"
+				item: { count: 1, id: "kubejs:fortified_seasoning" }
 				type: "item"
 			}]
-			title: "Fortified Seasoning"
 			x: 8.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["7F00D0000000001C"]
-			description: [
-				"The &eOre Worker Stew&r is your mining-session meal."
-				""
-				"Heated mixer: cooked beef, carrots, fortified seasoning, water."
-				""
-				"High &cprotein&r and &aveg&r — pushes Nourished bars above 75% for &bHaste&r while you mine or run ore processing."
-				""
-				"&7This complements — not replaces — your 3×/5× ore lines."
-			]
-			icon: "kubejs:ore_worker_stew"
 			id: "7F00D0000000001D"
 			rewards: [{
 				count: 4
 				id: "7F00D0000000020D"
-				item: "create:experience_nugget"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "Tier 4 — mining buff meal"
 			tasks: [{
 				count: 4L
 				id: "7F00D00000000111"
-				item: "kubejs:ore_worker_stew"
+				item: { count: 1, id: "kubejs:ore_worker_stew" }
 				type: "item"
 			}]
-			title: "Ore Worker Stew"
 			x: 6.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["7F00D0000000001C"]
-			description: [
-				"&eHearty Broth&r simmers in a heated basin with a long processing time."
-				""
-				"Bones, potatoes, asparagus, and water — a regen-friendly meal for long building sessions."
-				""
-				"Pairs well with the &aall-nutrients-high&r regen bonus from Nourished."
-			]
-			icon: "kubejs:hearty_broth"
 			id: "7F00D0000000001E"
 			rewards: [{
 				count: 4
 				id: "7F00D0000000020E"
-				item: "create:experience_nugget"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 4 — regen meal"
 			tasks: [{
 				count: 4L
 				id: "7F00D00000000112"
-				item: "kubejs:hearty_broth"
+				item: { count: 1, id: "kubejs:hearty_broth" }
 				type: "item"
 			}]
-			title: "Hearty Broth"
 			x: 10.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00D0000000001A", "7F00D00000000018"]
-			description: [
-				"Compact a quick scouting snack: toast, cranberries, and peanuts."
-				""
-				"High &6grains&r and &dfruits&r — great before a vein-scouting run or Terralith excursion."
-				""
-				"At 75%+ grains you get &bSpeed&r from Nourished."
+			dependencies: [
+				"7F00D0000000001A"
+				"7F00D00000000018"
 			]
-			icon: "kubejs:vein_scout_snack"
 			id: "7F00D0000000001F"
 			rewards: [{
 				count: 4
 				id: "7F00D0000000020F"
-				item: "create:experience_nugget"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 4 — movement snack"
 			tasks: [{
 				count: 8L
 				id: "7F00D00000000113"
-				item: "kubejs:vein_scout_snack"
+				item: { count: 1, id: "kubejs:vein_scout_snack" }
 				type: "item"
 			}]
-			title: "Vein Scout Snack"
 			x: 12.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00D0000000001D", "7F00D0000000001E", "7F00D0000000001F"]
-			dependency_requirement: "one_completed"
-			description: [
-				"Eat any &efactory meal&r and check your Nourished HUD."
-				""
-				"Goal: keep nutrients &aabove 75%&r during a work session."
-				""
-				"&bActive bonuses to aim for:&r"
-				"&7• Haste (proteins) — faster mining"
-				"&7• Speed (grains) — faster movement"
-				"&7• Regen (all high) — sustain during builds"
-				""
-				"Food is &eoptional&r — but a stocked canteen makes megafactory nights much smoother."
+			dependencies: [
+				"7F00D0000000001D"
+				"7F00D0000000001E"
+				"7F00D0000000001F"
 			]
-			icon: "minecraft:golden_carrot"
+			dependency_requirement: "one_completed"
 			id: "7F00D00000000020"
 			rewards: [{
 				count: 8
 				id: "7F00D00000000210"
-				item: "create:experience_nugget"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "Put buffs to work"
 			tasks: [{
 				id: "7F00D00000000114"
-				title: "I ran a session with factory meals + Nourished"
 				type: "checkmark"
 			}]
-			title: "Nutrition Online"
 			x: 8.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["7F00D0000000001B"]
-			description: [
-				"Age fresh cheese in a &eheated basin&r with long processing time."
-				""
-				"2× fresh cheese → 1× &eAged Cheese Wheel&r"
-				""
-				"Cut the wheel on a slicer or cutting wheel for slices used in the lunchbox."
-			]
-			icon: "kubejs:aged_cheese_wheel"
 			id: "7F00D00000000021"
 			rewards: [{
 				count: 4
 				id: "7F00D00000000211"
-				item: "farmersdelight_extended:fresh_cheese"
+				item: {
+					count: 1
+					id: "farmersdelight_extended:fresh_cheese"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 5 — aging"
 			tasks: [
 				{
 					id: "7F00D00000000115"
-					item: "kubejs:aged_cheese_wheel"
+					item: { count: 1, id: "kubejs:aged_cheese_wheel" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "7F00D00000000116"
-					item: "kubejs:aged_cheese_slice"
+					item: { count: 1, id: "kubejs:aged_cheese_slice" }
 					type: "item"
 				}
 			]
-			title: "Aged Cheese Line"
 			x: 4.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["7F00D0000000001B"]
-			description: [
-				"Press cocoa, sugar, and Create chocolate into a &eluxury chocolate bar&r."
-				""
-				"High dairy + grains + fruits in Nourished — a dessert buff for late-night building."
-			]
-			icon: "kubejs:luxury_chocolate_bar"
 			id: "7F00D00000000022"
 			rewards: [{
 				count: 4
 				id: "7F00D00000000212"
-				item: "minecraft:cocoa_beans"
+				item: {
+					count: 1
+					id: "minecraft:cocoa_beans"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 5 — dessert"
 			tasks: [{
 				count: 4L
 				id: "7F00D00000000117"
-				item: "kubejs:luxury_chocolate_bar"
+				item: { count: 1, id: "kubejs:luxury_chocolate_bar" }
 				type: "item"
 			}]
-			title: "Luxury Chocolate Bar"
 			x: 12.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["7F00D00000000021", "7F00D0000000001A"]
-			description: [
-				"Package a full shift meal via &esequenced assembly&r:"
-				""
-				"&71.&r Bread slice + aged cheese (deployer)"
-				"&72.&r Add toast layer (deployer)"
-				"&73.&r Press to seal"
-				""
-				"Output: &eFactory Lunchbox&r — balanced nutrients for marathon factory sessions."
+			dependencies: [
+				"7F00D00000000021"
+				"7F00D0000000001A"
 			]
-			icon: "kubejs:factory_lunchbox"
 			id: "7F00D00000000023"
 			rewards: [{
 				count: 4
 				id: "7F00D00000000213"
-				item: "farmersdelight_extended:bread_slice"
+				item: {
+					count: 1
+					id: "farmersdelight_extended:bread_slice"
+				}
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "Tier 5 — packaged lunch"
 			tasks: [{
 				count: 4L
 				id: "7F00D00000000118"
-				item: "kubejs:factory_lunchbox"
+				item: { count: 1, id: "kubejs:factory_lunchbox" }
 				type: "item"
 			}]
-			title: "Factory Lunchbox"
 			x: 6.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["7F00D00000000023", "7F00D00000000020"]
-			description: [
-				"&aCanteen complete!&r You now have a full food automation line:"
-				""
-				"&7Farm → mill → mix → cook → spice → factory meals → luxury lunchbox"
-				""
-				"Keep the canteen stocked beside your ore processing and building stone lines. Return here anytime food recipes confuse you — JEI is always the source of truth."
-				""
-				"&eThis chapter never gates progression.&r Go build the reactor when ready."
+			dependencies: [
+				"7F00D00000000023"
+				"7F00D00000000020"
 			]
-			icon: "supplementaries:lunch_basket"
 			id: "7F00D00000000024"
 			rewards: [
 				{
 					id: "7F00D00000000214"
-					item: "supplementaries:lunch_basket"
+					item: {
+						count: 1
+						id: "supplementaries:lunch_basket"
+					}
 					type: "item"
 				}
 				{
 					count: 16
 					id: "7F00D00000000215"
-					item: "create:experience_nugget"
+					item: {
+						count: 1
+						id: "create:experience_nugget"
+					}
 					type: "item"
 				}
 			]
 			shape: "hexagon"
 			size: 1.2d
-			subtitle: "Capstone — shift meal master"
 			tasks: [{
 				id: "7F00D00000000119"
-				item: "kubejs:factory_lunchbox"
+				item: { count: 1, id: "kubejs:factory_lunchbox" }
 				type: "item"
 			}]
-			title: "Canteen Capstone"
 			x: 8.0d
 			y: 8.0d
 		}

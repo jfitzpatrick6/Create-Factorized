@@ -234,12 +234,12 @@ Guns and cannons are **factory products and co-op toys**:
 | 1 | Ore processing | Core ✓ |
 | 3 | Petrochem | Core ✓ |
 | 4 | Electronics | Core ✓ |
-| 8 | FTB Quests — electronics + **nuclear capstone** | High |
-| 9 | Building stone automation | High |
-| 10 | FTB Quests — architecture | Medium |
-| 14 | FTB Quests — aeronautics | Medium |
+| 8 | FTB Quests — electronics + **nuclear capstone** | High ✓ |
+| 9 | Building stone automation | High ✓ |
+| 10 | FTB Quests — architecture | Medium ✓ |
+| 14 | FTB Quests — aeronautics | Medium ✓ |
 | 6 | Food / Nourished + **Factory Canteen** quests | Medium ✓ |
-| 7 | FTB Quests — petrochem | Medium |
+| 7 | FTB Quests — petrochem | Medium ✓ |
 | 13 | Infernal removal + PvE model | Done (design) |
 | 11 | CGS integration | Low ✓ |
 | 12 | FTB Quests — munitions factory | Low ✓ |
@@ -257,3 +257,4 @@ Guns and cannons are **factory products and co-op toys**:
 | 2026-07-01 | Issue #5 CBC explosives pipeline (`explosives.js`) |
 | 2026-07-01 | Issue #12 Munitions Factory FTB Quests chapter |
 | 2026-07-01 | Issue #11 CGS gunsmithing integration (`gunsmithing.js`) |
+| 2026-07-01 | Issues #7/#8/#10/#14 FTB Quests chapters (first pass); `docs/QUEST_REFINEMENT_PLAN.md` |

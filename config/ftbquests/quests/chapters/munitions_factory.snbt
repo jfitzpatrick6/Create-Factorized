@@ -2,749 +2,521 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
 	filename: "munitions_factory"
-	group: "Factory Support"
+	group: "7F00D00000000002"
 	icon: {
 		id: "createbigcannons:ap_shell"
 	}
-	id: "7F00M00000000001"
-	order_index: 2
+	id: "4F034AC551FDF0D9"
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"&eMunitions are optional&r — guns and cannons never gate recipes, power, or progression."
-				""
-				"This chapter has two parts:"
-				"&71)&r &aSecurity wing&r — keep your factory floor safe (lighting, chunk claims, mob drops)"
-				"&72)&r &cMunitions factory&r — turn ore-wash chemistry into CGS ammo and CBC shells"
-				""
-				"Combat is &elow priority&r. Think of this as co-op toys and a resource sink for your megabase — not a second progression tree."
-				""
-				"&7Tip: Search JEI for &fkubejs:explosives&7 to see pack propellant recipes."
-			]
-			icon: "createbigcannons:packed_gunpowder"
-			id: "7F00M00000000010"
+			id: "728C8681F84E44B2"
 			shape: "rsquare"
 			size: 1.1d
-			subtitle: "Optional security + artillery"
 			tasks: [{
-				id: "7F00M00000000100"
-				title: "Read the security briefing"
+				id: "787937664EB59E73"
 				type: "checkmark"
 			}]
-			title: "Welcome — Security Wing"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7F00M00000000010"]
-			description: [
-				"Mobs spawn in the dark. Light your factory floor so you can build without surprise visitors."
-				""
-				"Place &etorches&r, &elanterns&r, or Create &alamps&r along walkways and machine halls."
-				""
-				"&7Light level 7+ on floors = no hostile spawns."
-			]
-			icon: "minecraft:lantern"
-			id: "7F00M00000000011"
+			id: "58A6ACDB12ED5279"
 			rewards: [{
 				count: 16
-				id: "7F00M00000000200"
-				item: "minecraft:torch"
+				id: "076F3C3D62B2991E"
+				item: {
+					count: 1
+					id: "minecraft:torch"
+				}
 				type: "item"
 			}]
-			subtitle: "Step 1 — light the floor"
 			tasks: [{
 				count: 16L
-				id: "7F00M00000000101"
-				item: "minecraft:torch"
+				id: "256F994FA1BF054B"
+				item: { count: 1, id: "minecraft:torch" }
 				type: "item"
 			}]
-			title: "Light the Factory"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7F00M00000000011"]
-			description: [
-				"&eFTB Chunks&r lets your team claim cooperative build zones."
-				""
-				"Open the map (&bdefault: M&r), select a chunk, and claim it for your team. Claimed chunks are your &asafe factory floor&r — not a PvP arena."
-				""
-				"Claim the area around your main machines so chunk loaders and builds stay protected on the friend server."
-			]
-			icon: "minecraft:filled_map"
-			id: "7F00M00000000012"
+			id: "3E9C12C3A1A77329"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000201"
-				item: "minecraft:lantern"
+				id: "15BA855B7C0E57C1"
+				item: {
+					count: 1
+					id: "minecraft:lantern"
+				}
 				type: "item"
 			}]
-			subtitle: "Step 2 — claim your base"
 			tasks: [{
-				id: "7F00M00000000102"
-				title: "I claimed a factory chunk with FTB Chunks"
+				id: "0157156D0E155BB1"
 				type: "checkmark"
 			}]
-			title: "Claim Your Chunk"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M00000000012"]
-			description: [
-				"Factory &amob infrastructure&r means automating drops — not hunting mobs by hand."
-				""
-				"Build a simple dark-room farm:"
-				"&7• Water streams push spawns to a kill spot"
-				"&7• &eEncased Fan&r blows mobs into lava, a deployer blade, or a crushing wheel"
-				"&7• Collect loot in a chest at the end of the line"
-				""
-				"&bNo kill quest&r — just pull &f16 rotten flesh&r from your farm chest to prove the line works."
-			]
-			icon: "minecraft:rotten_flesh"
-			id: "7F00M00000000013"
+			id: "484E0D6E17F78761"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000202"
-				item: "create:andesite_alloy"
+				id: "5C1DE7A2CFB80BD7"
+				item: {
+					count: 1
+					id: "create:andesite_alloy"
+				}
 				type: "item"
 			}]
-			subtitle: "Step 3 — mob drop line"
 			tasks: [{
 				count: 16L
-				id: "7F00M00000000103"
-				item: "minecraft:rotten_flesh"
+				id: "3A6C744672F98227"
+				item: { count: 1, id: "minecraft:rotten_flesh" }
 				type: "item"
 			}]
-			title: "Mob Farm Chest"
 			x: 0.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["7F00M00000000013"]
-			description: [
-				"&aSecurity wing online!&r Your factory floor is lit, claimed, and producing mob drops."
-				""
-				"From here the &cmunitions branch&r is optional. It consumes byproducts from your ore lines:"
-				"&7• &ftfmg:sulfur_dust&7 — lead/nickel 3× washing"
-				"&7• &ftfmg:nitrate_dust&7 — crush dirt/gravel (TFMG route)"
-				"&7• &fcoal coke&7 — petrochem coking (mid-game)"
-				""
-				"Skip this entire branch if you only want to build — that's valid."
-			]
-			icon: "create:encased_fan"
-			id: "7F00M00000000014"
+			id: "052E8E06FC254C16"
 			shape: "diamond"
-			subtitle: "Security complete — munitions optional"
 			tasks: [{
-				id: "7F00M00000000104"
-				title: "Security wing is set up — munitions are optional"
+				id: "681CC6540A9C9BB6"
 				type: "checkmark"
 			}]
-			title: "Security Wing Complete"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["7F00M00000000014"]
-			description: [
-				"Sulfur is the first propellant input. Wash &ecrushed lead or nickel&r in a Create splashing setup."
-				""
-				"Each wash pass has a chance to output &ftfmg:sulfur_dust&r alongside nuggets — stockpile it for gunpowder."
-				""
-				"&7CoE Deposits lead/nickel veins also return sulfur from drilling."
-			]
-			icon: "tfmg:sulfur_dust"
-			id: "7F00M00000000015"
+			id: "0656D6CC15EE2E94"
 			rewards: [{
 				count: 8
-				id: "7F00M00000000203"
-				item: "tfmg:lead_nugget"
+				id: "45FAB6857E985528"
+				item: {
+					count: 1
+					id: "tfmg:lead_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 1 — wash byproduct"
 			tasks: [{
 				count: 8L
-				id: "7F00M00000000105"
-				item: "tfmg:sulfur_dust"
+				id: "45B186951482C0F1"
+				item: { count: 1, id: "tfmg:sulfur_dust" }
 				type: "item"
 			}]
-			title: "Sulfur from Washing"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7F00M00000000015"]
-			description: [
-				"Saltpeter in this pack is &ftfmg:nitrate_dust&r (canonical — CGS niter converts automatically)."
-				""
-				"Early source: run &edirt or gravel&r through crushing wheels — TFMG crushes yield nitrate dust."
-				""
-				"Later, pair sulfur + nitrate in heated mixers for all propellant tiers."
-			]
-			icon: "tfmg:nitrate_dust"
-			id: "7F00M00000000016"
+			id: "4DE4F6EEF8FB78A1"
 			rewards: [{
 				count: 16
-				id: "7F00M00000000204"
-				item: "minecraft:dirt"
+				id: "3882ABC00E9BC7E9"
+				item: {
+					count: 1
+					id: "minecraft:dirt"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 1 — nitrate supply"
 			tasks: [{
 				count: 8L
-				id: "7F00M00000000106"
-				item: "tfmg:nitrate_dust"
+				id: "751E70E508E11FD1"
+				item: { count: 1, id: "tfmg:nitrate_dust" }
 				type: "item"
 			}]
-			title: "Nitrate Stockpile"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7F00M00000000016"]
-			description: [
-				"Pack gunpowder requires chemistry — vanilla charcoal crafts are removed."
-				""
-				"&eHeated mixer:&r"
-				"&72×&r sulfur dust + &72×&r nitrate dust + &7250 mB water&r → &a4 gunpowder"
-				""
-				"Zinc washing also drops gunpowder. Supplement with:"
-				"&7gunpowder + charcoal → 2 gunpowder&r (heated)"
-			]
-			icon: "minecraft:gunpowder"
-			id: "7F00M00000000017"
+			id: "4829C15DE34003C9"
 			rewards: [{
 				count: 8
-				id: "7F00M00000000205"
-				item: "minecraft:charcoal"
+				id: "2110CD8C49584D5E"
+				item: {
+					count: 1
+					id: "minecraft:charcoal"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 1 — chemistry powder"
 			tasks: [{
 				count: 16L
-				id: "7F00M00000000107"
-				item: "minecraft:gunpowder"
+				id: "22A5CF20D71D50CB"
+				item: { count: 1, id: "minecraft:gunpowder" }
 				type: "item"
 			}]
-			title: "Chemistry Gunpowder"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7F00M00000000017"]
-			description: [
-				"Cannon propellant needs the &epetrochem coke age&r."
-				""
-				"&eHeated mixer:&r"
-				"&72×&r sulfur + &72×&r nitrate + &fcoal coke&r + water → &a2 packed gunpowder"
-				""
-				"Packed gunpowder feeds CBC propellant bags and shrapnel shells."
-			]
-			icon: "createbigcannons:packed_gunpowder"
-			id: "7F00M00000000018"
+			id: "747AD5FD60562407"
 			rewards: [{
 				count: 2
-				id: "7F00M00000000206"
-				item: "tfmg:coal_coke"
+				id: "39CE0F640E44435A"
+				item: {
+					count: 1
+					id: "tfmg:coal_coke"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — cannon propellant"
 			tasks: [{
 				count: 4L
-				id: "7F00M00000000108"
-				item: "createbigcannons:packed_gunpowder"
+				id: "53C620A141CA1FA0"
+				item: { count: 1, id: "createbigcannons:packed_gunpowder" }
 				type: "item"
 			}]
-			title: "Industrial Packed Gunpowder"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7F00M00000000017"]
-			description: [
-				"&eCreate Gunsmithing&r cartridges use lead nuggets and gunpowder — both from factory lines."
-				""
-				"Craft manually or run the &esequenced assembly&r paper cartridge line:"
-				"&7paper → deploy gunpowder → deploy lead nugget"
-				""
-				"Brass ammo plants use &fkubejs:factory_propellant&r — sulfur + nitrate + coke dust, not zinc gunpowder alone."
-			]
-			icon: "cgs:paper_cartridge"
-			id: "7F00M00000000019"
+			id: "650F4EBEB6D3CFE0"
 			rewards: [{
 				count: 8
-				id: "7F00M00000000207"
-				item: "tfmg:lead_nugget"
+				id: "28671652065839B7"
+				item: {
+					count: 1
+					id: "tfmg:lead_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Side route — CGS ammo"
 			tasks: [{
 				count: 8L
-				id: "7F00M00000000109"
-				item: "cgs:paper_cartridge"
+				id: "00F09EDE26F79CA9"
+				item: { count: 1, id: "cgs:paper_cartridge" }
 				type: "item"
 			}]
-			title: "Paper Cartridges"
 			x: 8.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7F00M00000000017"]
-			description: [
-				"High-explosive shells need &eguncotton&r — nitrate paper in a mixer."
-				""
-				"&eMixer:&r paper + gunpowder + nitro acidifier (redstone dust) + water → guncotton"
-				""
-				"Compact &73× guncotton&r → packed guncotton for AP and HE shell assembly."
-			]
-			icon: "createbigcannons:guncotton"
-			id: "7F00M0000000001A"
+			id: "22A247E65899B24C"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000208"
-				item: "minecraft:paper"
+				id: "38A50F8068D309E1"
+				item: {
+					count: 1
+					id: "minecraft:paper"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — HE filler prep"
 			tasks: [
 				{
 					count: 4L
-					id: "7F00M0000000010A"
-					item: "createbigcannons:guncotton"
+					id: "31E7AE92A4FCB600"
+					item: { count: 1, id: "createbigcannons:guncotton" }
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "7F00M0000000010B"
-					item: "createbigcannons:packed_guncotton"
+					id: "20576B4677A9BF86"
+					item: { count: 1, id: "createbigcannons:packed_guncotton" }
 					type: "item"
 				}
 			]
-			title: "Guncotton Line"
 			x: 6.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7F00M00000000018"]
-			description: [
-				"Advanced HE chemistry replaces the blaze shortcut."
-				""
-				"&eHeated mixer:&r sulfur + nitrate + coal coke + &fsulfuric acid&r → congealed nitro"
-				""
-				"Smelt congealed nitro → hardened nitro → mill to nitropowder for premium AP/HE filler."
-			]
-			icon: "createbigcannons:congealed_nitro"
-			id: "7F00M0000000001B"
+			id: "6743B591C2ADB6E6"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000209"
-				item: "create:experience_nugget"
+				id: "79CAFAFAB79A5AF2"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 4 — nitro chemistry"
 			tasks: [{
 				count: 2L
-				id: "7F00M0000000010C"
-				item: "createbigcannons:congealed_nitro"
+				id: "10D2939EEDCDC815"
+				item: { count: 1, id: "createbigcannons:congealed_nitro" }
 				type: "item"
 			}]
-			title: "Congealed Nitro"
 			x: 10.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7F00M00000000018"]
-			description: [
-				"Automate solid shot on a &esequenced assembly&r line:"
-				""
-				"&71.&r Deploy lead nuggets onto iron body"
-				"&72.&r Deploy steel heavy plate"
-				"&73.&r Deploy wooden slab base"
-				"&74.&r Press to finish"
-				""
-				"Uses &f3× wash lead nuggets&r — not 5× ingots — so ammo doesn't starve your metal lines."
-			]
-			icon: "createbigcannons:solid_shot"
-			id: "7F00M0000000001C"
+			id: "5A62058E551370BB"
 			rewards: [{
 				count: 4
-				id: "7F00M0000000020A"
-				item: "tfmg:heavy_plate"
+				id: "1731354759B601FC"
+				item: {
+					count: 1
+					id: "tfmg:heavy_plate"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — SA shell line"
 			tasks: [{
 				count: 2L
-				id: "7F00M0000000010D"
-				item: "createbigcannons:solid_shot"
+				id: "4A638DD667BA34D8"
+				item: { count: 1, id: "createbigcannons:solid_shot" }
 				type: "item"
 			}]
-			title: "Solid Shot Assembly"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M0000000001A", "7F00M0000000001C"]
-			description: [
-				"Armor-piercing shells add a &ecast iron&r cap and packed guncotton filler."
-				""
-				"Run the pack &esequenced assembly&r line — deploy cast iron, guncotton, and slab, then press."
-				""
-				"&7Recipe ID: &fkubejs:explosives/sequenced_assembly/ap_shell"
-			]
-			icon: "createbigcannons:ap_shell"
-			id: "7F00M0000000001D"
+			id: "246C43CEF7D0586A"
 			rewards: [{
 				count: 4
-				id: "7F00M0000000020B"
-				item: "create:experience_nugget"
+				id: "4EFAC5EBE06568AD"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — AP shells"
 			tasks: [{
-				id: "7F00M0000000010E"
-				item: "createbigcannons:ap_shell"
+				id: "70D54D6A2D7B5BE3"
+				item: { count: 1, id: "createbigcannons:ap_shell" }
 				type: "item"
 			}]
-			title: "AP Shell Factory"
 			x: 6.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M0000000001A"]
-			description: [
-				"High-explosive shells pack &epacked guncotton&r into an iron body — the big boom option."
-				""
-				"Same SA pattern as AP, without the cast iron cap."
-				""
-				"Great for co-op site clearance before expanding into new chunks."
-			]
-			icon: "createbigcannons:he_shell"
-			id: "7F00M0000000001E"
+			id: "6C2EAD8E97B99B45"
 			rewards: [{
 				count: 4
-				id: "7F00M0000000020C"
-				item: "create:experience_nugget"
+				id: "45C4142704908C7D"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — HE shells"
 			tasks: [{
-				id: "7F00M0000000010F"
-				item: "createbigcannons:he_shell"
+				id: "059063442ABE027B"
+				item: { count: 1, id: "createbigcannons:he_shell" }
 				type: "item"
 			}]
-			title: "HE Shell Factory"
 			x: 8.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M00000000018"]
-			description: [
-				"Shrapnel shells combine &eshot balls&r with &fpacked gunpowder&r in sequenced assembly."
-				""
-				"Less armor penetration than AP — more area saturation. Good for display batteries and clearing caves."
-			]
-			icon: "createbigcannons:shrapnel_shell"
-			id: "7F00M0000000001F"
+			id: "43F4B75443DAFACA"
 			rewards: [{
 				count: 4
-				id: "7F00M0000000020D"
-				item: "create:experience_nugget"
+				id: "3919A4D41153C965"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — shrapnel shells"
 			tasks: [{
-				id: "7F00M00000000110"
-				item: "createbigcannons:shrapnel_shell"
+				id: "1A9B5693E67B33B6"
+				item: { count: 1, id: "createbigcannons:shrapnel_shell" }
 				type: "item"
 			}]
-			title: "Shrapnel Shell Factory"
 			x: 10.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M00000000019"]
-			description: [
-				"Brass-cased ammunition needs &efactory propellant&r — the pack's gated smokeless powder."
-				""
-				"&eHeated mixer:&r"
-				"&72×&r sulfur + &72×&r nitrate + coke dust + water → &a4 factory propellant"
-				""
-				"Revolver, gatling, and shotgun &esequenced assembly&r blank lines deploy this item instead of raw gunpowder."
-			]
-			icon: "kubejs:factory_propellant"
-			id: "7F00M00000000023"
+			id: "342A419A922CE71B"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000212"
-				item: "tfmg:coal_coke_dust"
+				id: "2C041BAB3A92127C"
+				item: {
+					count: 1
+					id: "tfmg:coal_coke_dust"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — brass ammo chemistry"
 			tasks: [{
 				count: 8L
-				id: "7F00M00000000114"
-				item: "kubejs:factory_propellant"
+				id: "2C3425FDC9A931DF"
+				item: { count: 1, id: "kubejs:factory_propellant" }
 				type: "item"
 			}]
-			title: "Factory Propellant"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7F00M00000000023"]
-			description: [
-				"Press brass sheet with revolver press forms, deploy factory propellant, then deploy lead nuggets."
-				""
-				"&7Blank line → &fcgs:round_revolver_blank&7 → &fcgs:round_revolver"
-				""
-				"This is your first full &aCreate SA ammo factory&r — scale it beside the shell line."
-			]
-			icon: "cgs:round_revolver"
-			id: "7F00M00000000024"
+			id: "783AA06A6CFFF511"
 			rewards: [{
 				count: 16
-				id: "7F00M00000000213"
-				item: "create:brass_ingot"
+				id: "05FDA6AD31732123"
+				item: {
+					count: 1
+					id: "create:brass_ingot"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — revolver rounds"
 			tasks: [{
 				count: 16L
-				id: "7F00M00000000115"
-				item: "cgs:round_revolver"
+				id: "7694DBA714692248"
+				item: { count: 1, id: "cgs:round_revolver" }
 				type: "item"
 			}]
-			title: "Revolver Round Plant"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M00000000024"]
-			description: [
-				"Gate the revolver on &eTFMG steel mechanisms&r — not parallel CGS steel."
-				""
-				"Mechanical crafter pattern uses:"
-				"&7• Steel mechanism (replaces loose steel ingot)"
-				"&7• Brass + steel plates + wood stock"
-				""
-				"Viable after lead 3× washing and brass pressing."
-			]
-			icon: "cgs:revolver"
-			id: "7F00M00000000025"
+			id: "0FBB2583A25871DF"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000214"
-				item: "create:experience_nugget"
+				id: "4C589A38020FE9E0"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 2 — first firearm"
 			tasks: [{
-				id: "7F00M00000000116"
-				item: "cgs:revolver"
+				id: "736ED37F894A2371"
+				item: { count: 1, id: "cgs:revolver" }
 				type: "item"
 			}]
-			title: "Steel-Mechanism Revolver"
 			x: 2.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M00000000024"]
-			description: [
-				"Piercing rounds deploy &dovercharged iron&r from the electronics line instead of steel nuggets."
-				""
-				"Premium ammo tier — pairs CNA energising with your brass blank plant."
-			]
-			icon: "cgs:round_revolver_piercing"
-			id: "7F00M00000000026"
+			id: "42AC290DBC86C2C3"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000215"
-				item: "create_new_age:overcharged_iron"
+				id: "35010AF963A8F44C"
+				item: {
+					count: 1
+					id: "create_new_age:overcharged_iron"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — electronics ammo"
 			tasks: [{
 				count: 8L
-				id: "7F00M00000000117"
-				item: "cgs:round_revolver_piercing"
+				id: "636B747A6B8A413C"
+				item: { count: 1, id: "cgs:round_revolver_piercing" }
 				type: "item"
 			}]
-			title: "Piercing Ammunition"
 			x: 4.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["7F00M00000000018"]
-			description: [
-				"Incendiary shotgun shells swap blaze powder for a &fgasoline bucket&r — petrochem integration."
-				""
-				"Run the shotgun blank line, then deploy gasoline on the incendiary assembly step."
-			]
-			icon: "cgs:round_shotgun_incendiary"
-			id: "7F00M00000000027"
+			id: "41C2F3AF2B91FC12"
 			rewards: [{
-				id: "7F00M00000000216"
-				item: "tfmg:gasoline_bucket"
+				id: "2721A287491E1D10"
+				item: {
+					count: 1
+					id: "tfmg:gasoline_bucket"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — petrochem ammo"
 			tasks: [{
 				count: 8L
-				id: "7F00M00000000118"
-				item: "cgs:round_shotgun_incendiary"
+				id: "3E63B9AD5A4164DC"
+				item: { count: 1, id: "cgs:round_shotgun_incendiary" }
 				type: "item"
 			}]
-			title: "Incendiary Shotgun Rounds"
 			x: 12.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["7F00M00000000024"]
-			description: [
-				"The &enailgun&r gates on &fkubejs:control_unit&r — same item that unlocks deployers and smart pipes."
-				""
-				"Pneumatic factory tool: copper backtank + fluid valves + control unit + brass frame."
-			]
-			icon: "cgs:nailgun"
-			id: "7F00M00000000028"
+			id: "316AD3397418B28B"
 			rewards: [{
 				count: 4
-				id: "7F00M00000000217"
-				item: "create:experience_nugget"
+				id: "7C86504CE02182E1"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — electronics weapon"
 			tasks: [{
-				id: "7F00M00000000119"
-				item: "cgs:nailgun"
+				id: "5049776A67323050"
+				item: { count: 1, id: "cgs:nailgun" }
 				type: "item"
 			}]
-			title: "Control-Unit Nailgun"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["7F00M00000000025", "7F00M00000000026"]
 			dependency_requirement: "one_completed"
-			description: [
-				"The &egatling&r requires &ftfmg:steel_mechanism&r in the mechanical crafter — mid/late steel age."
-				""
-				"Gatling drum adds &fcontrol unit&r + &fcopper spool&r for sustained fire factory theming."
-			]
-			icon: "cgs:gatling"
-			id: "7F00M00000000029"
+			id: "2F37B9F6D54887BD"
 			rewards: [{
 				count: 8
-				id: "7F00M00000000218"
-				item: "create:experience_nugget"
+				id: "772AC28E99E0DD67"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 3 — heavy personal weapon"
 			tasks: [{
-				id: "7F00M0000000011A"
-				item: "cgs:gatling"
+				id: "0B4C24973933ABF8"
+				item: { count: 1, id: "cgs:gatling" }
 				type: "item"
 			}]
-			title: "Gatling Battery"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["7F00M0000000001D", "7F00M0000000001E", "7F00M0000000001F"]
 			dependency_requirement: "one_completed"
-			description: [
-				"Cast a &eCreate Big Cannons&r breech to start a display battery."
-				""
-				"Use &funified steel and cast iron&r from TFMG — duplicate CBC/CGS ingots convert automatically."
-				""
-				"Load shells with propellant bags or cartridges, aim away from your claimed chunks, and fire for fun."
-			]
-			icon: "createbigcannons:cast_iron_sliding_breech"
-			id: "7F00M00000000020"
+			id: "54F7EE91311D9472"
 			rewards: [{
 				count: 4
-				id: "7F00M0000000020E"
-				item: "createbigcannons:packed_gunpowder"
+				id: "7B7B24878B06B78F"
+				item: {
+					count: 1
+					id: "createbigcannons:packed_gunpowder"
+				}
 				type: "item"
 			}]
-			subtitle: "Tier 4 — artillery hardware"
 			tasks: [{
-				id: "7F00M00000000111"
-				item: "createbigcannons:cast_iron_sliding_breech"
+				id: "66E0D173DFF286F2"
+				item: { count: 1, id: "createbigcannons:cast_iron_sliding_breech" }
 				type: "item"
 			}]
-			title: "Cannon Breech Cast"
 			x: 8.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["7F00M00000000013"]
-			description: [
-				"&eOptional advanced&r — once your mob farm runs reliably, route drops through &dCreate Enchantment Industry&r for XP fluid."
-				""
-				"Deployer kills → XP fluid → basin/tank storage → tool enchanting beside your machines."
-				""
-				"&7Skip this if you're not ready for fluid XP yet — it is not required anywhere in the pack."
-			]
-			icon: "create_enchantment_industry:experience_bucket"
-			id: "7F00M00000000021"
+			id: "5CD29C41A6D1A26F"
 			rewards: [{
 				count: 8
-				id: "7F00M0000000020F"
-				item: "create:experience_nugget"
+				id: "7EFB5549541E93AE"
+				item: {
+					count: 1
+					id: "create:experience_nugget"
+				}
 				type: "item"
 			}]
 			shape: "pentagon"
-			subtitle: "Optional — CEI xp fluid"
 			tasks: [{
-				id: "7F00M00000000112"
-				title: "I understand the optional CEI mob-xp line"
+				id: "0A7ED4D1B1E5F102"
 				type: "checkmark"
 			}]
-			title: "Enchantment Industry (Optional)"
 			x: 0.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["7F00M00000000020", "7F00M00000000014", "7F00M00000000025"]
-			dependency_requirement: "all_completed"
-			description: [
-				"&aMunitions factory online!&r You built the optional security wing and a full propellant → shell pipeline."
-				""
-				"&7Sulfur/nitrate → propellant → CGS brass ammo + CBC shells → cannon breech"
-				""
-				"Use it to offload excess steel and lead from your 3× lines, decorate the megabase with artillery, and run co-op clearance sessions."
-				""
-				"&eNothing here gates the nuclear reactor or building chapters.&r Go build when ready."
-			]
-			icon: "createbigcannons:he_shell"
-			id: "7F00M00000000022"
+			id: "5A8EFF9FDCA38A6F"
 			rewards: [
 				{
-					id: "7F00M00000000210"
-					item: "createbigcannons:ap_shell"
+					id: "1CECAFF211E9F5A7"
+					item: {
+						count: 1
+						id: "createbigcannons:ap_shell"
+					}
 					type: "item"
 				}
 				{
 					count: 16
-					id: "7F00M00000000211"
-					item: "create:experience_nugget"
+					id: "03F6A223C1777365"
+					item: {
+						count: 1
+						id: "create:experience_nugget"
+					}
 					type: "item"
 				}
 			]
 			shape: "hexagon"
 			size: 1.2d
-			subtitle: "Capstone — security + artillery"
 			tasks: [{
-				id: "7F00M00000000113"
-				title: "Security wing + munitions line complete"
+				id: "290146DF57385BB0"
 				type: "checkmark"
 			}]
-			title: "Munitions Capstone"
 			x: 6.0d
 			y: 8.0d
 		}

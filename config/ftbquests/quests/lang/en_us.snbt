@@ -1,0 +1,1214 @@
+{
+	chapter_group.7F00D00000000002.title: "Factory Support"
+	quest.052E8E06FC254C16.quest_desc: [
+		"&aSecurity wing online!&r Your factory floor is lit, claimed, and producing mob drops."
+		""
+		"From here the &cmunitions branch&r is optional. It consumes byproducts from your ore lines:"
+		"&7• &ftfmg:sulfur_dust&7 — lead/nickel 3× washing"
+		"&7• &ftfmg:nitrate_dust&7 — crush dirt/gravel (TFMG route)"
+		"&7• &fcoal coke&7 — petrochem coking (mid-game)"
+		""
+		"Skip this entire branch if you only want to build — that's valid."
+	]
+	quest.052E8E06FC254C16.quest_subtitle: "Security complete — munitions optional"
+	quest.052E8E06FC254C16.title: "Security Wing Complete"
+	quest.0656D6CC15EE2E94.quest_desc: [
+		"Sulfur is the first propellant input. Wash &ecrushed lead or nickel&r in a Create splashing setup."
+		""
+		"Each wash pass has a chance to output &ftfmg:sulfur_dust&r alongside nuggets — stockpile it for gunpowder."
+		""
+		"&7CoE Deposits lead/nickel veins also return sulfur from drilling."
+	]
+	quest.0656D6CC15EE2E94.quest_subtitle: "Tier 1 — wash byproduct"
+	quest.0656D6CC15EE2E94.title: "Sulfur from Washing"
+	quest.0FBB2583A25871DF.quest_desc: [
+		"Gate the revolver on &eTFMG steel mechanisms&r — not parallel CGS steel."
+		""
+		"Mechanical crafter pattern uses:"
+		"&7• Steel mechanism (replaces loose steel ingot)"
+		"&7• Brass + steel plates + wood stock"
+		""
+		"Viable after lead 3× washing and brass pressing."
+	]
+	quest.0FBB2583A25871DF.quest_subtitle: "Tier 2 — first firearm"
+	quest.0FBB2583A25871DF.title: "Steel-Mechanism Revolver"
+	quest.22A247E65899B24C.quest_desc: [
+		"High-explosive shells need &eguncotton&r — nitrate paper in a mixer."
+		""
+		"&eMixer:&r paper + gunpowder + nitro acidifier (redstone dust) + water → guncotton"
+		""
+		"Compact &73× guncotton&r → packed guncotton for AP and HE shell assembly."
+	]
+	quest.22A247E65899B24C.quest_subtitle: "Tier 3 — HE filler prep"
+	quest.22A247E65899B24C.title: "Guncotton Line"
+	quest.246C43CEF7D0586A.quest_desc: [
+		"Armor-piercing shells add a &ecast iron&r cap and packed guncotton filler."
+		""
+		"Run the pack &esequenced assembly&r line — deploy cast iron, guncotton, and slab, then press."
+		""
+		"&7Recipe ID: &fkubejs:explosives/sequenced_assembly/ap_shell"
+	]
+	quest.246C43CEF7D0586A.quest_subtitle: "Tier 3 — AP shells"
+	quest.246C43CEF7D0586A.title: "AP Shell Factory"
+	quest.2F37B9F6D54887BD.quest_desc: [
+		"The &egatling&r requires &ftfmg:steel_mechanism&r in the mechanical crafter — mid/late steel age."
+		""
+		"Gatling drum adds &fcontrol unit&r + &fcopper spool&r for sustained fire factory theming."
+	]
+	quest.2F37B9F6D54887BD.quest_subtitle: "Tier 3 — heavy personal weapon"
+	quest.2F37B9F6D54887BD.title: "Gatling Battery"
+	quest.316AD3397418B28B.quest_desc: [
+		"The &enailgun&r gates on &fkubejs:control_unit&r — same item that unlocks deployers and smart pipes."
+		""
+		"Pneumatic factory tool: copper backtank + fluid valves + control unit + brass frame."
+	]
+	quest.316AD3397418B28B.quest_subtitle: "Tier 3 — electronics weapon"
+	quest.316AD3397418B28B.title: "Control-Unit Nailgun"
+	quest.342A419A922CE71B.quest_desc: [
+		"Brass-cased ammunition needs &efactory propellant&r — the pack's gated smokeless powder."
+		""
+		"&eHeated mixer:&r"
+		"&72×&r sulfur + &72×&r nitrate + coke dust + water → &a4 factory propellant"
+		""
+		"Revolver, gatling, and shotgun &esequenced assembly&r blank lines deploy this item instead of raw gunpowder."
+	]
+	quest.342A419A922CE71B.quest_subtitle: "Tier 2 — brass ammo chemistry"
+	quest.342A419A922CE71B.title: "Factory Propellant"
+	quest.3E9C12C3A1A77329.quest_desc: [
+		"&eFTB Chunks&r lets your team claim cooperative build zones."
+		""
+		"Open the map (&bdefault: M&r), select a chunk, and claim it for your team. Claimed chunks are your &asafe factory floor&r — not a PvP arena."
+		""
+		"Claim the area around your main machines so chunk loaders and builds stay protected on the friend server."
+	]
+	quest.3E9C12C3A1A77329.quest_subtitle: "Step 2 — claim your base"
+	quest.3E9C12C3A1A77329.title: "Claim Your Chunk"
+	quest.41C2F3AF2B91FC12.quest_desc: [
+		"Incendiary shotgun shells swap blaze powder for a &fgasoline bucket&r — petrochem integration."
+		""
+		"Run the shotgun blank line, then deploy gasoline on the incendiary assembly step."
+	]
+	quest.41C2F3AF2B91FC12.quest_subtitle: "Tier 3 — petrochem ammo"
+	quest.41C2F3AF2B91FC12.title: "Incendiary Shotgun Rounds"
+	quest.42AC290DBC86C2C3.quest_desc: [
+		"Piercing rounds deploy &dovercharged iron&r from the electronics line instead of steel nuggets."
+		""
+		"Premium ammo tier — pairs CNA energising with your brass blank plant."
+	]
+	quest.42AC290DBC86C2C3.quest_subtitle: "Tier 3 — electronics ammo"
+	quest.42AC290DBC86C2C3.title: "Piercing Ammunition"
+	quest.43F4B75443DAFACA.quest_desc: [
+		"Shrapnel shells combine &eshot balls&r with &fpacked gunpowder&r in sequenced assembly."
+		""
+		"Less armor penetration than AP — more area saturation. Good for display batteries and clearing caves."
+	]
+	quest.43F4B75443DAFACA.quest_subtitle: "Tier 3 — shrapnel shells"
+	quest.43F4B75443DAFACA.title: "Shrapnel Shell Factory"
+	quest.4829C15DE34003C9.quest_desc: [
+		"Pack gunpowder requires chemistry — vanilla charcoal crafts are removed."
+		""
+		"&eHeated mixer:&r"
+		"&72×&r sulfur dust + &72×&r nitrate dust + &7250 mB water&r → &a4 gunpowder"
+		""
+		"Zinc washing also drops gunpowder. Supplement with:"
+		"&7gunpowder + charcoal → 2 gunpowder&r (heated)"
+	]
+	quest.4829C15DE34003C9.quest_subtitle: "Tier 1 — chemistry powder"
+	quest.4829C15DE34003C9.title: "Chemistry Gunpowder"
+	quest.484E0D6E17F78761.quest_desc: [
+		"Factory &amob infrastructure&r means automating drops — not hunting mobs by hand."
+		""
+		"Build a simple dark-room farm:"
+		"&7• Water streams push spawns to a kill spot"
+		"&7• &eEncased Fan&r blows mobs into lava, a deployer blade, or a crushing wheel"
+		"&7• Collect loot in a chest at the end of the line"
+		""
+		"&bNo kill quest&r — just pull &f16 rotten flesh&r from your farm chest to prove the line works."
+	]
+	quest.484E0D6E17F78761.quest_subtitle: "Step 3 — mob drop line"
+	quest.484E0D6E17F78761.title: "Mob Farm Chest"
+	quest.4DE4F6EEF8FB78A1.quest_desc: [
+		"Saltpeter in this pack is &ftfmg:nitrate_dust&r (canonical — CGS niter converts automatically)."
+		""
+		"Early source: run &edirt or gravel&r through crushing wheels — TFMG crushes yield nitrate dust."
+		""
+		"Later, pair sulfur + nitrate in heated mixers for all propellant tiers."
+	]
+	quest.4DE4F6EEF8FB78A1.quest_subtitle: "Tier 1 — nitrate supply"
+	quest.4DE4F6EEF8FB78A1.title: "Nitrate Stockpile"
+	quest.54F7EE91311D9472.quest_desc: [
+		"Cast a &eCreate Big Cannons&r breech to start a display battery."
+		""
+		"Use &funified steel and cast iron&r from TFMG — duplicate CBC/CGS ingots convert automatically."
+		""
+		"Load shells with propellant bags or cartridges, aim away from your claimed chunks, and fire for fun."
+	]
+	quest.54F7EE91311D9472.quest_subtitle: "Tier 4 — artillery hardware"
+	quest.54F7EE91311D9472.title: "Cannon Breech Cast"
+	quest.58A6ACDB12ED5279.quest_desc: [
+		"Mobs spawn in the dark. Light your factory floor so you can build without surprise visitors."
+		""
+		"Place &etorches&r, &elanterns&r, or Create &alamps&r along walkways and machine halls."
+		""
+		"&7Light level 7+ on floors = no hostile spawns."
+	]
+	quest.58A6ACDB12ED5279.quest_subtitle: "Step 1 — light the floor"
+	quest.58A6ACDB12ED5279.title: "Light the Factory"
+	quest.5A62058E551370BB.quest_desc: [
+		"Automate solid shot on a &esequenced assembly&r line:"
+		""
+		"&71.&r Deploy lead nuggets onto iron body"
+		"&72.&r Deploy steel heavy plate"
+		"&73.&r Deploy wooden slab base"
+		"&74.&r Press to finish"
+		""
+		"Uses &f3× wash lead nuggets&r — not 5× ingots — so ammo doesn't starve your metal lines."
+	]
+	quest.5A62058E551370BB.quest_subtitle: "Tier 3 — SA shell line"
+	quest.5A62058E551370BB.title: "Solid Shot Assembly"
+	quest.5A8EFF9FDCA38A6F.quest_desc: [
+		"&aMunitions factory online!&r You built the optional security wing and a full propellant → shell pipeline."
+		""
+		"&7Sulfur/nitrate → propellant → CGS brass ammo + CBC shells → cannon breech"
+		""
+		"Use it to offload excess steel and lead from your 3× lines, decorate the megabase with artillery, and run co-op clearance sessions."
+		""
+		"&eNothing here gates the nuclear reactor or building chapters.&r Go build when ready."
+	]
+	quest.5A8EFF9FDCA38A6F.quest_subtitle: "Capstone — security + artillery"
+	quest.5A8EFF9FDCA38A6F.title: "Munitions Capstone"
+	quest.5CD29C41A6D1A26F.quest_desc: [
+		"&eOptional advanced&r — once your mob farm runs reliably, route drops through &dCreate Enchantment Industry&r for XP fluid."
+		""
+		"Deployer kills → XP fluid → basin/tank storage → tool enchanting beside your machines."
+		""
+		"&7Skip this if you're not ready for fluid XP yet — it is not required anywhere in the pack."
+	]
+	quest.5CD29C41A6D1A26F.quest_subtitle: "Optional — CEI xp fluid"
+	quest.5CD29C41A6D1A26F.title: "Enchantment Industry (Optional)"
+	quest.650F4EBEB6D3CFE0.quest_desc: [
+		"&eCreate Gunsmithing&r cartridges use lead nuggets and gunpowder — both from factory lines."
+		""
+		"Craft manually or run the &esequenced assembly&r paper cartridge line:"
+		"&7paper → deploy gunpowder → deploy lead nugget"
+		""
+		"Brass ammo plants use &fkubejs:factory_propellant&r — sulfur + nitrate + coke dust, not zinc gunpowder alone."
+	]
+	quest.650F4EBEB6D3CFE0.quest_subtitle: "Side route — CGS ammo"
+	quest.650F4EBEB6D3CFE0.title: "Paper Cartridges"
+	quest.6743B591C2ADB6E6.quest_desc: [
+		"Advanced HE chemistry replaces the blaze shortcut."
+		""
+		"&eHeated mixer:&r sulfur + nitrate + coal coke + &fsulfuric acid&r → congealed nitro"
+		""
+		"Smelt congealed nitro → hardened nitro → mill to nitropowder for premium AP/HE filler."
+	]
+	quest.6743B591C2ADB6E6.quest_subtitle: "Tier 4 — nitro chemistry"
+	quest.6743B591C2ADB6E6.title: "Congealed Nitro"
+	quest.6C2EAD8E97B99B45.quest_desc: [
+		"High-explosive shells pack &epacked guncotton&r into an iron body — the big boom option."
+		""
+		"Same SA pattern as AP, without the cast iron cap."
+		""
+		"Great for co-op site clearance before expanding into new chunks."
+	]
+	quest.6C2EAD8E97B99B45.quest_subtitle: "Tier 3 — HE shells"
+	quest.6C2EAD8E97B99B45.title: "HE Shell Factory"
+	quest.728C8681F84E44B2.quest_desc: [
+		"&eMunitions are optional&r — guns and cannons never gate recipes, power, or progression."
+		""
+		"This chapter has two parts:"
+		"&71)&r &aSecurity wing&r — keep your factory floor safe (lighting, chunk claims, mob drops)"
+		"&72)&r &cMunitions factory&r — turn ore-wash chemistry into CGS ammo and CBC shells"
+		""
+		"Combat is &elow priority&r. Think of this as co-op toys and a resource sink for your megabase — not a second progression tree."
+		""
+		"&7Tip: Search JEI for &fkubejs:explosives&7 to see pack propellant recipes."
+	]
+	quest.728C8681F84E44B2.quest_subtitle: "Optional security + artillery"
+	quest.728C8681F84E44B2.title: "Welcome — Security Wing"
+	quest.747AD5FD60562407.quest_desc: [
+		"Cannon propellant needs the &epetrochem coke age&r."
+		""
+		"&eHeated mixer:&r"
+		"&72×&r sulfur + &72×&r nitrate + &fcoal coke&r + water → &a2 packed gunpowder"
+		""
+		"Packed gunpowder feeds CBC propellant bags and shrapnel shells."
+	]
+	quest.747AD5FD60562407.quest_subtitle: "Tier 2 — cannon propellant"
+	quest.747AD5FD60562407.title: "Industrial Packed Gunpowder"
+	quest.783AA06A6CFFF511.quest_desc: [
+		"Press brass sheet with revolver press forms, deploy factory propellant, then deploy lead nuggets."
+		""
+		"&7Blank line → &fcgs:round_revolver_blank&7 → &fcgs:round_revolver"
+		""
+		"This is your first full &aCreate SA ammo factory&r — scale it beside the shell line."
+	]
+	quest.783AA06A6CFFF511.quest_subtitle: "Tier 2 — revolver rounds"
+	quest.783AA06A6CFFF511.title: "Revolver Round Plant"
+	quest.7F00D00000000010.quest_desc: [
+		"&eFood in this pack is optional&r — it never gates recipes, power, or progression."
+		""
+		"The goal is simple: &afuel long factory sessions&r with light buffs that &bhelp&r mining and building, not replace them."
+		""
+		"This chapter walks you from a basic wheat farm through Create-powered meal production and the &dNourished&r nutrition system."
+		""
+		"&7Tip: Open JEI and search &f@kubejs&7 anytime to see custom factory meals."
+	]
+	quest.7F00D00000000010.quest_subtitle: "Optional canteen progression"
+	quest.7F00D00000000010.title: "Welcome to the Factory Canteen"
+	quest.7F00D00000000011.quest_desc: [
+		"&dNourished&r tracks five nutrient bars: &cProteins&r, &aVegetables&r, &6Grains&r, &dFruits&r, and &9Dairy&r."
+		""
+		"Eat varied foods to fill them. Bars slowly decay over time — keep eating during long builds."
+		""
+		"&aAbove 75%&r on a nutrient: bonus effects kick in."
+		"&cBelow 25%&r: light penalties (e.g. mining fatigue when protein is low)."
+		""
+		"&bPack bonuses at 75%+:&r"
+		"&7• Proteins → Haste (mining speed)"
+		"&7• Grains → Speed (movement)"
+		"&7• All nutrients high → Regeneration + Health Boost"
+		""
+		"Press your &dNourished diet key&r (check Controls) to open the nutrition screen."
+	]
+	quest.7F00D00000000011.quest_subtitle: "Understand your nutrition HUD"
+	quest.7F00D00000000011.title: "Nourished — Session Buffs"
+	quest.7F00D00000000012.quest_desc: [
+		"Every food line starts with &astaple crops&r. You can hand-farm at first — automation comes next."
+		""
+		"Wheat becomes &ecanonical flour and dough&r via Create (not duplicate FD items)."
+		"Carrots and potatoes feed hearty broths and stews later."
+		""
+		"&7Canonical items in this pack:&r"
+		"&7• Flour → &fcreate:wheat_flour"
+		"&7• Dough → &fcreate:dough"
+		"&7• Bread slices / toast → &ffarmersdelight_extended&7 variants"
+	]
+	quest.7F00D00000000012.quest_subtitle: "Stock the pantry"
+	quest.7F00D00000000012.title: "Staple Crop Stockpile"
+	quest.7F00D00000000013.quest_desc: [
+		"Route wheat through a &eCreate Millstone&r (or crushing wheels) to get &fcreate:wheat_flour&r."
+		""
+		"This is the &aonly flour&r you need — other mod flours convert to it automatically."
+		""
+		"&7JEI: search &fcreate:wheat_flour&7 to see all routes."
+	]
+	quest.7F00D00000000013.quest_subtitle: "Tier 1 — milling"
+	quest.7F00D00000000013.title: "Mill to Flour"
+	quest.7F00D00000000014.quest_desc: [
+		"Combine flour and water in a &eMechanical Mixer&r to produce &fcreate:dough&r."
+		""
+		"Dough is the base for bread, battered foods, and many FD Extended recipes."
+	]
+	quest.7F00D00000000014.quest_subtitle: "Tier 1 — mixing"
+	quest.7F00D00000000014.title: "Knead the Dough"
+	quest.7F00D00000000015.quest_desc: [
+		"Farmer's Delight prep starts at the &eCutting Board&r with any knife from the unified knife tag."
+		""
+		"Slice meat, fish, and veg here before they go into the cooking pot."
+		""
+		"&7Pack unifies knives from FD, MoreDelight, and Ends Delight into one tag."
+	]
+	quest.7F00D00000000015.quest_subtitle: "Tier 2 — manual prep"
+	quest.7F00D00000000015.title: "Cutting Board Prep"
+	quest.7F00D00000000016.quest_desc: [
+		"&eSlice and Dice&r adds a Create &aSlicer&r — automate cutting board recipes on a contraption."
+		""
+		"Place a cutting board under the slicer, feed ingredients on a belt, and let deployers do the prep."
+		""
+		"&7Knife durability applies — keep a spare knife in the system."
+	]
+	quest.7F00D00000000016.quest_subtitle: "Tier 2 — automated prep"
+	quest.7F00D00000000016.title: "Slicer Station"
+	quest.7F00D00000000017.quest_desc: [
+		"The &eCooking Pot&r is the heart of Farmer's Delight meal crafting."
+		""
+		"Toss ingredients in, add a container (bowl/plate), and cook over heat."
+		""
+		"&eCreate Central Kitchen&r lets you automate pot recipes with deployers and blaze burners on moving contraptions — check JEI for your target meal."
+	]
+	quest.7F00D00000000017.quest_subtitle: "Tier 2 — hot meals"
+	quest.7F00D00000000017.title: "Cooking Pot Online"
+	quest.7F00D00000000018.quest_desc: [
+		"&eBotany Pots&r grow crops on demand — perfect for spice ingredients beside your factory."
+		""
+		"&aExpanded Delight&r crops used in this pack:"
+		"&7• Chili pepper — desert/savanna heat"
+		"&7• Cinnamon — tree crop (Botany Trees)"
+		"&7• Cranberries — needs water soil"
+		"&7• Asparagus, peanuts — mid-game veg/protein"
+		""
+		"Plant one spice crop to unlock the seasoning line later."
+	]
+	quest.7F00D00000000018.quest_subtitle: "Tier 3 — spice inputs"
+	quest.7F00D00000000018.title: "Spice Garden (Botany Pots)"
+	quest.7F00D00000000019.quest_desc: [
+		"Mount a &eMechanical Harvester&r on a contraption to automate crop collection."
+		""
+		"Pair with a deployer cobblegen or a simple flooded farm — wheat, carrots, and potatoes all work."
+		""
+		"Mob farms (deployer + fan) also feed protein lines for stews."
+	]
+	quest.7F00D00000000019.quest_subtitle: "Tier 1 — farm automation"
+	quest.7F00D00000000019.title: "Harvester Contraption"
+	quest.7F00D0000000001A.quest_desc: [
+		"Toast and bread slices are &acanonical&r through FD Extended."
+		""
+		"Route bread through a smoker or campfire, or use Create smokers on belts."
+		""
+		"Toast is an ingredient in the &eVein Scout Snack&r and &eFactory Lunchbox&r later."
+	]
+	quest.7F00D0000000001A.quest_subtitle: "Side route — bakery"
+	quest.7F00D0000000001A.title: "Toast Production"
+	quest.7F00D0000000001B.quest_desc: [
+		"Automate cheese with a &eheated mixer&r: 1000 mB milk → Fresh Cheese."
+		""
+		"This pack fixes broken FD Extended Create recipes — battered foods, cheese, ice cream, and mochi all work in JEI now."
+		""
+		"Fresh cheese feeds the &aaged cheese&r luxury line."
+	]
+	quest.7F00D0000000001B.quest_subtitle: "Tier 2 — dairy automation"
+	quest.7F00D0000000001B.title: "Fresh Cheese (Create Mixer)"
+	quest.7F00D0000000001C.quest_desc: [
+		"Combine automation-era ingredients into &efortified seasoning&r:"
+		""
+		"&7• 1× chili pepper"
+		"&7• 1× cinnamon stick"
+		"&7• 50 mB lubrication oil (petrochem byproduct)"
+		""
+		"Heated mixing. This is the &aspice gate&r for factory worker meals — one batch seasons many stews."
+	]
+	quest.7F00D0000000001C.quest_subtitle: "Tier 3 — spice processing"
+	quest.7F00D0000000001C.title: "Fortified Seasoning"
+	quest.7F00D0000000001D.quest_desc: [
+		"The &eOre Worker Stew&r is your mining-session meal."
+		""
+		"Heated mixer: cooked beef, carrots, fortified seasoning, water."
+		""
+		"High &cprotein&r and &aveg&r — pushes Nourished bars above 75% for &bHaste&r while you mine or run ore processing."
+		""
+		"&7This complements — not replaces — your 3×/5× ore lines."
+	]
+	quest.7F00D0000000001D.quest_subtitle: "Tier 4 — mining buff meal"
+	quest.7F00D0000000001D.title: "Ore Worker Stew"
+	quest.7F00D0000000001E.quest_desc: [
+		"&eHearty Broth&r simmers in a heated basin with a long processing time."
+		""
+		"Bones, potatoes, asparagus, and water — a regen-friendly meal for long building sessions."
+		""
+		"Pairs well with the &aall-nutrients-high&r regen bonus from Nourished."
+	]
+	quest.7F00D0000000001E.quest_subtitle: "Tier 4 — regen meal"
+	quest.7F00D0000000001E.title: "Hearty Broth"
+	quest.7F00D0000000001F.quest_desc: [
+		"Compact a quick scouting snack: toast, cranberries, and peanuts."
+		""
+		"High &6grains&r and &dfruits&r — great before a vein-scouting run or Terralith excursion."
+		""
+		"At 75%+ grains you get &bSpeed&r from Nourished."
+	]
+	quest.7F00D0000000001F.quest_subtitle: "Tier 4 — movement snack"
+	quest.7F00D0000000001F.title: "Vein Scout Snack"
+	quest.7F00D00000000020.quest_desc: [
+		"Eat any &efactory meal&r and check your Nourished HUD."
+		""
+		"Goal: keep nutrients &aabove 75%&r during a work session."
+		""
+		"&bActive bonuses to aim for:&r"
+		"&7• Haste (proteins) — faster mining"
+		"&7• Speed (grains) — faster movement"
+		"&7• Regen (all high) — sustain during builds"
+		""
+		"Food is &eoptional&r — but a stocked canteen makes megafactory nights much smoother."
+	]
+	quest.7F00D00000000020.quest_subtitle: "Put buffs to work"
+	quest.7F00D00000000020.title: "Nutrition Online"
+	quest.7F00D00000000021.quest_desc: [
+		"Age fresh cheese in a &eheated basin&r with long processing time."
+		""
+		"2× fresh cheese → 1× &eAged Cheese Wheel&r"
+		""
+		"Cut the wheel on a slicer or cutting wheel for slices used in the lunchbox."
+	]
+	quest.7F00D00000000021.quest_subtitle: "Tier 5 — aging"
+	quest.7F00D00000000021.title: "Aged Cheese Line"
+	quest.7F00D00000000022.quest_desc: [
+		"Press cocoa, sugar, and Create chocolate into a &eluxury chocolate bar&r."
+		""
+		"High dairy + grains + fruits in Nourished — a dessert buff for late-night building."
+	]
+	quest.7F00D00000000022.quest_subtitle: "Tier 5 — dessert"
+	quest.7F00D00000000022.title: "Luxury Chocolate Bar"
+	quest.7F00D00000000023.quest_desc: [
+		"Package a full shift meal via &esequenced assembly&r:"
+		""
+		"&71.&r Bread slice + aged cheese (deployer)"
+		"&72.&r Add toast layer (deployer)"
+		"&73.&r Press to seal"
+		""
+		"Output: &eFactory Lunchbox&r — balanced nutrients for marathon factory sessions."
+	]
+	quest.7F00D00000000023.quest_subtitle: "Tier 5 — packaged lunch"
+	quest.7F00D00000000023.title: "Factory Lunchbox"
+	quest.7F00D00000000024.quest_desc: [
+		"&aCanteen complete!&r You now have a full food automation line:"
+		""
+		"&7Farm → mill → mix → cook → spice → factory meals → luxury lunchbox"
+		""
+		"Keep the canteen stocked beside your ore processing and building stone lines. Return here anytime food recipes confuse you — JEI is always the source of truth."
+		""
+		"&eThis chapter never gates progression.&r Go build the reactor when ready."
+	]
+	quest.7F00D00000000024.quest_subtitle: "Capstone — shift meal master"
+	quest.7F00D00000000024.title: "Canteen Capstone"
+	task.0157156D0E155BB1.title: "I claimed a factory chunk with FTB Chunks"
+	task.0A7ED4D1B1E5F102.title: "I understand the optional CEI mob-xp line"
+	task.290146DF57385BB0.title: "Security wing + munitions line complete"
+	task.681CC6540A9C9BB6.title: "Security wing is set up — munitions are optional"
+	task.787937664EB59E73.title: "Read the security briefing"
+	task.7F00D00000000100.title: "Read the canteen briefing"
+	task.7F00D00000000101.title: "I know how Nourished works"
+	task.7F00D00000000114.title: "I ran a session with factory meals + Nourished"
+	chapter_group.8F01A00000000002.title: "Petrochemicals"
+	chapter_group.8F01B00000000002.title: "Electronics & Power"
+	chapter_group.8F01C00000000002.title: "Architecture & Stone"
+	chapter_group.8F01D00000000002.title: "Aeronautics (Optional)"
+	quest.8F01A00000000010.quest_desc: [
+		"&ePetrochemicals unlock diesel power&r — TFMG crude oil, distillation towers, and the asphalt road line."
+		""
+		"This chapter walks &aoil discovery → pumpjack → distillation → diesel engines&r, then branches into plastics, coke, and a &f5-step asphalt chain&r for factory roads."
+		""
+		"&7Heat matters:&r distillation controllers need steel; vat recipes use heated/superheated mixing. Pair with your brass age and steel lines."
+		""
+		"&7Tip: Search JEI for &ftfmg:crude_oil&7 and &fkubejs:petrochem&7 to preview pack tweaks."
+	]
+	quest.8F01A00000000010.quest_subtitle: "Oil → diesel → asphalt"
+	quest.8F01A00000000010.title: "Welcome — Petrochem Wing"
+	quest.8F01A00000000011.quest_desc: [
+		"Craft a &etfmg:surface_scanner&r — your first tool for finding underground oil deposits."
+		""
+		"Hold it and scan the overworld surface. Oil pools show as markers you can stake with a pumpjack later."
+		""
+		"&7Beginner tip:&r claim the chunk around your future oil field with &eFTB Chunks&r before building heavy machines."
+	]
+	quest.8F01A00000000011.quest_subtitle: "Step 1 — find oil"
+	quest.8F01A00000000011.title: "Surface Scanner"
+	quest.8F01A00000000012.quest_desc: [
+		"Use the scanner until you locate a viable &ecrude oil deposit&r — usually deep overworld strata."
+		""
+		"Mark the spot, clear a flat pad, and plan pipe routes back to your main factory hall."
+		""
+		"&7No item gate&r — just confirm you found oil and are ready to build extraction."
+	]
+	quest.8F01A00000000012.quest_subtitle: "Step 2 — stake a deposit"
+	quest.8F01A00000000012.title: "Oil Deposit Located"
+	quest.8F01A00000000013.quest_desc: [
+		"Place a &etfmg:pumpjack_base&r on your staked deposit and build the pumpjack tower above it."
+		""
+		"Route &fcrude oil&r into fluid tanks or pipes — this is your long-term liquid feedstock for diesel, plastics, and coke."
+		""
+		"&7Steel plates&r gate the distillation controller in this pack (lead plates are replaced)."
+	]
+	quest.8F01A00000000013.quest_subtitle: "Step 3 — start pumping"
+	quest.8F01A00000000013.title: "Pumpjack Online"
+	quest.8F01A00000000014.quest_desc: [
+		"Stockpile &f4× tfmg:crude_oil_bucket&r from the pumpjack line."
+		""
+		"Crude is the root fluid — everything downstream (diesel, heavy oil, naphtha, asphalt) starts here."
+		""
+		"&7Pack tweak:&r crude distillation is &adiesel-biased&r vs vanilla TFMG splits."
+	]
+	quest.8F01A00000000014.quest_subtitle: "Step 4 — crude stockpile"
+	quest.8F01A00000000014.title: "Crude Oil Reservoir"
+	quest.8F01A00000000015.quest_desc: [
+		"Craft a &etfmg:steel_distillation_controller&r and assemble a TFMG distillation tower."
+		""
+		"Feed crude (or heavy oil) into the tower with heat and rotation. Outputs split into &fdiesel, kerosene, heavy oil, naphtha, gasoline, LPG&r."
+		""
+		"&7Recipe ID:&r &fkubejs:petrochem/distillation/crude_oil"
+	]
+	quest.8F01A00000000015.quest_subtitle: "Step 5 — distillation tower"
+	quest.8F01A00000000015.title: "Steel Distillation Controller"
+	quest.8F01A00000000016.quest_desc: [
+		"Collect &f2× tfmg:diesel_bucket&r from distillation — your primary liquid fuel for TFMG engines."
+		""
+		"Diesel powers &eregular engines&r, generators, and later radial engines. Route it in fluid pipes beside your Create shafts."
+		""
+		"&7Diesel also feeds&r munitions gasoline shells and factory propellant coke lines indirectly."
+	]
+	quest.8F01A00000000016.quest_subtitle: "Step 6 — diesel fuel"
+	quest.8F01A00000000016.title: "Diesel Stockpile"
+	quest.8F01A00000000017.quest_desc: [
+		"Craft a &etfmg:regular_engine&r and couple it to a generator or machine that needs shaft power."
+		""
+		"Pipe diesel in, spin a flywheel, and you have &afactory-grade RPM&r independent of water wheels."
+		""
+		"&7First petrochem power milestone&r — scale engines before chasing radial/kero tiers."
+	]
+	quest.8F01A00000000017.quest_subtitle: "Step 7 — diesel engine online"
+	quest.8F01A00000000017.title: "Regular Engine Running"
+	quest.8F01A00000000018.quest_desc: [
+		"Tap the &eheavy oil&r side stream from distillation — save at least one &ftfmg:heavy_oil_bucket&r."
+		""
+		"Heavy oil feeds three important branches:"
+		"&7• Coking → &ftfmg:coal_coke&r (munitions + steel chemistry)"
+		"&7• Compacting → &ftfmg:bitumen&r (asphalt chain)"
+		"&7• Further distillation&r for lube and diesel recovery"
+	]
+	quest.8F01A00000000018.quest_subtitle: "Heavy oil side stream"
+	quest.8F01A00000000018.title: "Heavy Oil Branch"
+	quest.8F01A00000000019.quest_desc: [
+		"Run naphtha through a &esteel/firebrick vat&r with superheated mixing to crack &fethylene&r."
+		""
+		"&7Recipe ID:&r &fkubejs:petrochem/catalytic_cracking"
+		""
+		"Ethylene is the gateway to &fplastic sheets&r, cooling fluid, and reactor casings later."
+	]
+	quest.8F01A00000000019.quest_subtitle: "Vat chemistry — heated"
+	quest.8F01A00000000019.title: "Ethylene Cracking"
+	quest.8F01A0000000001A.quest_desc: [
+		"Process ethylene into &f4× tfmg:plastic_sheet&r — stock for circuit boards, reactor casings, and rubber recipes."
+		""
+		"Plastics tie petrochem to the &eelectronics chapter&r without hard-gating it."
+		""
+		"&7Keep a plastic bus&r on your fluid logistics network."
+	]
+	quest.8F01A0000000001A.quest_subtitle: "Petrochemical solids"
+	quest.8F01A0000000001A.title: "Plastic Sheet Line"
+	quest.8F01A0000000001B.quest_desc: [
+		"Bottle &f2× tfmg:cooling_fluid_bottle&r from the plastic/chemistry line."
+		""
+		"Cooling fluid gates &egold and diamond energiser billets&r in Create New Age — plan ahead if you're chasing the reactor."
+		""
+		"&7Also used&r in advanced TFMG machine recipes."
+	]
+	quest.8F01A0000000001B.quest_subtitle: "Electronics crossover"
+	quest.8F01A0000000001B.title: "Cooling Fluid Bottles"
+	quest.8F01A0000000001C.quest_desc: [
+		"Produce &f4× tfmg:rubber_sheet&r — gaskets, belts, and fluid-proof fittings for hot machine halls."
+		""
+		"Rubber pairs with plastics from the same ethylene tree."
+	]
+	quest.8F01A0000000001C.quest_subtitle: "Side branch — rubber"
+	quest.8F01A0000000001C.title: "Rubber Sheets"
+	quest.8F01A0000000001D.quest_desc: [
+		"Coke &f2× tfmg:coal_coke&r in a superheated vat from heavy oil."
+		""
+		"&7Recipe ID:&r &fkubejs:petrochem/heavy_oil_coking"
+		""
+		"Coke feeds &efactory propellant, packed gunpowder, and scoria/basalt&r synthesis — a key mid-game byproduct."
+	]
+	quest.8F01A0000000001D.quest_subtitle: "Coking — superheated vat"
+	quest.8F01A0000000001D.title: "Coal Coke from Heavy Oil"
+	quest.8F01A0000000001E.quest_desc: [
+		"Reform or distill into &ftfmg:kerosene_bucket&r — lighter fuel for aircraft and premium engines."
+		""
+		"&7Recipe ID:&r &fkubejs:petrochem/premium_fuel_reforming&r (gasoline + sulfuric acid route)"
+		""
+		"Kerosene unlocks the &aaeronautics&r levitite line later."
+	]
+	quest.8F01A0000000001E.quest_subtitle: "Premium fuel tier"
+	quest.8F01A0000000001E.title: "Kerosene Stockpile"
+	quest.8F01A0000000001F.quest_desc: [
+		"Upgrade to a &etfmg:radial_engine&r — kerosene/diesel-class power for large contraptions."
+		""
+		"Radial engines are your &ahigh-RPM petrochem cap&r before nuclear — pair with fluid valves and smart pipes from electronics."
+	]
+	quest.8F01A0000000001F.quest_subtitle: "Late petrochem power"
+	quest.8F01A0000000001F.title: "Radial Engine Upgrade"
+	quest.8F01A00000000020.quest_desc: [
+		"Compact heavy oil into &f4× tfmg:bitumen&r — step &a1/5&r of the asphalt road chain."
+		""
+		"&eHeated compacting:&r 1000 mB heavy oil → bitumen."
+		""
+		"Bitumen mixes with gravel/sand into &fasphalt_mixture&r next."
+	]
+	quest.8F01A00000000020.quest_subtitle: "Asphalt 1/5 — bitumen"
+	quest.8F01A00000000020.title: "Bitumen from Heavy Oil"
+	quest.8F01A00000000021.quest_desc: [
+		"Craft &f16× tfmg:asphalt_mixture&r — step &a2/5&r of the road line."
+		""
+		"Mix bitumen with aggregate (gravel/sand) in a Create mixer. Stockpile for liquid asphalt conversion."
+	]
+	quest.8F01A00000000021.quest_subtitle: "Asphalt 2/5 — dry mix"
+	quest.8F01A00000000021.title: "Asphalt Mixture"
+	quest.8F01A00000000022.quest_desc: [
+		"Mix asphalt mixture + water into &ftfmg:liquid_asphalt_bucket&r — step &a3/5&r."
+		""
+		"&eHeated mixer:&r asphalt_mixture + 250 mB water → 1000 mB liquid asphalt."
+		"&7Recipe ID:&r &fkubejs:petrochem/mixing/liquid_asphalt"
+	]
+	quest.8F01A00000000022.quest_subtitle: "Asphalt 3/5 — hot liquid"
+	quest.8F01A00000000022.title: "Liquid Asphalt"
+	quest.8F01A00000000023.quest_desc: [
+		"Place a &etfmg:casting_basin&r — step &a4/5&r. This is the TFMG-native caster for asphalt blocks."
+		""
+		"&eHopper hint:&r park a &fminecraft:hopper&r on the basin input so bitumen/gravel automation can feed casting without hand-filling."
+		""
+		"Pipe &f144 mB liquid_asphalt&r per block (basin tank max). Heat below with blaze burner or heated vat."
+		"&7Fallback:&r Create basin compacting — &fkubejs:petrochem/compacting/asphalt"
+	]
+	quest.8F01A00000000023.quest_subtitle: "Asphalt 4/5 — casting setup"
+	quest.8F01A00000000023.title: "Casting Basin + Hopper"
+	quest.8F01A00000000024.quest_desc: [
+		"Cast &f8× tfmg:asphalt&r blocks — step &a5/5&r complete."
+		""
+		"Pave factory roads between ore processing, distillation, and your claimed chunks."
+		""
+		"&7Architecture chapter&r cross-links here for megabase paving."
+	]
+	quest.8F01A00000000024.quest_subtitle: "Asphalt 5/5 — paved roads"
+	quest.8F01A00000000024.title: "Asphalt Blocks Cast"
+	quest.8F01A00000000025.quest_desc: [
+		"Craft &ftfmg:asphalt_stairs&r from asphalt blocks — ramps for multi-level factory floors."
+		""
+		"Stonecutter and TFMG stairs recipes both work; pick whichever fits your build style."
+	]
+	quest.8F01A00000000025.quest_subtitle: "Road detailing"
+	quest.8F01A00000000025.title: "Asphalt Stairs & Ramps"
+	quest.8F01A00000000026.quest_desc: [
+		"&aPetrochem wing online!&r You completed at least one end branch:"
+		"&7• Coke for munitions/steel chemistry"
+		"&7• Plastics + cooling fluid for electronics"
+		"&7• Full asphalt road chain"
+		""
+		"Diesel and radial engines now sustain your factory between water wheels and nuclear."
+		"&eNothing here hard-gates the reactor&r — return anytime to expand distillation."
+	]
+	quest.8F01A00000000026.quest_subtitle: "Capstone — fuels & roads"
+	quest.8F01A00000000026.title: "Petrochem Capstone"
+	quest.8F01B00000000010.quest_desc: [
+		"&eCreate New Age (CNA)&r is your power progression — wires, magnets, energising, and the nuclear reactor."
+		""
+		"This chapter follows the &apack CNA path&r: TFMG etched boards + copper spools, not the removed blank-circuit chain."
+		""
+		"Core pattern: &fbillet (mixer) → energiser (FE) → overcharged metal&r — two steps, every tier."
+		""
+		"&7Tip: Search JEI for &fkubejs:electronics&7 to see all pack redirects."
+	]
+	quest.8F01B00000000010.quest_subtitle: "CNA power progression"
+	quest.8F01B00000000010.title: "Welcome — Electronics Wing"
+	quest.8F01B00000000011.quest_desc: [
+		"Wind or hand-spin a &etfmg:copper_spool&r — CNA conductor stock for coils and motors."
+		""
+		"Spools replace loose wire bundles in generator coil and motor extension recipes."
+	]
+	quest.8F01B00000000011.quest_subtitle: "Step 1 — conductors"
+	quest.8F01B00000000011.title: "Copper Spool"
+	quest.8F01B00000000012.quest_desc: [
+		"Etch a &etfmg:etched_circuit_board&r — the TFMG-primary PCB that gates generator coils."
+		""
+		"CNA blank circuits are removed; this is the only board path in the pack."
+	]
+	quest.8F01B00000000012.quest_subtitle: "Step 2 — PCB"
+	quest.8F01B00000000012.title: "Etched Circuit Board"
+	quest.8F01B00000000013.quest_desc: [
+		"Stock &f16× create_new_age:copper_wire&r — or convert via &fkubejs:electronics/convert_cna_copper_wire&r if you had legacy wire."
+		""
+		"Wire feeds coils, magnets, and early motor extensions."
+	]
+	quest.8F01B00000000013.quest_subtitle: "Step 3 — wire bus"
+	quest.8F01B00000000013.title: "Copper Wire Stockpile"
+	quest.8F01B00000000014.quest_desc: [
+		"Wind a &ecreate_new_age:copper_coil&r on a lathe or appropriate CNA station."
+		""
+		"Coils stack into layered magnets and generator coils — the heart of FE generation."
+	]
+	quest.8F01B00000000014.quest_subtitle: "Step 4 — first coil"
+	quest.8F01B00000000014.title: "Copper Coil"
+	quest.8F01B00000000015.quest_desc: [
+		"Layer magnets into a &ecreate_new_age:layered_magnet&r — stronger field for generator coils."
+		""
+		"Magnetite blocks from ore processing or Create crushing supplement the recipe."
+	]
+	quest.8F01B00000000015.quest_subtitle: "Step 5 — magnetic core"
+	quest.8F01B00000000015.title: "Layered Magnet"
+	quest.8F01B00000000016.quest_desc: [
+		"Assemble a &ecreate_new_age:generator_coil&r with etched board + andesite alloy block + copper spool."
+		""
+		"&7Recipe ID:&r &fkubejs:electronics/generator_coil"
+		""
+		"Mount coils on a wind turbine or other CNA generator to start producing &bFE&r."
+	]
+	quest.8F01B00000000016.quest_subtitle: "Step 6 — FE generation"
+	quest.8F01B00000000016.title: "Generator Coil"
+	quest.8F01B00000000017.quest_desc: [
+		"Before energising: build a CNA &eenergiser&r and confirm you have steady &bFE&r from wind/solar/hand crank."
+		""
+		"Every overcharged tier uses the same &atwo-step flow&r:"
+		"&71)&r Mixer crafts &fkubejs:*_energiser_billet"
+		"&72)&r Energiser spends FE to output &fcreate_new_age:overcharged_*"
+		""
+		"&7CNA energising accepts exactly one billet per pulse&r — automate with belts if scaling."
+	]
+	quest.8F01B00000000017.quest_subtitle: "Understand billet → energise"
+	quest.8F01B00000000017.title: "Energiser Two-Step Flow"
+	quest.8F01B00000000018.quest_desc: [
+		"Craft a &ecreate_new_age:basic_motor&r — FE → RPM conversion for machines that need electric spin."
+		""
+		"Motors pair with generator coils on the opposite end of your power hall."
+	]
+	quest.8F01B00000000018.quest_subtitle: "Step 7 — electric motors"
+	quest.8F01B00000000018.title: "Basic Motor"
+	quest.8F01B00000000019.quest_desc: [
+		"Mixer-craft &f2× kubejs:iron_energiser_billet&r — iron ingots + redstone."
+		""
+		"&7Recipe ID:&r &fkubejs:electronics/mixing/iron_energiser_billet"
+		""
+		"Feed billets into the energiser (1000 FE each) for overcharged iron."
+	]
+	quest.8F01B00000000019.quest_subtitle: "Tier 1 billet — iron"
+	quest.8F01B00000000019.title: "Iron Energiser Billet"
+	quest.8F01B0000000001A.quest_desc: [
+		"Energise billets into &f2× create_new_age:overcharged_iron&r."
+		""
+		"&7Recipe ID:&r &fkubejs:electronics/energising/overcharged_iron"
+		""
+		"Overcharged iron unlocks piercing ammo, carbon brushes, and advanced Create parts."
+	]
+	quest.8F01B0000000001A.quest_subtitle: "Tier 1 energise — iron"
+	quest.8F01B0000000001A.title: "Overcharged Iron"
+	quest.8F01B0000000001B.quest_desc: [
+		"Mixer-craft a &fkubejs:gold_energiser_billet&r — gold + &ftfmg:cooling_fluid_bottle&r + redstone."
+		""
+		"&7Recipe ID:&r &fkubejs:electronics/mixing/gold_energiser_billet"
+		""
+		"Cooling fluid comes from the petrochem plastic line — light cross-chapter link."
+	]
+	quest.8F01B0000000001B.quest_subtitle: "Tier 2 billet — gold"
+	quest.8F01B0000000001B.title: "Gold Energiser Billet"
+	quest.8F01B0000000001C.quest_desc: [
+		"Energise into &fcreate_new_age:overcharged_gold&r (2000 FE)."
+		""
+		"&7Recipe ID:&r &fkubejs:electronics/energising/overcharged_gold"
+	]
+	quest.8F01B0000000001C.quest_subtitle: "Tier 2 energise — gold"
+	quest.8F01B0000000001C.title: "Overcharged Gold"
+	quest.8F01B0000000001D.quest_desc: [
+		"Mixer-craft a &fkubejs:diamond_energiser_billet&r — diamond + lithium + cooling fluid."
+		""
+		"&7Recipe ID:&r &fkubejs:electronics/mixing/diamond_energiser_billet"
+		""
+		"The top-tier billet before reactor fuel."
+	]
+	quest.8F01B0000000001D.quest_subtitle: "Tier 3 billet — diamond"
+	quest.8F01B0000000001D.title: "Diamond Energiser Billet"
+	quest.8F01B0000000001E.quest_desc: [
+		"Energise into &fcreate_new_age:overcharged_diamond&r (10000 FE)."
+		""
+		"&7Recipe ID:&r &fkubejs:electronics/energising/overcharged_diamond"
+		""
+		"Required for carbon brushes and late CNA extensions."
+	]
+	quest.8F01B0000000001E.quest_subtitle: "Tier 3 energise — diamond"
+	quest.8F01B0000000001E.title: "Overcharged Diamond"
+	quest.8F01B0000000001F.quest_desc: [
+		"Press a &etfmg:circuit_board&r — TFMG board replaces CNA copper circuits in motor recipes."
+		""
+		"Boards bridge etched PCBs to deployable control logic."
+	]
+	quest.8F01B0000000001F.quest_subtitle: "Control logic prep"
+	quest.8F01B0000000001F.title: "TFMG Circuit Board"
+	quest.8F01B00000000020.quest_desc: [
+		"Assemble a &fkubejs:control_unit&r — the pack gate for smart factory automation."
+		""
+		"Control units replace electron tubes in &edeployer&r, &esmart fluid pipe&r, and &erotation speed controller&r recipes."
+		""
+		"&7This is the automation milestone&r that makes petrochem and ore lines hands-off."
+	]
+	quest.8F01B00000000020.quest_subtitle: "Automation brain"
+	quest.8F01B00000000020.title: "Control Unit"
+	quest.8F01B00000000021.quest_desc: [
+		"Craft a &ecreate:deployer&r with your control unit — block placement and machine interaction on belts."
+		""
+		"Deployers run sequenced assembly, mob farms, and casting lines."
+	]
+	quest.8F01B00000000021.quest_subtitle: "Smart contraptions"
+	quest.8F01B00000000021.title: "Deployer Online"
+	quest.8F01B00000000022.quest_desc: [
+		"Add a &ecreate:smart_fluid_pipe&r — redstone-aware fluid routing for diesel, asphalt, and XP fluid."
+		""
+		"Essential when multiple heated machines share one fluid bus."
+	]
+	quest.8F01B00000000022.quest_subtitle: "Fluid logic"
+	quest.8F01B00000000022.title: "Smart Fluid Pipe"
+	quest.8F01B00000000023.quest_desc: [
+		"Install a &ecreate:rotation_speed_controller&r — dial exact RPM for mixers, lathes, and encased fans."
+		""
+		"Pair with stressometers on long petrochem shafts."
+	]
+	quest.8F01B00000000023.quest_subtitle: "RPM tuning"
+	quest.8F01B00000000023.title: "Rotation Speed Controller"
+	quest.8F01B00000000024.quest_desc: [
+		"Craft &ecreate_new_age:carbon_brushes&r from overcharged diamond + coke dust."
+		""
+		"Brushes maintain FE contacts on motors and generators at scale."
+	]
+	quest.8F01B00000000024.quest_subtitle: "FE maintenance parts"
+	quest.8F01B00000000024.title: "Carbon Brushes"
+	quest.8F01B00000000025.quest_desc: [
+		"Stock &f4× create_new_age:reactor_casing&r — plastic-lined shielding for the nuclear multiblock."
+		""
+		"Casings need petrochem plastics — another soft link between chapters."
+	]
+	quest.8F01B00000000025.quest_subtitle: "Reactor hull"
+	quest.8F01B00000000025.title: "Reactor Casing"
+	quest.8F01B00000000026.quest_desc: [
+		"Produce &ecreate_new_age:nuclear_fuel&r — enriched material for reactor rods."
+		""
+		"Handle with care; store away from your main storage until the reactor is shielded."
+	]
+	quest.8F01B00000000026.quest_subtitle: "Fuel pellets"
+	quest.8F01B00000000026.title: "Nuclear Fuel"
+	quest.8F01B00000000027.quest_desc: [
+		"Insert &f2× create_new_age:reactor_rod&r — the active fuel columns."
+		""
+		"Rods slot into the CNA reactor frame with casings and a heat exchanger plan."
+	]
+	quest.8F01B00000000027.quest_subtitle: "Fuel rods loaded"
+	quest.8F01B00000000027.title: "Reactor Rods"
+	quest.8F01B00000000028.quest_desc: [
+		"Complete the &enuclear reactor multiblock&r — CNA's endgame FE source (the &anuclear SA&r assembly)."
+		""
+		"Verify cooling, casing corners, and rod placement in JEI's structure preview."
+		""
+		"&7Grid Online&r is the next quest once the reactor runs stably."
+	]
+	quest.8F01B00000000028.quest_subtitle: "Nuclear SA — reactor built"
+	quest.8F01B00000000028.title: "Nuclear Reactor Assembly"
+	quest.8F01B00000000029.quest_desc: [
+		"&aGrid Online!&r Your CNA reactor produces steady &bFE&r — the pack's main power capstone."
+		""
+		"You now have: control units, smart pipes, energised metals, and nuclear generation."
+		""
+		"&ePost-game:&r optional chapters branch from here — petrochem roads, megabase stone, and co-op flight."
+		""
+		"&7Main progression complete.&r Build for fun; no further recipe gates."
+	]
+	quest.8F01B00000000029.quest_subtitle: "Capstone — nuclear grid live"
+	quest.8F01B00000000029.title: "Grid Online"
+	quest.8F01B0000000002A.quest_desc: [
+		"&ePost-game pointer — Petrochem (#10)&r"
+		""
+		"If you skipped oil, open the &cPetrochemicals&r chapter — start with &fWelcome — Petrochem Wing&r."
+		""
+		"Diesel, coke, and asphalt roads still add huge QoL to a post-reactor megabase."
+		""
+		"&ePost-game pointer — Aeronautics (#14)&r"
+		""
+		"Optional flight: craft &faeronautics:gyroscopic_propeller_bearing&r in the &bAeronautics&r chapter for co-op sky tours."
+	]
+	quest.8F01B0000000002A.quest_subtitle: "Optional — fuels & flight"
+	quest.8F01B0000000002A.title: "After the Reactor — Oil & Sky"
+	quest.8F01B0000000002B.quest_desc: [
+		"&ePost-game pointer — Architecture (#12)&r"
+		""
+		"Open the &aArchitecture & Stone&r chapter — &fBuilding Stones Synthesis&r covers automated rare-stone routes."
+		""
+		"Heated/superheated mixers craft calcite, tuff, deepslate, Create limestones, basalt, and more from cobble → stone staples."
+		""
+		"Pair with Chipped, Rechiseled, and Create Deco for megabase facades — no combat required."
+	]
+	quest.8F01B0000000002B.quest_subtitle: "Optional — stone megabase"
+	quest.8F01B0000000002B.title: "After the Reactor — Build Big"
+	quest.8F01C00000000010.quest_desc: [
+		"&eArchitecture is optional&r — decorative stone automation never gates power or recipes."
+		""
+		"This chapter walks &acobble → stone → rare overworld rocks&r via &fbuilding_stones.js&r, then Create worldgen stones, Chipped/Rechiseled/Deco tools, and a petrochem &fasphalt&r crosslink."
+		""
+		"&7Heat tiers:&r heated mixing for sediments, superheated for deepslate/scoria/basalt."
+	]
+	quest.8F01C00000000010.quest_subtitle: "Optional building stone factory"
+	quest.8F01C00000000010.title: "Welcome — Architecture Wing"
+	quest.8F01C00000000011.quest_desc: [
+		"Stock &f64× minecraft:cobblestone&r — the universal starter aggregate."
+		""
+		"Cobble feeds mixers, compactors, and crushing wheels across every stone recipe in this chapter."
+	]
+	quest.8F01C00000000011.quest_subtitle: "Step 1 — bulk cobble"
+	quest.8F01C00000000011.title: "Cobble Stockpile"
+	quest.8F01C00000000012.quest_desc: [
+		"Read &fbuilding_stones.js&r routes in JEI — search &fkubejs:building_stones&r."
+		""
+		"Phase 2 synthesizes worldgen-only blocks:"
+		"&7• &fkubejs:building_stones/calcite_lithification&r (heated)"
+		"&7• &fkubejs:building_stones/tuff_compaction"
+		"&7• &fkubejs:building_stones/cobbled_deepslate_lithification&r (superheated)"
+		""
+		"&7No kill quest&r — confirm you understand the mixer/compactor flow."
+	]
+	quest.8F01C00000000012.quest_subtitle: "Step 2 — rare stone recipes"
+	quest.8F01C00000000012.title: "Building Stones Synthesis"
+	quest.8F01C00000000013.quest_desc: [
+		"Process &f32× minecraft:stone&r — smelt cobble or crush it on belts."
+		""
+		"Stone is the Phase 2 lithification input for deepslate and dripstone chains."
+	]
+	quest.8F01C00000000013.quest_subtitle: "Step 3 — smooth stone bus"
+	quest.8F01C00000000013.title: "Stone Stockpile"
+	quest.8F01C00000000014.quest_desc: [
+		"Collect &f16× minecraft:gravel&r — tuff compaction and aggregate mixes need it."
+		""
+		"Create crushing wheels convert cobble → gravel efficiently."
+	]
+	quest.8F01C00000000014.quest_subtitle: "Step 4 — gravel"
+	quest.8F01C00000000014.title: "Gravel Aggregate"
+	quest.8F01C00000000015.quest_desc: [
+		"Collect &f16× minecraft:sand&r — sandstone sediments and asphalt-adjacent mixes."
+		""
+		"Crushing gravel → sand is the vanilla Create route (not duplicated by KubeJS)."
+	]
+	quest.8F01C00000000015.quest_subtitle: "Step 5 — sand"
+	quest.8F01C00000000015.title: "Sand Aggregate"
+	quest.8F01C00000000016.quest_desc: [
+		"Craft a &eminecraft:stonecutter&r — slice base stones into stairs, walls, and polished variants."
+		""
+		"Place it beside your mixer output chest for instant detailing."
+	]
+	quest.8F01C00000000016.quest_subtitle: "Step 6 — stonecutter bench"
+	quest.8F01C00000000016.title: "Stonecutter Online"
+	quest.8F01C00000000017.quest_desc: [
+		"Synthesize or mine &f16× minecraft:andesite&r — early facades and mixer filler."
+		""
+		"Andesite is in the &fkubejs:lithified_stone_inputs&r tag for bulk recipes."
+	]
+	quest.8F01C00000000017.quest_subtitle: "Step 7 — andesite"
+	quest.8F01C00000000017.title: "Andesite Palette"
+	quest.8F01C00000000018.quest_desc: [
+		"Produce &f8× minecraft:calcite&r via heated lithification or dripstone biomes."
+		""
+		"&7Recipe:&r sandstone + bone meal + flux + water → 2× calcite."
+		""
+		"Calcite unlocks dripstone farms and Create limestone sediments."
+	]
+	quest.8F01C00000000018.quest_subtitle: "Step 8 — calcite"
+	quest.8F01C00000000018.title: "Calcite Line"
+	quest.8F01C00000000019.quest_desc: [
+		"Synthesize &f8× minecraft:cobbled_deepslate&r — superheated stone + charcoal + flux + lava."
+		""
+		"&7Recipe ID:&r &fkubejs:building_stones/cobbled_deepslate_lithification"
+		""
+		"Smelt to deepslate for polished factory walls."
+	]
+	quest.8F01C00000000019.quest_subtitle: "Step 9 — deepslate"
+	quest.8F01C00000000019.title: "Cobbled Deepslate"
+	quest.8F01C0000000001A.quest_desc: [
+		"Compact &f8× minecraft:tuff&r — gravel + clay + cobble in a compactor."
+		""
+		"&7Recipe ID:&r &fkubejs:building_stones/tuff_compaction"
+	]
+	quest.8F01C0000000001A.quest_subtitle: "Step 10 — tuff"
+	quest.8F01C0000000001A.title: "Tuff Palette"
+	quest.8F01C0000000001B.quest_desc: [
+		"Mix &f8× create:limestone&r — heated sandstone + calcite + water."
+		""
+		"&7Recipe ID:&r &fkubejs:building_stones/limestone_sediment"
+		""
+		"Limestone begins the Create worldgen stone tree (asurine, veridium, ochrum)."
+	]
+	quest.8F01C0000000001B.quest_subtitle: "Phase 3 — Create limestone"
+	quest.8F01C0000000001B.title: "Limestone Sediment"
+	quest.8F01C0000000001C.quest_desc: [
+		"Volcanic-mix &f8× create:scoria&r — basalt + coal coke + magma cream (superheated)."
+		""
+		"&7Recipe ID:&r &fkubejs:building_stones/scoria_volcanic"
+		""
+		"Scoria leads to scorchia and crimsite variants."
+	]
+	quest.8F01C0000000001C.quest_subtitle: "Phase 3 — scoria"
+	quest.8F01C0000000001C.title: "Scoria Volcanic Mix"
+	quest.8F01C0000000001D.quest_desc: [
+		"Stonecut &fcreate:cut_limestone&r — the chapter icon and showcase block."
+		""
+		"Cut variants feed Chipped and Rechiseled benches for hundreds of facades."
+	]
+	quest.8F01C0000000001D.quest_subtitle: "Detailing — cut stone"
+	quest.8F01C0000000001D.title: "Cut Limestone"
+	quest.8F01C0000000001E.quest_desc: [
+		"Place a &echipped:botanist_workbench&r — mass-variant stone from one input block."
+		""
+		"Feed andesite, limestone, or deepslate for themed panels without hand-placing every texture."
+	]
+	quest.8F01C0000000001E.quest_subtitle: "Chipped workstation"
+	quest.8F01C0000000001E.title: "Chipped Botanist Bench"
+	quest.8F01C0000000001F.quest_desc: [
+		"Craft a &erechiseled:chisel&r — in-world rechiseling for alternate block faces."
+		""
+		"Pair with Chipped output for mixed industrial/brutalist megabase skins."
+	]
+	quest.8F01C0000000001F.quest_subtitle: "Rechiseled tool"
+	quest.8F01C0000000001F.title: "Rechiseled Chisel"
+	quest.8F01C00000000020.quest_desc: [
+		"Fire &f4× createdeco:dean_bricks&r in a blast furnace or alloy kiln — art-deco metal/stone accents."
+		""
+		"Create Deco bridges factory brass aesthetics with stone halls."
+	]
+	quest.8F01C00000000020.quest_subtitle: "Create Deco accents"
+	quest.8F01C00000000020.title: "Dean Bricks"
+	quest.8F01C00000000021.quest_desc: [
+		"Place &f4× beautify:bookstack&r (or craft them) — interior decoration for offices, labs, and canteens."
+		""
+		"&7Purely cosmetic&r — flex your build after the machines work."
+	]
+	quest.8F01C00000000021.quest_subtitle: "Interior decoration"
+	quest.8F01C00000000021.title: "Beautify Bookstacks"
+	quest.8F01C00000000022.quest_desc: [
+		"Upgrade to a &ewands:iron_wand&r — fast bulk placement for large floors and walls."
+		""
+		"Stone wand is the reward; iron wand is the task — essential for co-op megabase paving sessions."
+	]
+	quest.8F01C00000000022.quest_subtitle: "Builder QoL — wands"
+	quest.8F01C00000000022.title: "Iron Construction Wand"
+	quest.8F01C00000000023.quest_desc: [
+		"Pave with &f8× tfmg:asphalt&r — crosslink to the &cPetrochemicals&r asphalt chain."
+		""
+		"Connect ore halls, reactor shielding, and canteen wings with factory roads."
+		""
+		"&7See the Petrochemicals chapter&r — &fBitumen&r through &fAsphalt Stairs&r — for the full 5-step casting line."
+	]
+	quest.8F01C00000000023.quest_subtitle: "Petrochem crosslink — roads"
+	quest.8F01C00000000023.title: "Asphalt Factory Roads"
+	quest.8F01C00000000024.quest_desc: [
+		"Synthesize &f16× minecraft:basalt&r — superheated stone + coal coke + lava."
+		""
+		"&7Recipe ID:&r &fkubejs:building_stones/basalt_from_coke_lava"
+		""
+		"Basalt feeds scoria and blackstone compacting."
+	]
+	quest.8F01C00000000024.quest_subtitle: "Phase 4 — basalt"
+	quest.8F01C00000000024.title: "Basalt Volcanic Line"
+	quest.8F01C00000000025.quest_desc: [
+		"Combine three build paths — &eWands&r, &eAsphalt roads&r, and &eBasalt/scoria&r palettes."
+		""
+		"Your megabase should have at least one paved artery and one detailed stone facade."
+		""
+		"&7Co-op tip:&r claim exterior chunks before wand-paving shared roads."
+	]
+	quest.8F01C00000000025.quest_subtitle: "Megabase checkpoint"
+	quest.8F01C00000000025.title: "Facade & Roads Online"
+	quest.8F01C00000000026.quest_desc: [
+		"&aArchitecture wing complete!&r"
+		""
+		"&7Cobble → stone → rare rocks → Create stones → Chipped/Rechiseled/Deco → asphalt roads"
+		""
+		"Return to JEI anytime for &fkubejs:building_stones&r — this chapter never gates the reactor or munitions."
+		""
+		"Show the team the build — that's the real reward."
+	]
+	quest.8F01C00000000026.quest_subtitle: "Capstone — megabase ready"
+	quest.8F01C00000000026.title: "Architecture Capstone"
+	quest.8F01D00000000010.quest_desc: [
+		"&eAeronautics is optional QoL&r — flight never gates recipes, power, or the nuclear reactor."
+		""
+		"This chapter adds &bco-op sky mobility&r: brass airframes, &faeronautics:gyroscopic_propeller_bearing&r contraptions, and levitite fuel."
+		""
+		"&7Low priority&r — finish electronics and petrochem first unless your team wants joyrides."
+	]
+	quest.8F01D00000000010.quest_subtitle: "Optional flight branch"
+	quest.8F01D00000000010.title: "Welcome — Aeronautics Wing"
+	quest.8F01D00000000011.quest_desc: [
+		"Craft &ecreate:brass_casing&r — lightweight structural skin for airship hulls and engine nacelles."
+		""
+		"Brass should already flow from your andesite → brass age line."
+	]
+	quest.8F01D00000000011.quest_subtitle: "Step 1 — brass airframe"
+	quest.8F01D00000000011.title: "Brass Casing"
+	quest.8F01D00000000012.quest_desc: [
+		"Keep a &ecreate:hand_crank&r handy for bench testing propeller bearings before you commit FE or diesel."
+		""
+		"Spin bearings safely on the ground first — tune RPM with a rotation speed controller if needed."
+	]
+	quest.8F01D00000000012.quest_subtitle: "Step 2 — bench testing"
+	quest.8F01D00000000012.title: "Hand Crank Test Rig"
+	quest.8F01D00000000013.quest_desc: [
+		"&eFTB Chunks&r — claim airspace approach lanes and your hangar pad on the team map."
+		""
+		"Open map (&bdefault: M&r), claim chunks around the runway, and enable chunk loading if your server allows."
+		""
+		"Prevents friendly grief and keeps contraptions loaded during co-op flights."
+	]
+	quest.8F01D00000000013.quest_subtitle: "Step 3 — claim sky base"
+	quest.8F01D00000000013.title: "Chunk-Claimed Hangar"
+	quest.8F01D00000000014.quest_desc: [
+		"Craft &faeronautics:gyroscopic_propeller_bearing&r — the core gyroscopic flight block."
+		""
+		"Mount on a balanced brass frame; add propellers per JEI structure hints."
+		""
+		"&7This item is the mod's signature&r — treat it like a Create bearing with lift."
+	]
+	quest.8F01D00000000014.quest_subtitle: "Step 4 — gyro bearing"
+	quest.8F01D00000000014.title: "Gyroscopic Propeller Bearing"
+	quest.8F01D00000000015.quest_desc: [
+		"Fill a &faeronautics:levitite_blend_bucket&r — aerotech fuel brewed from petrochem light fractions."
+		""
+		"Kerosene and LPG routes from the &cPetrochemicals&r chapter feed levitite recipes."
+		""
+		"Pipe fuel into the bearing assembly before your first manned test hop."
+	]
+	quest.8F01D00000000015.quest_subtitle: "Step 5 — levitite fuel"
+	quest.8F01D00000000015.title: "Levitite Blend Tank"
+	quest.8F01D00000000016.quest_desc: [
+		"Complete a &ashakedown flight&r — lift off, translate 50 blocks, land safely."
+		""
+		"&7Co-op:&r one player pilots, another tends fuel pipes and chunk loaders."
+		""
+		"No hard item check — mark complete when your team trusts the bearing."
+	]
+	quest.8F01D00000000016.quest_subtitle: "Step 6 — first hop"
+	quest.8F01D00000000016.title: "Shakedown Flight"
+	quest.8F01D00000000017.quest_desc: [
+		"Pave a &esmooth_stone&r landing pad at least 5×5 — flat approach reduces bearing wobble on touchdown."
+		""
+		"Asphalt from petrochem also works for taxiways; smooth stone is the cheap starter helipad."
+	]
+	quest.8F01D00000000017.quest_subtitle: "Step 7 — helipad"
+	quest.8F01D00000000017.title: "Smooth Stone Landing Pad"
+	quest.8F01D00000000018.quest_desc: [
+		"Place a &eshared hangar chest&r beside the pad — stock spare propellers, fuel buckets, and goggles for teammates."
+		""
+		"&7Friend-server flavor:&r label the chest so visitors know flight gear is communal."
+	]
+	quest.8F01D00000000018.quest_subtitle: "Step 8 — team stash"
+	quest.8F01D00000000018.title: "Co-op Hangar Chest"
+	quest.8F01D00000000019.quest_desc: [
+		"Run a &bco-op flight session&r — ferry a friend from the reactor site to a distant ore outpost."
+		""
+		"Optional goals: scenic tour, chunk scouting, or dropping supplies on a buddy's build."
+		""
+		"&eFlight is tourism&r — not required for any recipe in the pack."
+	]
+	quest.8F01D00000000019.quest_subtitle: "Step 9 — friend server joyride"
+	quest.8F01D00000000019.title: "Co-op Sky Tour"
+	quest.8F01D0000000001A.quest_desc: [
+		"&aAeronautics wing complete!&r"
+		""
+		"Gyro bearing + levitite + claimed chunks = comfortable co-op mobility."
+		""
+		"Return to ground factories anytime — the nuclear grid still does the real work."
+		""
+		"Reward: &faeronautics:aviators_goggles&r for the pilot who logs the most hours."
+	]
+	quest.8F01D0000000001A.quest_subtitle: "Capstone — optional aviator"
+	quest.8F01D0000000001A.title: "Aeronautics Capstone"
+	task.8F01A00000000100.title: "Read the petrochem briefing"
+	task.8F01A00000000102.title: "I found an oil deposit to stake"
+	task.8F01A00000000116.title: "Petrochem wing complete — coke, plastics, or roads"
+	task.8F01B00000000100.title: "Read the electronics briefing"
+	task.8F01B00000000107.title: "I understand billet → energiser (two-step)"
+	task.8F01B00000000118.title: "Nuclear reactor multiblock is assembled"
+	task.8F01B00000000119.title: "Grid Online — reactor producing FE"
+	task.8F01B0000000011A.title: "I'll explore optional petrochem (#10) and flight (#14)"
+	task.8F01B0000000011B.title: "I'll explore optional architecture stones (#12)"
+	task.8F01C00000000100.title: "Read the architecture briefing"
+	task.8F01C00000000102.title: "I checked kubejs:building_stones recipes in JEI"
+	task.8F01C00000000115.title: "Megabase roads + facades are underway"
+	task.8F01C00000000116.title: "Architecture wing complete — megabase ready"
+	task.8F01D00000000100.title: "Read the aeronautics briefing (optional flight)"
+	task.8F01D00000000103.title: "I claimed hangar chunks with FTB Chunks"
+	task.8F01D00000000106.title: "Shakedown flight successful"
+	task.8F01D00000000107.title: "Landing pad is paved"
+	task.8F01D00000000108.title: "Co-op hangar chest stocked"
+	task.8F01D00000000109.title: "We flew a co-op sky tour"
+	task.8F01D0000000010A.title: "Aeronautics wing complete — optional aviator"
+}
