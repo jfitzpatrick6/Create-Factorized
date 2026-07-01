@@ -15,6 +15,21 @@ Recipe gates, custom items, and pack tweaks live here. **FTB Quests do not.**
 
 Do not put quest SNBT under `kubejs/data/` — FTB Quests only reads `config/ftbquests/`.
 
+## Processing lines (epic #2)
+
+| Script | Issue | Role |
+|--------|-------|------|
+| `ore_processing.js` + `*_modded.js` + `*_special.js` + `*_cleanup.js` | #1 | 2×/3×/5× crush/wash/mix; byproducts |
+| `unification.js` | — | Canonical metals, food, tags |
+| `petrochem.js` | #3 | Distillation tweaks, coke, asphalt casting |
+| `electronics.js` | #4 | CNA coils, energiser billets, reactor SA |
+| `explosives.js` | #5 | Gunpowder, packed powder, CBC shell SA |
+| `gunsmithing.js` | #11 | CGS steel bypass removal, propellant, weapon gates |
+| `food_compat.js` | #6 | FD Extended fixes, factory meals, lunchbox |
+| `building_stones.js` | #9 | Heated/superheated stone synthesis |
+
+Reload check: `logs/kubejs/server.log` should report **0 errors** after `/reload`.
+
 ## Layout
 
 - `server_scripts/` — recipes, removals, sequenced assembly (petrochem, electronics, building stones, munitions, food)

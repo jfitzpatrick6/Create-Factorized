@@ -231,6 +231,7 @@ Guns and cannons are **factory products and co-op toys**:
 
 | # | Topic | Priority |
 |---|-------|----------|
+| 2 | **Epic: processing line progression** | **Complete ✓** |
 | 1 | Ore processing | Core ✓ |
 | 3 | Petrochem | Core ✓ |
 | 4 | Electronics | Core ✓ |
@@ -259,3 +260,4 @@ Guns and cannons are **factory products and co-op toys**:
 | 2026-07-01 | Issue #11 CGS gunsmithing integration (`gunsmithing.js`) |
 | 2026-07-01 | Issues #7/#8/#10/#14 FTB Quests chapters (first pass); `docs/QUEST_REFINEMENT_PLAN.md` |
 | 2026-07-01 | Quest refinement Phase 1 — deps, cross-links, chapter order |
+| 2026-07-01 | Epic #2 complete — all four processing lines + quest chapters; byproduct map in README |

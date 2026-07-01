@@ -8,6 +8,34 @@ Private modpack managed from Modrinth App.
 - `kubejs/` — recipe/tag unification scripts
 - `config/` — mod configuration
 - `defaultconfigs/`, `datapacks/`, `resourcepacks/`, `shaderpacks/`
+- `docs/PACK_PHILOSOPHY.md` — design doc and issue roadmap ([epic #2](https://github.com/jfitzpatrick6/neoforge-1.21.1-modpack/issues/2))
+
+## Factory processing lines (epic #2)
+
+Unlock order and KubeJS scripts:
+
+| Line | Script(s) | Quest chapter | Feeds |
+|------|-----------|---------------|-------|
+| Ore metallurgy | `ore_processing*.js` | — | 2×/3×/5× metals, flux, byproducts |
+| Petrochem / power | `petrochem.js` | `petrochem_factory.snbt` | Diesel, plastic, coke, asphalt |
+| Electronics / CNA | `electronics.js` | `electronics_factory.snbt` | Coils, energising, **nuclear capstone** |
+| Explosives / munitions | `explosives.js`, `gunsmithing.js` | `munitions_factory.snbt` | Sulfur/niter shells, CGS ammo |
+| Food / nutrition | `food_compat.js` | `factory_kitchen.snbt` | Nourished factory meals |
+| Building stones | `building_stones.js` | `architecture_factory.snbt` | Decoration sink (optional) |
+
+**Cross-line byproduct loops** (ore washing → downstream):
+
+```
+Iron wash   → redstone        → CNA energiser billets
+Zinc wash   → gunpowder       → munitions / CGS
+Lead wash   → sulfur_dust     → propellant, rubber, petrochem
+Nickel wash → sulfur_dust     → propellant
+Gold 5×     → ingot flood     → energising, CBC plates
+Lithium     → cooling fluid   → petrochem + diamond billet
+Coke / heavy oil coking → coal_coke_dust → propellant binder
+```
+
+Quest book chapters are optional guides — they never gate recipes. See `docs/PACK_PHILOSOPHY.md` for balance principles.
 
 ## Shader packs
 
