@@ -20,10 +20,6 @@ ServerEvents.recipes(event => {
   // --- Remove sulfur/niter bypass routes ------------------------------------
 
   event.remove({ id: 'minecraft:gunpowder' })
-  event.remove({ id: 'cgs:mixing/niter_guano' })
-  event.remove({ id: 'cgs:mixing/niter_rot' })
-  event.remove({ id: 'cgs:mixing/steel_ingot' })
-
   event.remove({ id: 'createbigcannons:compacting/packed_gunpowder' })
   event.remove({ id: 'createbigcannons:mixing/congealed_nitro' })
 
@@ -154,15 +150,4 @@ ServerEvents.recipes(event => {
     .transitionalItem('minecraft:iron_ingot')
     .id('kubejs:explosives/sequenced_assembly/shrapnel_shell')
 
-  // --- CGS ammo: bulk propellant batch --------------------------------------
-
-  event.recipes.create.mixing(Item.of('minecraft:gunpowder', 6), [
-    '3x tfmg:sulfur_dust',
-    '3x tfmg:nitrate_dust',
-    'tfmg:coal_coke_dust',
-    Fluid.of('minecraft:water', 500)
-  ])
-    .heated()
-    .processingTime(400)
-    .id('kubejs:explosives/mixing/cgs_propellant_batch')
 })

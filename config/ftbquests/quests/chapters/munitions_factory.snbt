@@ -270,7 +270,7 @@
 				"Craft manually or run the &esequenced assembly&r paper cartridge line:"
 				"&7paper → deploy gunpowder → deploy lead nugget"
 				""
-				"Bulk propellant: &fkubejs:explosives/mixing/cgs_propellant_batch&r for large ammo plants."
+				"Brass ammo plants use &fkubejs:factory_propellant&r — sulfur + nitrate + coke dust, not zinc gunpowder alone."
 			]
 			icon: "cgs:paper_cartridge"
 			id: "7F00M00000000019"
@@ -466,6 +466,194 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["7F00M00000000019"]
+			description: [
+				"Brass-cased ammunition needs &efactory propellant&r — the pack's gated smokeless powder."
+				""
+				"&eHeated mixer:&r"
+				"&72×&r sulfur + &72×&r nitrate + coke dust + water → &a4 factory propellant"
+				""
+				"Revolver, gatling, and shotgun &esequenced assembly&r blank lines deploy this item instead of raw gunpowder."
+			]
+			icon: "kubejs:factory_propellant"
+			id: "7F00M00000000023"
+			rewards: [{
+				count: 4
+				id: "7F00M00000000212"
+				item: "tfmg:coal_coke_dust"
+				type: "item"
+			}]
+			subtitle: "Tier 2 — brass ammo chemistry"
+			tasks: [{
+				count: 8L
+				id: "7F00M00000000114"
+				item: "kubejs:factory_propellant"
+				type: "item"
+			}]
+			title: "Factory Propellant"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F00M00000000023"]
+			description: [
+				"Press brass sheet with revolver press forms, deploy factory propellant, then deploy lead nuggets."
+				""
+				"&7Blank line → &fcgs:round_revolver_blank&7 → &fcgs:round_revolver"
+				""
+				"This is your first full &aCreate SA ammo factory&r — scale it beside the shell line."
+			]
+			icon: "cgs:round_revolver"
+			id: "7F00M00000000024"
+			rewards: [{
+				count: 16
+				id: "7F00M00000000213"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			subtitle: "Tier 2 — revolver rounds"
+			tasks: [{
+				count: 16L
+				id: "7F00M00000000115"
+				item: "cgs:round_revolver"
+				type: "item"
+			}]
+			title: "Revolver Round Plant"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F00M00000000024"]
+			description: [
+				"Gate the revolver on &eTFMG steel mechanisms&r — not parallel CGS steel."
+				""
+				"Mechanical crafter pattern uses:"
+				"&7• Steel mechanism (replaces loose steel ingot)"
+				"&7• Brass + steel plates + wood stock"
+				""
+				"Viable after lead 3× washing and brass pressing."
+			]
+			icon: "cgs:revolver"
+			id: "7F00M00000000025"
+			rewards: [{
+				count: 4
+				id: "7F00M00000000214"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			subtitle: "Tier 2 — first firearm"
+			tasks: [{
+				id: "7F00M00000000116"
+				item: "cgs:revolver"
+				type: "item"
+			}]
+			title: "Steel-Mechanism Revolver"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F00M00000000024"]
+			description: [
+				"Piercing rounds deploy &dovercharged iron&r from the electronics line instead of steel nuggets."
+				""
+				"Premium ammo tier — pairs CNA energising with your brass blank plant."
+			]
+			icon: "cgs:round_revolver_piercing"
+			id: "7F00M00000000026"
+			rewards: [{
+				count: 4
+				id: "7F00M00000000215"
+				item: "create_new_age:overcharged_iron"
+				type: "item"
+			}]
+			subtitle: "Tier 3 — electronics ammo"
+			tasks: [{
+				count: 8L
+				id: "7F00M00000000117"
+				item: "cgs:round_revolver_piercing"
+				type: "item"
+			}]
+			title: "Piercing Ammunition"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7F00M00000000018"]
+			description: [
+				"Incendiary shotgun shells swap blaze powder for a &fgasoline bucket&r — petrochem integration."
+				""
+				"Run the shotgun blank line, then deploy gasoline on the incendiary assembly step."
+			]
+			icon: "cgs:round_shotgun_incendiary"
+			id: "7F00M00000000027"
+			rewards: [{
+				id: "7F00M00000000216"
+				item: "tfmg:gasoline_bucket"
+				type: "item"
+			}]
+			subtitle: "Tier 3 — petrochem ammo"
+			tasks: [{
+				count: 8L
+				id: "7F00M00000000118"
+				item: "cgs:round_shotgun_incendiary"
+				type: "item"
+			}]
+			title: "Incendiary Shotgun Rounds"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F00M00000000024"]
+			description: [
+				"The &enailgun&r gates on &fkubejs:control_unit&r — same item that unlocks deployers and smart pipes."
+				""
+				"Pneumatic factory tool: copper backtank + fluid valves + control unit + brass frame."
+			]
+			icon: "cgs:nailgun"
+			id: "7F00M00000000028"
+			rewards: [{
+				count: 4
+				id: "7F00M00000000217"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			subtitle: "Tier 3 — electronics weapon"
+			tasks: [{
+				id: "7F00M00000000119"
+				item: "cgs:nailgun"
+				type: "item"
+			}]
+			title: "Control-Unit Nailgun"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F00M00000000025", "7F00M00000000026"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The &egatling&r requires &ftfmg:steel_mechanism&r in the mechanical crafter — mid/late steel age."
+				""
+				"Gatling drum adds &fcontrol unit&r + &fcopper spool&r for sustained fire factory theming."
+			]
+			icon: "cgs:gatling"
+			id: "7F00M00000000029"
+			rewards: [{
+				count: 8
+				id: "7F00M00000000218"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			subtitle: "Tier 3 — heavy personal weapon"
+			tasks: [{
+				id: "7F00M0000000011A"
+				item: "cgs:gatling"
+				type: "item"
+			}]
+			title: "Gatling Battery"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
 			dependencies: ["7F00M0000000001D", "7F00M0000000001E", "7F00M0000000001F"]
 			dependency_requirement: "one_completed"
 			description: [
@@ -518,15 +706,16 @@
 				type: "checkmark"
 			}]
 			title: "Enchantment Industry (Optional)"
-			x: 2.0d
-			y: 4.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["7F00M00000000020", "7F00M00000000014"]
+			dependencies: ["7F00M00000000020", "7F00M00000000014", "7F00M00000000025"]
+			dependency_requirement: "all_completed"
 			description: [
 				"&aMunitions factory online!&r You built the optional security wing and a full propellant → shell pipeline."
 				""
-				"&7Sulfur/nitrate wash → gunpowder → packed propellant → SA shells → cannon breech"
+				"&7Sulfur/nitrate → propellant → CGS brass ammo + CBC shells → cannon breech"
 				""
 				"Use it to offload excess steel and lead from your 3× lines, decorate the megabase with artillery, and run co-op clearance sessions."
 				""

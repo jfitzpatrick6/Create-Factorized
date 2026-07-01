@@ -17,6 +17,8 @@ RecipeViewerEvents.removeEntries('item', event => {
     'cgs:raw_lead',
     'cgs:sulfur',
     'cgs:niter',
+    'cgs:charcoal_dust',
+    'cgs:sulfur_ore',
     'farmersdelight:wheat_dough',
     'sophisticatedcore:xp_bucket',
     'moredelight:bread_slice',

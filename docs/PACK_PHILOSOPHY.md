@@ -241,7 +241,7 @@ Guns and cannons are **factory products and co-op toys**:
 | 6 | Food / Nourished + **Factory Canteen** quests | Medium ✓ |
 | 7 | FTB Quests — petrochem | Medium |
 | 13 | Infernal removal + PvE model | Done (design) |
-| 11 | CGS integration | Low |
+| 11 | CGS integration | Low ✓ |
 | 12 | FTB Quests — munitions factory | Low ✓ |
 | 5 | CBC explosives | Low ✓ |
 
@@ -256,3 +256,4 @@ Guns and cannons are **factory products and co-op toys**:
 | 2026-06-29 | CNA reactor = official endgame; Industrial ecology PvE model; Infernal config removed; aero chapter #14 |
 | 2026-07-01 | Issue #5 CBC explosives pipeline (`explosives.js`) |
 | 2026-07-01 | Issue #12 Munitions Factory FTB Quests chapter |
+| 2026-07-01 | Issue #11 CGS gunsmithing integration (`gunsmithing.js`) |
