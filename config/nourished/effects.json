@@ -76,5 +76,31 @@
     "threshold_max": 1.0,
     "ambient": true,
     "show_particles": false
+  },
+  {
+    "id": "protein_bonus_haste",
+    "effect": "minecraft:haste",
+    "nutrient": "proteins",
+    "trigger": "above",
+    "threshold": 0.75,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
+  },
+  {
+    "id": "grains_bonus_speed",
+    "effect": "minecraft:speed",
+    "nutrient": "grains",
+    "trigger": "above",
+    "threshold": 0.75,
+    "amplifier": 0,
+    "duration_ticks": 140,
+    "enabled": true,
+    "threshold_max": 1.0,
+    "ambient": true,
+    "show_particles": false
   }
 ]

@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "item": "kubejs:ore_worker_stew",
+    "nutrients": {
+      "proteins": 0.55,
+      "vegetables": 0.3,
+      "grains": 0.15
+    },
+    "calories": 85,
+    "enabled": true
+  },
+  {
+    "item": "kubejs:hearty_broth",
+    "nutrients": {
+      "proteins": 0.35,
+      "vegetables": 0.45,
+      "grains": 0.2
+    },
+    "calories": 70,
+    "enabled": true
+  },
+  {
+    "item": "kubejs:vein_scout_snack",
+    "nutrients": {
+      "grains": 0.45,
+      "fruits": 0.3,
+      "proteins": 0.25
+    },
+    "calories": 55,
+    "enabled": true
+  },
+  {
+    "item": "kubejs:aged_cheese_slice",
+    "nutrients": {
+      "dairy": 0.7,
+      "proteins": 0.2,
+      "grains": 0.1
+    },
+    "calories": 45,
+    "enabled": true
+  },
+  {
+    "item": "kubejs:luxury_chocolate_bar",
+    "nutrients": {
+      "dairy": 0.35,
+      "grains": 0.35,
+      "fruits": 0.3
+    },
+    "calories": 65,
+    "enabled": true
+  },
+  {
+    "item": "kubejs:factory_lunchbox",
+    "nutrients": {
+      "proteins": 0.25,
+      "grains": 0.3,
+      "dairy": 0.25,
+      "vegetables": 0.2
+    },
+    "calories": 95,
+    "enabled": true
+  }
+]

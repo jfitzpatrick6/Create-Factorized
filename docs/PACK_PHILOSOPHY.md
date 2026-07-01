@@ -78,7 +78,7 @@ Lithium    → cooling fluid → petrochem + diamond billet (#4)
 
 ### 4. Create-automated discovery
 
-Progression visible in **JEI/EMI**. FTB Quests (#7, #8, #10, #12, #14) guide non-technical players — **never gate** recipes or power.
+Progression visible in **JEI/EMI**. FTB Quests (#6 canteen, #7, #8, #10, #12, #14) guide non-technical players — **never gate** recipes or power.
 
 ### 5. TFMG-primary industry
 
@@ -238,7 +238,7 @@ Guns and cannons are **factory products and co-op toys**:
 | 9 | Building stone automation | High |
 | 10 | FTB Quests — architecture | Medium |
 | 14 | FTB Quests — aeronautics | Medium |
-| 6 | Food / Nourished | Medium |
+| 6 | Food / Nourished + **Factory Canteen** quests | Medium ✓ |
 | 7 | FTB Quests — petrochem | Medium |
 | 13 | Infernal removal + PvE model | Done (design) |
 | 11 | CGS integration | Low |

@@ -1,0 +1,11 @@
+{
+	chapter_groups: [
+		{
+			id: "7F00D00000000002"
+			title: "Factory Support"
+			icon: {
+				id: "create:wrench"
+			}
+		}
+	]
+}
