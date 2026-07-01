@@ -44,7 +44,7 @@ key_key.mechtrowel.restriction_modifier:key.keyboard.unknown
 key_key.sophisticatedcore.sort:key.mouse.middle
 key_key.sophisticatedcore.transfer_to_storage:key.keyboard.left.bracket
 key_key.sophisticatedcore.transfer_to_inventory:key.keyboard.right.bracket
-key_key.ntgl.reload:key.keyboard.unknown
+key_key.ntgl.reload:key.keyboard.r
 key_key.ntgl.unload:key.keyboard.unknown
 key_key.ntgl.attachments:key.keyboard.unknown
 key_key.ntgl.inspect:key.keyboard.unknown
@@ -142,7 +142,7 @@ key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.previousPage:key.keyboard.unknown
 key_key.jei.nextPage:key.keyboard.unknown
 key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown
-key_key.jei.bookmark:key.keyboard.unknown
+key_key.jei.bookmark:key.keyboard.a
 key_key.jei.showRecipe:key.keyboard.r
 key_key.jei.showRecipe2:key.mouse.left
 key_key.jei.showUses:key.keyboard.u
@@ -177,7 +177,7 @@ key_key.coedeposits.toggle_overlay:key.keyboard.unknown
 key_key.coedeposits.share_deposit:key.keyboard.unknown
 key_key.easy_villagers.pick_up:key.keyboard.unknown
 key_key.easy_villagers.cycle_trades:key.keyboard.unknown
-key_key.ponder.ponder:key.keyboard.f7
+key_key.ponder.ponder:key.keyboard.w
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_create.keyinfo.rotate_menu:key.keyboard.unknown

@@ -21,7 +21,9 @@ Highlights:
 
 | Key | Action |
 |-----|--------|
-| `R` | JEI — show recipe |
+| `A` | Strafe left · JEI bookmark (different contexts) |
+| `W` | Walk forward · Create Ponder (different contexts) |
+| `R` | JEI show recipe · NTGL reload in gun menu (different contexts) |
 | `U` | JEI — show uses |
 | `K` | Iris — toggle shaders |
 | `O` | Iris — shader pack menu |
@@ -31,9 +33,8 @@ Highlights:
 | `'` | Mechtrowel — toggle build mode |
 | `.` | Mechtrowel — toggle replace |
 | `B` | Sophisticated Backpacks — open backpack |
-| `F7` | Create Ponder |
 
-Optional combat/villager/vehicle keys are unbound (`unknown`) to avoid stealing factory hotkeys.
+Some keys intentionally overlap vanilla movement or UI binds where the actions happen in different screens. Optional villager/vehicle keys stay unbound to avoid stealing factory hotkeys.
 
 ## Not tracked
 
