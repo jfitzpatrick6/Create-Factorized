@@ -91,7 +91,7 @@ Boots the server, waits for `Done`, then stops the process. Exit 0 = clean start
 | Setting | File | Value |
 |---------|------|-------|
 | Chunk unclaim idle | `config/ftbchunks-world.snbt` | 30 days |
-| PvP in claims | `config/ftbchunks-world.snbt` | `never` |
+| PvP | `config/ftbchunks-world.snbt` | `always` (friends server) |
 | Infinite oil | `config/tfmg-common.toml` | `infiniteDeposits = true` |
 
 Override per-world in `world/serverconfig/` after first launch if needed.
