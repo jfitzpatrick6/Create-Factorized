@@ -175,7 +175,7 @@ Guns and cannons are **factory products and co-op toys**:
 
 | Chapter | Issue | Role |
 |---------|-------|------|
-| Ore processing | (TBD) | 2×/3×/5× |
+| Ore processing | `ore_processing_factory.snbt` | 2×/3×/5× + CoE drilling |
 | Petrochem / power | #7 | Oil → diesel → plastic |
 | Electronics / **nuclear** | #8 | CNA + **reactor capstone** |
 | Architecture | #10 | Stone + decoration |

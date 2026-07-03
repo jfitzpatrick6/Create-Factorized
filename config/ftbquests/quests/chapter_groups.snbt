@@ -1,6 +1,10 @@
 {
 	chapter_groups: [
 		{
+			icon: { id: "create:crushed_raw_iron" }
+			id: "8F01E00000000002"
+		}
+		{
 			icon: { id: "create:wrench" }
 			id: "7F00D00000000002"
 		}

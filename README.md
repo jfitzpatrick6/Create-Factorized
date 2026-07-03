@@ -16,7 +16,7 @@ Unlock order and KubeJS scripts:
 
 | Line | Script(s) | Quest chapter | Feeds |
 |------|-----------|---------------|-------|
-| Ore metallurgy | `ore_processing*.js` | — | 2×/3×/5× metals, flux, byproducts |
+| Ore metallurgy | `ore_processing*.js` | `ore_processing_factory.snbt` | 2×/3×/5× metals, flux, byproducts |
 | Petrochem / power | `petrochem.js` | `petrochem_factory.snbt` | Diesel, plastic, coke, asphalt |
 | Electronics / CNA | `electronics.js` | `electronics_factory.snbt` | Coils, energising, **nuclear capstone** |
 | Explosives / munitions | `explosives.js`, `gunsmithing.js` | `munitions_factory.snbt` | Sulfur/niter shells, CGS ammo |

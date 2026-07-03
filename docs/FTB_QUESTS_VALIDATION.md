@@ -23,6 +23,7 @@ Open the quest book and verify each chapter loads without pink/black missing ico
 
 | Order | Chapter file | Welcome quest | Capstone |
 |-------|--------------|---------------|----------|
+| -1 | `ore_processing_factory.snbt` | Welcome — Ore Wing | Ore Wing Capstone |
 | 0 | `factory_kitchen.snbt` | Welcome — Canteen | Canteen Capstone |
 | 1 | `petrochem_factory.snbt` | Welcome — Petrochem Wing | Petrochem Capstone |
 | 2 | `electronics_factory.snbt` | Welcome — Electronics Wing | Grid Online |
@@ -32,6 +33,8 @@ Open the quest book and verify each chapter loads without pink/black missing ico
 
 ### Quick spot checks
 
+- [ ] Ore chapter welcome explains 2×/3×/5× tiers, flux, and byproduct loops
+- [ ] Ore capstone opens after 5× iron plus any one advanced branch (lead, nickel, drilling, or specialty ores)
 - [ ] Petrochem asphalt chain (5 steps) shows expanded copy with casting basin + hopper
 - [ ] Electronics energising quests mention billet → energiser and FE costs
 - [ ] Architecture Palette Master shows 10 item subtasks
@@ -42,6 +45,7 @@ Open the quest book and verify each chapter loads without pink/black missing ico
 
 On first playthrough, pin:
 
+- **Ore** — `Welcome — Ore Wing`
 - **Petrochem** — `Welcome — Petrochem Wing`
 - **Electronics** — `Welcome — Electronics Wing` and later `Grid Online`
 
