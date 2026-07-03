@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
   ], 'minecraft:iron_ingot', [
     event.recipes.create.deploying('minecraft:iron_ingot', [
       'minecraft:iron_ingot',
-      '4x tfmg:lead_nugget'
+      'tfmg:lead_nugget'
     ]),
     event.recipes.create.deploying('minecraft:iron_ingot', [
       'minecraft:iron_ingot',

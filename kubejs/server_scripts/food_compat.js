@@ -22,7 +22,7 @@ var FDE_MIXING_FIXES = [
   {
     id: 'battered_mushroom',
     output: 'farmersdelight_extended:battered_mushroom',
-    inputs: ['#c:flours/wheat', '#c:mushrooms', Fluid.of('minecraft:water', 250)]
+    inputs: ['#c:flours/wheat', 'minecraft:red_mushroom', Fluid.of('minecraft:water', 250)]
   },
   {
     id: 'brownie_batter',

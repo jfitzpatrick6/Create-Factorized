@@ -23,11 +23,6 @@ var CANONICAL = {
   experienceBucket: 'create_enchantment_industry:experience_bucket'
 }
 
-var EXPERIENCE_FLUID_VARIANTS = [
-  'sophisticatedcore:xp_still',
-  'sophisticatedcore:xp_flow'
-]
-
 var EXPERIENCE_BUCKET_VARIANTS = [
   'sophisticatedcore:xp_bucket'
 ]
@@ -162,7 +157,6 @@ ServerEvents.tags('fluid', event => {
     C.experienceFluid,
     'create_enchantment_industry:flowing_experience'
   ])
-  stripFromTag(event, 'c:experience', EXPERIENCE_FLUID_VARIANTS)
 })
 
 ServerEvents.recipes(event => {

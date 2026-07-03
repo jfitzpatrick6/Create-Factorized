@@ -36,14 +36,3 @@ RecipeViewerEvents.removeEntries('item', event => {
     event.remove(hidden[i])
   }
 })
-
-RecipeViewerEvents.removeEntries('fluid', event => {
-  var hiddenFluids = [
-    'sophisticatedcore:xp_still',
-    'sophisticatedcore:xp_flow'
-  ]
-
-  for (var j = 0; j < hiddenFluids.length; j++) {
-    event.remove(hiddenFluids[j])
-  }
-})
