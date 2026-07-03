@@ -24,16 +24,18 @@ Open the quest book and verify each chapter loads without pink/black missing ico
 | Order | Chapter file | Welcome quest | Capstone |
 |-------|--------------|---------------|----------|
 | -1 | `ore_processing_factory.snbt` | Welcome — Ore Wing | Ore Wing Capstone |
-| 0 | `factory_kitchen.snbt` | Welcome — Canteen | Canteen Capstone |
-| 1 | `petrochem_factory.snbt` | Welcome — Petrochem Wing | Petrochem Capstone |
-| 2 | `electronics_factory.snbt` | Welcome — Electronics Wing | Grid Online |
-| 3 | `architecture_factory.snbt` | Welcome — Architecture Wing | Architecture Capstone |
-| 4 | `munitions_factory.snbt` | Welcome — Security Wing | Munitions Capstone |
-| 5 | `aeronautics_factory.snbt` | Welcome — Aeronautics Wing | Aeronautics Capstone |
+| 0 | `storage_factory.snbt` | Welcome — Storage Wing | Storage Wing Capstone |
+| 1 | `factory_kitchen.snbt` | Welcome — Canteen | Canteen Capstone |
+| 2 | `petrochem_factory.snbt` | Welcome — Petrochem Wing | Petrochem Capstone |
+| 3 | `electronics_factory.snbt` | Welcome — Electronics Wing | Grid Online |
+| 4 | `architecture_factory.snbt` | Welcome — Architecture Wing | Architecture Capstone |
+| 5 | `munitions_factory.snbt` | Welcome — Security Wing | Munitions Capstone |
+| 6 | `aeronautics_factory.snbt` | Welcome — Aeronautics Wing | Aeronautics Capstone |
 
 ### Quick spot checks
 
 - [ ] Ore chapter welcome explains 2×/3×/5× tiers, flux, and byproduct loops
+- [ ] Storage chapter covers Sophisticated compacting, Tom's terminal, and Create vault buffers
 - [ ] Ore capstone opens after 5× iron plus any one advanced branch (lead, nickel, drilling, or specialty ores)
 - [ ] Petrochem asphalt chain (5 steps) shows expanded copy with casting basin + hopper
 - [ ] Electronics energising quests mention billet → energiser and FE costs
@@ -46,6 +48,7 @@ Open the quest book and verify each chapter loads without pink/black missing ico
 On first playthrough, pin:
 
 - **Ore** — `Welcome — Ore Wing`
+- **Storage** — `Welcome — Storage Wing`
 - **Petrochem** — `Welcome — Petrochem Wing`
 - **Electronics** — `Welcome — Electronics Wing` and later `Grid Online`
 

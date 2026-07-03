@@ -7,7 +7,7 @@
 		id: "kubejs:factory_lunchbox"
 	}
 	id: "7F00D00000000001"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

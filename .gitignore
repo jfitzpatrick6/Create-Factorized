@@ -1,3 +1,21 @@
+# Dedicated server runtime (see docs/SERVER_SETUP.md)
+server/libraries/
+server/world/
+server/logs/
+server/crash-reports/
+server/eula.txt
+server/server.properties
+server/installer.log
+server/*.jar
+server/mods/
+server/config/
+server/kubejs/
+server/defaultconfigs/
+server/ops.json
+server/whitelist.json
+server/banned-*.json
+!server/server.properties.example
+
 # Runtime / generated
 .mixin.out/
 .sable/

@@ -17,6 +17,7 @@ Unlock order and KubeJS scripts:
 | Line | Script(s) | Quest chapter | Feeds |
 |------|-----------|---------------|-------|
 | Ore metallurgy | `ore_processing*.js` | `ore_processing_factory.snbt` | 2×/3×/5× metals, flux, byproducts |
+| Storage / logistics | — | `storage_factory.snbt` | Sophisticated Storage, Tom's, Create buffers, backpacks |
 | Petrochem / power | `petrochem.js` | `petrochem_factory.snbt` | Diesel, plastic, coke, asphalt |
 | Electronics / CNA | `electronics.js` | `electronics_factory.snbt` | Coils, energising, **nuclear capstone** |
 | Explosives / munitions | `explosives.js`, `gunsmithing.js` | `munitions_factory.snbt` | Sulfur/niter shells, CGS ammo |
@@ -36,6 +37,10 @@ Coke / heavy oil coking → coal_coke_dust → propellant binder
 ```
 
 Quest book chapters are optional guides — they never gate recipes. See `docs/PACK_PHILOSOPHY.md` for balance principles.
+
+## Dedicated server
+
+See [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md) for NeoForge 21.1.234 install, client-only mod filtering, smoke test, and friend onboarding (Modrinth export or git clone).
 
 ## Shader packs
 

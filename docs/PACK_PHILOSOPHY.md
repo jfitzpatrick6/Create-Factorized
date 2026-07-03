@@ -112,6 +112,7 @@ Early          Mid                 Late mid              Endgame milestone
 Andesite       Steel + brass       Diesel + plastic      CNA reactor online
 Crushing       Distillation        Cooling / lithium     (then: endless build)
 2× metals      3× wash + drill     5× flux metals        Aeronautics QoL
+Storage tiers  Tom's terminal      Vault + fluid buffers Backpack logistics
 Cobble/wood    TFMG circuits       Electronics SA        Optional munitions
                Stone automation    Control units         Megabase polish
 ```
@@ -176,6 +177,7 @@ Guns and cannons are **factory products and co-op toys**:
 | Chapter | Issue | Role |
 |---------|-------|------|
 | Ore processing | `ore_processing_factory.snbt` | 2×/3×/5× + CoE drilling |
+| Storage / logistics | `storage_factory.snbt` | Sophisticated, Tom's, Create buffers, backpacks |
 | Petrochem / power | #7 | Oil → diesel → plastic |
 | Electronics / **nuclear** | #8 | CNA + **reactor capstone** |
 | Architecture | #10 | Stone + decoration |

@@ -1,0 +1,391 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: "square"
+	filename: "storage_factory"
+	group: "8F01F00000000002"
+	icon: {
+		id: "toms_storage:storage_terminal"
+	}
+	id: "8F01F00000000001"
+	order_index: 0
+	quest_links: [
+		{
+			id: "8F01F00000000030"
+			linked_quest: "8F01E00000000010"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "8F01F00000000031"
+			linked_quest: "8F01A00000000010"
+			x: 12.0d
+			y: 2.0d
+		}
+	]
+	quests: [
+		{
+			id: "8F01F00000000010"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "8F01F00000000100"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8F01F00000000010"]
+			id: "8F01F00000000011"
+			rewards: [{
+				count: 4
+				id: "8F01F00000000200"
+				item: { count: 1, id: "minecraft:oak_planks" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000101"
+				item: { count: 1, id: "sophisticatedstorage:chest" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01F00000000011"]
+			id: "8F01F00000000012"
+			rewards: [{
+				count: 4
+				id: "8F01F00000000201"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000102"
+				item: { count: 1, id: "sophisticatedstorage:copper_chest" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01F00000000012"]
+			id: "8F01F00000000013"
+			rewards: [{
+				id: "8F01F00000000202"
+				item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000103"
+				item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01F00000000013"]
+			id: "8F01F00000000014"
+			rewards: [{
+				count: 4
+				id: "8F01F00000000203"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "8F01F00000000104"
+					item: { count: 1, id: "sophisticatedstorage:controller" }
+					type: "item"
+				}
+				{
+					id: "8F01F00000000105"
+					item: { count: 1, id: "sophisticatedstorage:oak_storage_connector" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01F00000000014"]
+			id: "8F01F00000000015"
+			rewards: [{
+				id: "8F01F00000000204"
+				item: { count: 1, id: "sophisticatedstorage:filter_upgrade" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000106"
+				item: { count: 1, id: "sophisticatedstorage:filter_upgrade" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["8F01F00000000015"]
+			id: "8F01F00000000016"
+			shape: "diamond"
+			rewards: [{
+				count: 8
+				id: "8F01F00000000205"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000107"
+				item: { count: 1, id: "sophisticatedstorage:compacting_upgrade" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["8F01F00000000014"]
+			id: "8F01F00000000017"
+			rewards: [{
+				count: 4
+				id: "8F01F00000000206"
+				item: { count: 1, id: "toms_storage:inventory_cable" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000108"
+				item: { count: 1, id: "toms_storage:inventory_connector" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01F00000000017"]
+			id: "8F01F00000000018"
+			rewards: [{
+				id: "8F01F00000000207"
+				item: { count: 1, id: "toms_storage:inventory_configurator" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000109"
+				item: { count: 1, id: "toms_storage:storage_terminal" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01F00000000018"]
+			id: "8F01F00000000019"
+			rewards: [{
+				count: 4
+				id: "8F01F00000000208"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "8F01F0000000010A"
+					item: { count: 1, id: "toms_storage:inventory_interface" }
+					type: "item"
+				}
+				{
+					id: "8F01F0000000010B"
+					item: { count: 1, id: "toms_storage:polymorphic_item_filter" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01F00000000019"]
+			id: "8F01F0000000001A"
+			rewards: [{
+				id: "8F01F00000000209"
+				item: { count: 1, id: "toms_storage:wireless_terminal" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F0000000010C"
+				item: { count: 1, id: "toms_storage:wireless_terminal" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01F00000000011"]
+			id: "8F01F0000000001B"
+			rewards: [{
+				count: 4
+				id: "8F01F0000000020A"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "8F01F0000000010D"
+				item: { count: 1, id: "create:item_vault" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01F0000000001B"]
+			id: "8F01F0000000001C"
+			rewards: [{
+				id: "8F01F0000000020B"
+				item: { count: 1, id: "minecraft:bucket" }
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "8F01F0000000010E"
+					item: { count: 1, id: "create:fluid_tank" }
+					type: "item"
+				}
+				{
+					id: "8F01F0000000010F"
+					item: { count: 1, id: "create:stockpile_switch" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01F0000000001C"]
+			id: "8F01F0000000001D"
+			rewards: [{
+				count: 4
+				id: "8F01F0000000020C"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "8F01F00000000110"
+					item: { count: 1, id: "create:smart_chute" }
+					type: "item"
+				}
+				{
+					id: "8F01F00000000111"
+					item: { count: 1, id: "create:brass_funnel" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01F00000000010"]
+			id: "8F01F0000000001E"
+			rewards: [{
+				count: 4
+				id: "8F01F0000000020D"
+				item: { count: 1, id: "minecraft:leather" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "8F01F00000000112"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01F0000000001E"]
+			id: "8F01F0000000001F"
+			rewards: [{
+				id: "8F01F0000000020E"
+				item: { count: 1, id: "sophisticatedbackpacks:pickup_upgrade" }
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "8F01F00000000113"
+					item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+					type: "item"
+				}
+				{
+					id: "8F01F00000000114"
+					item: { count: 1, id: "sophisticatedbackpacks:pickup_upgrade" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01F0000000001F"]
+			id: "8F01F00000000020"
+			rewards: [{
+				id: "8F01F0000000020F"
+				item: { count: 1, id: "sophisticatedbackpacks:crafting_upgrade" }
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "8F01F00000000115"
+					item: { count: 1, id: "sophisticatedbackpacks:deposit_upgrade" }
+					type: "item"
+				}
+				{
+					id: "8F01F00000000116"
+					item: { count: 1, id: "sophisticatedbackpacks:restock_upgrade" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01F00000000016"]
+			id: "8F01F00000000022"
+			optional: true
+			shape: "pentagon"
+			tasks: [{
+				id: "8F01F00000000117"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"8F01F00000000016"
+				"8F01F0000000001A"
+				"8F01F0000000001D"
+				"8F01F00000000020"
+			]
+			dependency_requirement: "one_completed"
+			id: "8F01F00000000026"
+			rewards: [
+				{
+					count: 8
+					id: "8F01F00000000210"
+					item: { count: 1, id: "create:experience_nugget" }
+					type: "item"
+				}
+				{
+					id: "8F01F00000000211"
+					item: { count: 1, id: "sophisticatedstorage:gold_chest" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "8F01F00000000118"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+	]
+}

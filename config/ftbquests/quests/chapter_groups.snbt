@@ -5,6 +5,10 @@
 			id: "8F01E00000000002"
 		}
 		{
+			icon: { id: "toms_storage:storage_terminal" }
+			id: "8F01F00000000002"
+		}
+		{
 			icon: { id: "create:wrench" }
 			id: "7F00D00000000002"
 		}

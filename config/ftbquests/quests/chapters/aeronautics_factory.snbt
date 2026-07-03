@@ -7,7 +7,7 @@
 		id: "aeronautics:aviators_goggles"
 	}
 	id: "8F01D00000000001"
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
