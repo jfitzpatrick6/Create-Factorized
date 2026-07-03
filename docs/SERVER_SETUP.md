@@ -107,13 +107,9 @@ Override per-world in `world/serverconfig/` after first launch if needed.
 3. Match NeoForge **21.1.234** when prompted.
 4. Direct connect: `<your-ip>:25565` (port-forward UDP+TCP 25565 on the host router).
 
-### Option B — Git clone
+### Option B — Git clone (recommended for this pack)
 
-```powershell
-git clone https://github.com/jfitzpatrick6/neoforge-1.21.1-modpack.git
-```
-
-Open the folder as a custom instance in Modrinth App and let it resolve NeoForge + Java 21.
+See [`CLIENT_SETUP.md`](CLIENT_SETUP.md). Friends clone into `%APPDATA%\ModrinthApp\profiles\NeoForge 1.21.1` and launch via **`Launch-Pack.bat`** so `git pull` runs before each play session.
 
 ### Default keybinds
 

@@ -38,9 +38,13 @@ Coke / heavy oil coking → coal_coke_dust → propellant binder
 
 Quest book chapters are optional guides — they never gate recipes. See `docs/PACK_PHILOSOPHY.md` for balance principles.
 
+## Friends — install & updates
+
+See [`docs/CLIENT_SETUP.md`](docs/CLIENT_SETUP.md). Clone the repo into the Modrinth profile folder, then use **`Launch-Pack.bat`** before each session — it `git pull`s the latest mods/config and opens Modrinth App.
+
 ## Dedicated server
 
-See [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md) for NeoForge 21.1.234 install, client-only mod filtering, smoke test, and friend onboarding (Modrinth export or git clone).
+See [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md) for NeoForge 21.1.234 install, client-only mod filtering, smoke test, and friend onboarding.
 
 ## Shader packs
 
