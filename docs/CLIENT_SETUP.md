@@ -1,41 +1,66 @@
 # Client setup — friends joining the pack
 
-## One-time install
+Pick **one launcher**. Prism is best if you want git pull every time you click Play.
 
-1. Install [Modrinth App](https://modrinth.com/app) and **Java 21** (Modrinth can install both).
-2. Install **Git for Windows** ([git-scm.com](https://git-scm.com/download/win)).
-3. Clone this repo **into** your Modrinth profile folder:
+---
+
+## Option A — Prism Launcher (recommended)
+
+[Prism Launcher](https://prismlauncher.org/) can run `git pull` **automatically** before Minecraft starts.
+
+### One-time setup
+
+1. Install **Prism Launcher**, **Git for Windows**, and ensure **Java 21** is available (Prism can download it).
+2. Clone the pack anywhere you like, e.g.:
+
+```powershell
+git clone https://github.com/jfitzpatrick6/neoforge-1.21.1-modpack.git "$env:USERPROFILE\Games\NeoForge-1.21.1"
+```
+
+3. In Prism → **Add Instance** → **Import from zip/folder** → select the cloned folder.
+4. Set the loader to **NeoForge 21.1.234** / Minecraft **1.21.1** if Prism asks (first launch may download missing libraries).
+5. Open the instance → **Edit** → **Settings** → **Custom commands** tab.
+6. **Pre-launch command:**
+
+```
+"%INST_DIR%\scripts\prism_prelaunch.cmd"
+```
+
+7. Save. Every **Launch** now runs `git pull` first; if the pack changed, restart is automatic on that same click.
+
+**Private repo:** ask Jake for GitHub access before cloning.
+
+### Why Prism over Modrinth App?
+
+| | Prism | Modrinth App |
+|---|-------|--------------|
+| Pre-launch `git pull` | Built-in | Not supported |
+| Instance folder = git repo | Yes | Awkward path under `%APPDATA%` |
+| Modrinth/Curse mod installs | Yes | Yes |
+
+---
+
+## Option B — Modrinth App
+
+1. Install [Modrinth App](https://modrinth.com/app) and **Java 21**.
+2. Install **Git for Windows**.
+3. Clone into the Modrinth profiles folder:
 
 ```powershell
 cd $env:APPDATA\ModrinthApp\profiles
 git clone https://github.com/jfitzpatrick6/neoforge-1.21.1-modpack.git "NeoForge 1.21.1"
 ```
 
-4. In Modrinth App → **Add instance** → point at the cloned `NeoForge 1.21.1` folder (or refresh if it already appears).
-5. Let Modrinth install **NeoForge 21.1.234** for Minecraft 1.21.1 on first launch.
+4. Modrinth → add/refresh the instance → first launch installs NeoForge **21.1.234**.
 
-**Private repo:** ask Jake for collaborator access, or use a read-only deploy token / SSH key before cloning.
+### Updating (Modrinth)
 
----
-
-## Updating when the pack changes
-
-Modrinth App does **not** auto-run `git pull` when you click Play. Use one of these:
-
-### Recommended — `Launch-Pack.bat`
-
-Double-click **`Launch-Pack.bat`** in the profile root (pin it to taskbar or desktop).
-
-It runs `git pull` then opens Modrinth App. Click **Play** as usual.
-
-### Manual
+Modrinth does **not** run `git pull` on Play. Use **`Launch-Pack.bat`** in the profile root (pull + opens Modrinth), or:
 
 ```powershell
 cd $env:APPDATA\ModrinthApp\profiles\"NeoForge 1.21.1"
 git pull
 ```
-
-Then launch from Modrinth App.
 
 ---
 

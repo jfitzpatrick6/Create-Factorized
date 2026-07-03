@@ -40,7 +40,7 @@ Quest book chapters are optional guides — they never gate recipes. See `docs/P
 
 ## Friends — install & updates
 
-See [`docs/CLIENT_SETUP.md`](docs/CLIENT_SETUP.md). Clone the repo into the Modrinth profile folder, then use **`Launch-Pack.bat`** before each session — it `git pull`s the latest mods/config and opens Modrinth App.
+See [`docs/CLIENT_SETUP.md`](docs/CLIENT_SETUP.md). **Prism Launcher** is recommended: set pre-launch to `scripts/prism_prelaunch.cmd` for automatic `git pull` on every Play. Modrinth App users can use **`Launch-Pack.bat`** instead.
 
 ## Dedicated server
 
