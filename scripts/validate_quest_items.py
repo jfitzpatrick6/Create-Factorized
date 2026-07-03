@@ -170,7 +170,14 @@ def main() -> int:
         return 1
 
     print("\nOK — all non-vanilla quest item IDs resolve in mods/ or kubejs startup.")
-    return 0
+
+    scripts_dir = Path(__file__).resolve().parent
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    from check_quest_lang import main as check_lang_main
+
+    print()
+    return check_lang_main()
 
 
 if __name__ == "__main__":

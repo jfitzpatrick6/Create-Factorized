@@ -2,14 +2,29 @@
 
 Run after editing quest SNBT, lang, or adding/removing mods.
 
+**Do not use the in-game FTB Quests editor** on this pack. Saving from the editor rewrites
+`config/ftbquests/quests/chapters/*.snbt` with new random quest IDs and empty item tasks.
+Titles and descriptions live in `lang/en_us.snbt` keyed by those IDs — the book will show
+**Unknown**, blank descriptions, and question-mark icons until you restore from git:
+
+```powershell
+git checkout HEAD -- config/ftbquests/
+```
+
+Then fully restart Minecraft (not just `/reload`) so the client does not re-save corrupted files on exit.
+
 ## 1. Offline (repo root)
 
 ```powershell
 python scripts/validate_quest_items.py
 ```
 
-Expect: `OK — all non-vanilla quest item IDs resolve in mods/ or kubejs startup.`  
+Expect:
+- `OK — all non-vanilla quest item IDs resolve in mods/ or kubejs startup.`
+- `OK — N quests have matching en_us lang entries; no editor corruption signals.`
+
 If items are missing, fix the SNBT task ID or add the item via KubeJS startup before shipping.
+If corruption is reported, restore `config/ftbquests/` from git before editing quests in the repo.
 
 ## 2. In-game reload
 
