@@ -4,7 +4,7 @@
 	filename: "aeronautics_factory"
 	group: "8F01D00000000002"
 	icon: {
-		id: "aeronautics:aviators_goggles"
+		id: "offroad:tire"
 	}
 	id: "8F01D00000000001"
 	order_index: 6
@@ -18,8 +18,202 @@
 				id: "8F01D00000000100"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["8F01D00000000010"]
+			id: "8F01D00000000020"
+			tasks: [{
+				id: "8F01D00000000120"
+				item: { count: 1, id: "simulated:physics_assembler" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8F01D00000000020"]
+			id: "8F01D00000000021"
+			tasks: [{
+				id: "8F01D00000000121"
+				item: { count: 1, id: "create:super_glue" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["8F01D00000000021"]
+			id: "8F01D00000000022"
+			tasks: [{
+				count: 2L
+				id: "8F01D00000000122"
+				item: { count: 1, id: "simulated:spring" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["8F01D00000000022"]
+			id: "8F01D00000000023"
+			tasks: [{
+				count: 2L
+				id: "8F01D00000000123"
+				item: { count: 1, id: "offroad:wheel_mount" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["8F01D00000000023"]
+			id: "8F01D00000000024"
+			tasks: [{
+				count: 2L
+				id: "8F01D00000000124"
+				item: { count: 1, id: "offroad:tire" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["8F01D00000000024"]
+			id: "8F01D00000000025"
+			tasks: [{
+				id: "8F01D00000000125"
+				item: { count: 1, id: "tfmg:regular_engine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["8F01D00000000025"]
+			id: "8F01D00000000026"
+			tasks: [{
+				id: "8F01D00000000126"
+				item: { count: 1, id: "simulated:analog_transmission" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["8F01D00000000026"]
+			id: "8F01D00000000027"
+			tasks: [{
+				id: "8F01D00000000127"
+				item: { count: 1, id: "simulated:steering_wheel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["8F01D00000000027"]
+			id: "8F01D00000000028"
+			tasks: [{
+				id: "8F01D00000000128"
+				item: { count: 1, id: "create:white_seat" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["8F01D00000000028"]
+			id: "8F01D00000000029"
+			shape: "diamond"
+			tasks: [{
+				id: "8F01D00000000129"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["8F01D00000000029"]
+			id: "8F01D0000000002D"
+			tasks: [{
+				id: "8F01D0000000012D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["8F01D0000000002D"]
+			id: "8F01D0000000002E"
+			rewards: [{
+				id: "8F01D0000000030A"
+				item: { count: 1, id: "offroad:tire" }
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "8F01D0000000012E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"8F01D00000000010"
+				"8F01D00000000023"
+			]
+			id: "8F01D00000000030"
+			tasks: [{
+				id: "8F01D00000000130"
+				item: { count: 1, id: "offroad:rockcutting_wheel" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["8F01D00000000030"]
+			id: "8F01D00000000031"
+			tasks: [{
+				id: "8F01D00000000131"
+				item: { count: 1, id: "offroad:borehead_bearing" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["8F01D00000000031"]
+			id: "8F01D00000000032"
+			shape: "diamond"
+			tasks: [{
+				id: "8F01D00000000132"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["8F01D00000000032"]
+			id: "8F01D00000000033"
+			rewards: [{
+				count: 4
+				id: "8F01D0000000030B"
+				item: { count: 1, id: "create:experience_nugget" }
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.1d
+			tasks: [{
+				id: "8F01D00000000133"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["8F01D00000000010"]
@@ -35,7 +229,7 @@
 				item: { count: 1, id: "create:brass_casing" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 10.0d
 			y: 2.0d
 		}
 		{
@@ -46,7 +240,7 @@
 				item: { count: 1, id: "create:hand_crank" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 12.0d
 			y: 2.0d
 		}
 		{
@@ -64,7 +258,7 @@
 				item: { count: 1, id: "aeronautics:end_stone_powder" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 13.0d
 			y: 2.0d
 		}
 		{
@@ -80,7 +274,7 @@
 				id: "8F01D00000000103"
 				type: "checkmark"
 			}]
-			x: 4.0d
+			x: 14.0d
 			y: 2.0d
 		}
 		{
@@ -97,7 +291,7 @@
 				item: { count: 1, id: "aeronautics:gyroscopic_propeller_bearing" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 12.0d
 			y: 4.0d
 		}
 		{
@@ -117,7 +311,7 @@
 				item: { count: 1, id: "aeronautics:levitite_blend_bucket" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 14.0d
 			y: 4.0d
 		}
 		{
@@ -135,7 +329,7 @@
 				id: "8F01D0000000010C"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 10.0d
 			y: 4.0d
 		}
 		{
@@ -146,7 +340,7 @@
 				id: "8F01D00000000106"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 16.0d
 			y: 4.0d
 		}
 		{
@@ -162,7 +356,7 @@
 				id: "8F01D00000000107"
 				type: "checkmark"
 			}]
-			x: 4.0d
+			x: 14.0d
 			y: 6.0d
 		}
 		{
@@ -178,7 +372,7 @@
 				id: "8F01D00000000108"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: 12.0d
 			y: 6.0d
 		}
 		{
@@ -188,7 +382,7 @@
 				id: "8F01D00000000109"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 10.0d
 			y: 6.0d
 		}
 		{
@@ -216,7 +410,7 @@
 				id: "8F01D0000000010A"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: 12.0d
 			y: 8.0d
 		}
 	]
