@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 
   // --- Factory propellant (sulfur + nitrate + coke required) ------------------
 
-  event.recipes.create.mixing(Item.of('kubejs:factory_propellant', 4), [
+  global.CreateRecipes.mixing(event, Item.of('kubejs:factory_propellant', 4), [
     '2x tfmg:sulfur_dust',
     '2x tfmg:nitrate_dust',
     'tfmg:coal_coke_dust',

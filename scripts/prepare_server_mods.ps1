@@ -21,7 +21,12 @@ $ClientOnlyPatterns = @(
     "Controlling-neoforge",
     "Searchables-neoforge",
     "defaultoptions-neoforge",
-    "ferritecore"
+    "ferritecore",
+    "DistantHorizons",
+    "lithium-neoforge",
+    "MouseTweaks-neoforge",
+    "SSRD-",
+    "kubejs-create"
 )
 
 function Test-ClientOnly([string]$Name) {
@@ -34,6 +39,15 @@ function Test-ClientOnly([string]$Name) {
 if (-not (Test-Path $ServerDir)) {
     Write-Error "Server directory not found: $ServerDir. Run the NeoForge installer first (see docs/SERVER_SETUP.md)."
     exit 1
+}
+
+$PatchScript = Join-Path $Root "scripts\patch_coe_kubejs_load_order.py"
+if (Test-Path $PatchScript) {
+    python $PatchScript
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Failed to patch createoreexcavation load order. See scripts/patch_coe_kubejs_load_order.py"
+        exit 1
+    }
 }
 
 New-Item -ItemType Directory -Force -Path $ModsDst | Out-Null

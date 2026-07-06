@@ -48,6 +48,7 @@ Copies `mods/` (minus client-only jars), `config/`, `kubejs/`, `defaultconfigs/`
 
 - Iris, Sodium, AppleSkin, Entity Culling, Controlling, Searchables
 - JEI Worldgen, Create JEI Compat, Default Options, FerriteCore
+- Distant Horizons, Lithium, Mouse Tweaks, SSRD (client render distance)
 
 **Kept on server:** JEI + fzzy_config (hard dependencies for JER/JEP/Immersive Paintings).
 
@@ -132,6 +133,7 @@ See [`CLIENT_SETUP.md`](CLIENT_SETUP.md). Friends clone into `%APPDATA%\Modrinth
 
 | Symptom | Fix |
 |---------|-----|
+| `ProcessingOutput already exists` (KubeJS crash) | Rerun `prepare_server_mods.ps1` — it patches COE 1.6.8's inverted KubeJS bytecode. Copy the patched `mods/createoreexcavation-1.21-1.6.8.jar` to the server (verify with `sha256sum` after pull). |
 | `Mod X requires jei` | Do **not** strip JEI from server — rerun `prepare_server_mods.ps1` |
 | `requires fzzy_config` | Keep fzzy_config on server |
 | Java 8 / wrong version | Use Java 21 path above |

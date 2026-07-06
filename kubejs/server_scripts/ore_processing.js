@@ -27,10 +27,10 @@ function defineCoreMetal(event, config) {
 
   var splashOutputs = [Item.of(nugget, 27)]
   if (washByproduct) {
-    splashOutputs.push(CreateItem.of(washByproduct, washByproductChance))
+    splashOutputs.push(global.CreateItem.of(washByproduct, washByproductChance))
   }
 
-  event.recipes.create.splashing(splashOutputs, crushed)
+  global.CreateRecipes.splashing(event, splashOutputs, crushed)
     .id('kubejs:ore_processing/' + name + '_3x_splashing')
 
   var mixInputs = [crushed, '#tfmg:flux', Fluid.of('minecraft:water', 250)]
@@ -38,7 +38,7 @@ function defineCoreMetal(event, config) {
     mixInputs.push(washByproduct)
   }
 
-  event.recipes.create.mixing(Item.of(ingot, 5), mixInputs)
+  global.CreateRecipes.mixing(event, Item.of(ingot, 5), mixInputs)
     .heated()
     .id('kubejs:ore_processing/' + name + '_5x_mixing')
 }

@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 
   // --- Tier 1: primitive & bulk gunpowder -----------------------------------
 
-  event.recipes.create.mixing(Item.of('minecraft:gunpowder', 4), [
+  global.CreateRecipes.mixing(event, Item.of('minecraft:gunpowder', 4), [
     '2x tfmg:sulfur_dust',
     '2x tfmg:nitrate_dust',
     Fluid.of('minecraft:water', 250)
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     .heated()
     .id('kubejs:explosives/mixing/gunpowder_from_chemistry')
 
-  event.recipes.create.mixing(Item.of('minecraft:gunpowder', 2), [
+  global.CreateRecipes.mixing(event, Item.of('minecraft:gunpowder', 2), [
     'minecraft:gunpowder',
     'minecraft:charcoal'
   ])
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 
   // --- Tier 2: industrial propellant --------------------------------------
 
-  event.recipes.create.mixing(Item.of('createbigcannons:packed_gunpowder', 2), [
+  global.CreateRecipes.mixing(event, Item.of('createbigcannons:packed_gunpowder', 2), [
     '2x tfmg:sulfur_dust',
     '2x tfmg:nitrate_dust',
     'tfmg:coal_coke',
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
 
   // --- Tier 4: hardened nitro (HE filler) ---------------------------------
 
-  event.recipes.create.mixing(Item.of('createbigcannons:congealed_nitro', 2), [
+  global.CreateRecipes.mixing(event, Item.of('createbigcannons:congealed_nitro', 2), [
     '2x tfmg:sulfur_dust',
     '2x tfmg:nitrate_dust',
     'tfmg:coal_coke',
@@ -72,81 +72,81 @@ ServerEvents.recipes(event => {
   // Deploy steps must use concrete items — KubeJS tag inputs serialize with
   // amount:1000 and Create treats them as fluid inputs in deployer recipes.
 
-  event.recipes.create.sequenced_assembly([
+  global.CreateRecipes.sequenced_assembly(event, [
     Item.of('createbigcannons:solid_shot')
   ], 'minecraft:iron_ingot', [
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'tfmg:lead_nugget'
     ]),
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'tfmg:heavy_plate'
     ]),
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'minecraft:oak_slab'
     ]),
-    event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
+    global.CreateRecipes.pressing(event, 'minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
     .loops(1)
     .transitionalItem('minecraft:iron_ingot')
     .id('kubejs:explosives/sequenced_assembly/solid_shot')
 
-  event.recipes.create.sequenced_assembly([
+  global.CreateRecipes.sequenced_assembly(event, [
     Item.of('createbigcannons:ap_shell')
   ], 'minecraft:iron_ingot', [
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'tfmg:cast_iron_ingot'
     ]),
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'createbigcannons:packed_guncotton'
     ]),
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'minecraft:oak_slab'
     ]),
-    event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
+    global.CreateRecipes.pressing(event, 'minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
     .loops(1)
     .transitionalItem('minecraft:iron_ingot')
     .id('kubejs:explosives/sequenced_assembly/ap_shell')
 
-  event.recipes.create.sequenced_assembly([
+  global.CreateRecipes.sequenced_assembly(event, [
     Item.of('createbigcannons:he_shell')
   ], 'minecraft:iron_ingot', [
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'createbigcannons:packed_guncotton'
     ]),
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'minecraft:oak_slab'
     ]),
-    event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
+    global.CreateRecipes.pressing(event, 'minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
     .loops(1)
     .transitionalItem('minecraft:iron_ingot')
     .id('kubejs:explosives/sequenced_assembly/he_shell')
 
-  event.recipes.create.sequenced_assembly([
+  global.CreateRecipes.sequenced_assembly(event, [
     Item.of('createbigcannons:shrapnel_shell')
   ], 'minecraft:iron_ingot', [
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'createbigcannons:shot_balls'
     ]),
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'createbigcannons:packed_gunpowder'
     ]),
-    event.recipes.create.deploying('minecraft:iron_ingot', [
+    global.CreateRecipes.deploying(event, 'minecraft:iron_ingot', [
       'minecraft:iron_ingot',
       'minecraft:oak_slab'
     ]),
-    event.recipes.create.pressing('minecraft:iron_ingot', 'minecraft:iron_ingot')
+    global.CreateRecipes.pressing(event, 'minecraft:iron_ingot', 'minecraft:iron_ingot')
   ])
     .loops(1)
     .transitionalItem('minecraft:iron_ingot')

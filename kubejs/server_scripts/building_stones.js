@@ -15,7 +15,7 @@
 // Polished deepslate: smelt/blast cobbled_deepslate (vanilla) — not synthesized directly.
 
 function defineStoneMix(event, config) {
-  var recipe = event.recipes.create.mixing(config.output, config.inputs)
+  var recipe = global.CreateRecipes.mixing(event, config.output, config.inputs)
   if (config.heat === 'superheated') {
     recipe.superheated()
   } else if (config.heat === 'heated') {
@@ -25,7 +25,7 @@ function defineStoneMix(event, config) {
 }
 
 function defineStoneCompact(event, config) {
-  var recipe = event.recipes.create.compacting(config.output, config.inputs)
+  var recipe = global.CreateRecipes.compacting(event, config.output, config.inputs)
   if (config.heat) {
     recipe.heated()
   }
@@ -107,9 +107,9 @@ ServerEvents.recipes(event => {
     heat: 'heated'
   })
 
-  event.recipes.create.crushing([
+  global.CreateRecipes.crushing(event, [
     Item.of('minecraft:pointed_dripstone', 4),
-    CreateItem.of('minecraft:clay_ball', 0.25)
+    global.CreateItem.of('minecraft:clay_ball', 0.25)
   ], 'minecraft:dripstone_block')
     .processingTime(300)
     .id('kubejs:building_stones/dripstone_to_pointed')

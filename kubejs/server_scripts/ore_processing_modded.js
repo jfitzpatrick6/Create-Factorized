@@ -19,20 +19,20 @@ function defineSimpleMetal(event, config) {
 
   var splashOutputs = [Item.of(nugget, 27)]
   if (washByproduct) {
-    splashOutputs.push(CreateItem.of(washByproduct, washByproductChance))
+    splashOutputs.push(global.CreateItem.of(washByproduct, washByproductChance))
   }
 
-  event.recipes.create.splashing(splashOutputs, crushed)
+  global.CreateRecipes.splashing(event, splashOutputs, crushed)
     .id('kubejs:ore_processing/' + name + '_3x_splashing')
 
   if (maxTier >= 4 && config.mix4xInputs) {
-    event.recipes.create.mixing(Item.of(ingot, 4), config.mix4xInputs)
+    global.CreateRecipes.mixing(event, Item.of(ingot, 4), config.mix4xInputs)
       .heated()
       .id('kubejs:ore_processing/' + name + '_4x_mixing')
   }
 
   if (maxTier >= 5 && config.mix5xInputs) {
-    event.recipes.create.mixing(Item.of(ingot, 5), config.mix5xInputs)
+    global.CreateRecipes.mixing(event, Item.of(ingot, 5), config.mix5xInputs)
       .superheated()
       .id('kubejs:ore_processing/' + name + '_5x_mixing')
   }
@@ -126,13 +126,13 @@ ServerEvents.recipes(event => {
     .cookingTime(100)
     .id('kubejs:ore_processing/lithium_2x_blasting')
 
-  event.recipes.create.splashing([
+  global.CreateRecipes.splashing(event, [
     Item.of('tfmg:lithium_nugget', 27),
-    CreateItem.of('minecraft:water_bucket', 0.15)
+    global.CreateItem.of('minecraft:water_bucket', 0.15)
   ], 'tfmg:crushed_raw_lithium')
     .id('kubejs:ore_processing/lithium_3x_splashing')
 
-  event.recipes.create.mixing(Item.of('tfmg:lithium_ingot', 2), [
+  global.CreateRecipes.mixing(event, Item.of('tfmg:lithium_ingot', 2), [
     'tfmg:crushed_raw_lithium',
     'tfmg:cooling_fluid_bottle'
   ]).id('kubejs:ore_processing/lithium_cooled_mixing')

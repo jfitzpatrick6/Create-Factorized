@@ -16,6 +16,9 @@ server/whitelist.json
 server/banned-*.json
 !server/server.properties.example
 
+# Pack exports (regenerate with scripts/export_mrpack.py)
+exports/
+
 # Runtime / generated
 .mixin.out/
 .sable/

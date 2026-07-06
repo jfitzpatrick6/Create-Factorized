@@ -64,7 +64,7 @@ function removeFdeCreateRecipes(event, suffix) {
 
 function registerFdeMixingFixes(event) {
   FDE_MIXING_FIXES.forEach(function (recipe) {
-    var mix = event.recipes.create.mixing(recipe.output, recipe.inputs)
+    var mix = global.CreateRecipes.mixing(event, recipe.output, recipe.inputs)
     if (recipe.heat === 'heated') {
       mix.heated()
     }
@@ -73,19 +73,19 @@ function registerFdeMixingFixes(event) {
 }
 
 function registerFdeFillingFixes(event) {
-  event.recipes.create.filling('farmersdelight_extended:chocolate_roll', [
+  global.CreateRecipes.filling(event, 'farmersdelight_extended:chocolate_roll', [
     'minecraft:bread',
     Fluid.of('create:chocolate', 250)
   ]).id('kubejs:food_compat/fde_filling/chocolate_roll')
 
-  event.recipes.create.filling('farmersdelight_extended:honey_roll', [
+  global.CreateRecipes.filling(event, 'farmersdelight_extended:honey_roll', [
     'minecraft:bread',
     Fluid.of('create:honey', 250)
   ]).id('kubejs:food_compat/fde_filling/honey_roll')
 }
 
 function registerFdeCompactingFixes(event) {
-  event.recipes.create.compacting('4x farmersdelight_extended:chocolate_graham_cracker', [
+  global.CreateRecipes.compacting(event, '4x farmersdelight_extended:chocolate_graham_cracker', [
     'minecraft:cocoa_beans',
     Fluid.of('create:honey', 250),
     '#c:flours/wheat'
@@ -95,19 +95,19 @@ function registerFdeCompactingFixes(event) {
 }
 
 function registerFdeMochiAssembly(event) {
-  event.recipes.create.sequenced_assembly([
+  global.CreateRecipes.sequenced_assembly(event, [
     Item.of('farmersdelight_extended:mochi')
   ], 'farmersdelight_extended:rice_flour', [
-    event.recipes.create.filling('farmersdelight_extended:unprocessed_mochi', [
+    global.CreateRecipes.filling(event, 'farmersdelight_extended:unprocessed_mochi', [
       'farmersdelight_extended:unprocessed_mochi',
       Fluid.of('minecraft:water', 250)
     ]),
-    event.recipes.create.deploying('farmersdelight_extended:unprocessed_mochi', [
+    global.CreateRecipes.deploying(event, 'farmersdelight_extended:unprocessed_mochi', [
       'farmersdelight_extended:unprocessed_mochi',
       'minecraft:sugar'
     ]),
-    event.recipes.create.pressing('farmersdelight_extended:unprocessed_mochi', 'farmersdelight_extended:unprocessed_mochi'),
-    event.recipes.create.pressing('farmersdelight_extended:unprocessed_mochi', 'farmersdelight_extended:unprocessed_mochi')
+    global.CreateRecipes.pressing(event, 'farmersdelight_extended:unprocessed_mochi', 'farmersdelight_extended:unprocessed_mochi'),
+    global.CreateRecipes.pressing(event, 'farmersdelight_extended:unprocessed_mochi', 'farmersdelight_extended:unprocessed_mochi')
   ])
     .loops(1)
     .transitionalItem('farmersdelight_extended:unprocessed_mochi')
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
 
   // --- Phase 3: Spice intermediate ------------------------------------------
 
-  event.recipes.create.mixing('kubejs:fortified_seasoning', [
+  global.CreateRecipes.mixing(event, 'kubejs:fortified_seasoning', [
     'expandeddelight:chili_pepper',
     'expandeddelight:cinnamon_stick',
     Fluid.of('tfmg:lubrication_oil', 50)
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
 
   // --- Phase 4: Factory worker meals ----------------------------------------
 
-  event.recipes.create.mixing('kubejs:ore_worker_stew', [
+  global.CreateRecipes.mixing(event, 'kubejs:ore_worker_stew', [
     '2x minecraft:cooked_beef',
     '2x minecraft:carrot',
     'kubejs:fortified_seasoning',
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
     .heated()
     .id('kubejs:food_compat/mixing/ore_worker_stew')
 
-  event.recipes.create.mixing('kubejs:hearty_broth', [
+  global.CreateRecipes.mixing(event, 'kubejs:hearty_broth', [
     '2x minecraft:bone',
     '2x minecraft:potato',
     'expandeddelight:asparagus',
@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
     .processingTime(400)
     .id('kubejs:food_compat/mixing/hearty_broth')
 
-  event.recipes.create.compacting('kubejs:vein_scout_snack', [
+  global.CreateRecipes.compacting(event, 'kubejs:vein_scout_snack', [
     '2x farmersdelight_extended:toast',
     'expandeddelight:cranberries',
     'expandeddelight:peanut'
@@ -172,19 +172,19 @@ ServerEvents.recipes(event => {
 
   // --- Phase 5: Luxury / aged chain -----------------------------------------
 
-  event.recipes.create.mixing('kubejs:aged_cheese_wheel', [
+  global.CreateRecipes.mixing(event, 'kubejs:aged_cheese_wheel', [
     '2x farmersdelight_extended:fresh_cheese'
   ])
     .heated()
     .processingTime(600)
     .id('kubejs:food_compat/mixing/aged_cheese_wheel')
 
-  event.recipes.create.cutting([
+  global.CreateRecipes.cutting(event, [
     Item.of('kubejs:aged_cheese_slice', 4)
   ], 'kubejs:aged_cheese_wheel')
     .id('kubejs:food_compat/cutting/aged_cheese_wheel')
 
-  event.recipes.create.compacting('kubejs:luxury_chocolate_bar', [
+  global.CreateRecipes.compacting(event, 'kubejs:luxury_chocolate_bar', [
     'minecraft:cocoa_beans',
     'minecraft:sugar',
     Fluid.of('create:chocolate', 250)
@@ -192,18 +192,18 @@ ServerEvents.recipes(event => {
     .heated()
     .id('kubejs:food_compat/compacting/luxury_chocolate_bar')
 
-  event.recipes.create.sequenced_assembly([
+  global.CreateRecipes.sequenced_assembly(event, [
     Item.of('kubejs:factory_lunchbox')
   ], 'farmersdelight_extended:bread_slice', [
-    event.recipes.create.deploying('kubejs:incomplete_lunchbox', [
+    global.CreateRecipes.deploying(event, 'kubejs:incomplete_lunchbox', [
       'farmersdelight_extended:bread_slice',
       'kubejs:aged_cheese_slice'
     ]),
-    event.recipes.create.deploying('kubejs:incomplete_lunchbox', [
+    global.CreateRecipes.deploying(event, 'kubejs:incomplete_lunchbox', [
       'kubejs:incomplete_lunchbox',
       'farmersdelight_extended:toast'
     ]),
-    event.recipes.create.pressing('kubejs:incomplete_lunchbox', 'kubejs:incomplete_lunchbox')
+    global.CreateRecipes.pressing(event, 'kubejs:incomplete_lunchbox', 'kubejs:incomplete_lunchbox')
   ])
     .loops(1)
     .transitionalItem('kubejs:incomplete_lunchbox')

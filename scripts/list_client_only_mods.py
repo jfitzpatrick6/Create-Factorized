@@ -43,10 +43,15 @@ KNOWN_CLIENT_ONLY = {
     "iris",
     "sodium",
     "ferritecore",  # client perf; optional on server
+    "distanthorizons",
+    "lithium-neoforge",
+    "mousetweaks",
+    "ssrd",
     "konkrete",
     "fancymenu",
     "fancymenu_neoforge",
     "defaultoptions",  # client keybind defaults only
+    "kubejs-create",  # crashes KubeJS on dedicated servers; scripts use 00_create_polyfill.js
 }
 
 

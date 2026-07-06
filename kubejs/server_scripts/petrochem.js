@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
   // heavy_oil -> bitumen -> asphalt_mixture -> liquid_asphalt -> asphalt block
 
   event.remove({ id: 'tfmg:mixing/liquid_asphalt' })
-  event.recipes.create.mixing(
+  global.CreateRecipes.mixing(event, 
     Fluid.of('tfmg:liquid_asphalt', 1000),
     ['tfmg:asphalt_mixture', Fluid.of('minecraft:water', 250)]
   )
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
   // (datapack JSON — event.custom can fail to bind fluidIngredients for tfmg:casting)
 
   // Create Basin fallback (black basin + heat below).
-  event.recipes.create.compacting('tfmg:asphalt', Fluid.of('tfmg:liquid_asphalt', 144))
+  global.CreateRecipes.compacting(event, 'tfmg:asphalt', Fluid.of('tfmg:liquid_asphalt', 144))
     .heated()
     .id('kubejs:petrochem/compacting/asphalt')
 

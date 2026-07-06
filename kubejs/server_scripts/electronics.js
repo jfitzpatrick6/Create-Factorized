@@ -37,18 +37,18 @@ ServerEvents.recipes(event => {
   }).id('kubejs:electronics/generator_coil')
 
   // CNA energising accepts exactly one item input — prep materials via mixing first.
-  event.recipes.create.mixing('kubejs:iron_energiser_billet', [
+  global.CreateRecipes.mixing(event, 'kubejs:iron_energiser_billet', [
     '2x minecraft:iron_ingot',
     '4x minecraft:redstone'
   ]).id('kubejs:electronics/mixing/iron_energiser_billet')
 
-  event.recipes.create.mixing('kubejs:gold_energiser_billet', [
+  global.CreateRecipes.mixing(event, 'kubejs:gold_energiser_billet', [
     '2x minecraft:gold_ingot',
     'tfmg:cooling_fluid_bottle',
     '4x minecraft:redstone'
   ]).id('kubejs:electronics/mixing/gold_energiser_billet')
 
-  event.recipes.create.mixing('kubejs:diamond_energiser_billet', [
+  global.CreateRecipes.mixing(event, 'kubejs:diamond_energiser_billet', [
     'minecraft:diamond',
     'tfmg:lithium_ingot',
     'tfmg:cooling_fluid_bottle'
@@ -92,18 +92,18 @@ ServerEvents.recipes(event => {
 
   // --- Control unit (TFMG circuit board investment) -------------------------
 
-  event.recipes.create.sequenced_assembly([
+  global.CreateRecipes.sequenced_assembly(event, [
     Item.of('kubejs:control_unit')
   ], 'tfmg:circuit_board', [
-    event.recipes.create.deploying('kubejs:incomplete_control_unit', [
+    global.CreateRecipes.deploying(event, 'kubejs:incomplete_control_unit', [
       'kubejs:incomplete_control_unit',
       'tfmg:steel_mechanism'
     ]),
-    event.recipes.create.deploying('kubejs:incomplete_control_unit', [
+    global.CreateRecipes.deploying(event, 'kubejs:incomplete_control_unit', [
       'kubejs:incomplete_control_unit',
       'tfmg:copper_spool'
     ]),
-    event.recipes.create.pressing('kubejs:incomplete_control_unit', 'kubejs:incomplete_control_unit')
+    global.CreateRecipes.pressing(event, 'kubejs:incomplete_control_unit', 'kubejs:incomplete_control_unit')
   ])
     .loops(1)
     .transitionalItem('kubejs:incomplete_control_unit')
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
   }).id('kubejs:electronics/nuclear_fuel')
 
   event.remove({ id: 'create_new_age:mechanical_crafting/reactor_rod' })
-  event.recipes.create.mechanical_crafting(
+  global.CreateRecipes.mechanical_crafting(event, 
     Item.of('create_new_age:reactor_rod', 2),
     [
       'SCPPC',
