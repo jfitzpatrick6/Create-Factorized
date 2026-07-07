@@ -2,49 +2,36 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: "square"
 	filename: "ore_processing_factory"
-	group: "8F01E00000000002"
+	group: "7F01E00000000002"
 	icon: {
 		id: "create:crushed_raw_iron"
 	}
-	id: "8F01E00000000001"
+	id: "7F01E00000000001"
 	order_index: -1
-	quest_links: [
-		{
-			id: "8F01E00000000030"
-			linked_quest: "8F01A00000000010"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			id: "8F01E00000000031"
-			linked_quest: "8F01B00000000010"
-			x: 12.0d
-			y: 4.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
-			id: "8F01E00000000010"
+			id: "7F01E00000000010"
 			shape: "rsquare"
 			size: 1.1d
 			tasks: [{
-				id: "8F01E00000000100"
+				id: "7F01E00000000100"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["8F01E00000000010"]
-			id: "8F01E00000000011"
+			dependencies: ["7F01E00000000010"]
+			id: "7F01E00000000011"
 			rewards: [{
 				count: 8
-				id: "8F01E00000000200"
+				id: "7F01E00000000200"
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01E00000000101"
+				id: "7F01E00000000101"
 				item: { count: 1, id: "create:crushing_wheel" }
 				type: "item"
 			}]
@@ -52,17 +39,17 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8F01E00000000011"]
-			id: "8F01E00000000012"
+			dependencies: ["7F01E00000000011"]
+			id: "7F01E00000000012"
 			rewards: [{
 				count: 4
-				id: "8F01E00000000201"
+				id: "7F01E00000000201"
 				item: { count: 1, id: "minecraft:raw_iron" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 8L
-				id: "8F01E00000000102"
+				id: "7F01E00000000102"
 				item: { count: 1, id: "create:crushed_raw_iron" }
 				type: "item"
 			}]
@@ -70,18 +57,18 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01E00000000012"]
-			id: "8F01E00000000013"
+			dependencies: ["7F01E00000000012"]
+			id: "7F01E00000000013"
 			shape: "diamond"
 			rewards: [{
 				count: 8
-				id: "8F01E00000000202"
+				id: "7F01E00000000202"
 				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 8L
-				id: "8F01E00000000103"
+				id: "7F01E00000000103"
 				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
@@ -89,15 +76,15 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01E00000000013"]
-			id: "8F01E00000000014"
+			dependencies: ["7F01E00000000013"]
+			id: "7F01E00000000014"
 			rewards: [{
-				id: "8F01E00000000203"
+				id: "7F01E00000000203"
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01E00000000104"
+				id: "7F01E00000000104"
 				item: { count: 1, id: "create:item_drain" }
 				type: "item"
 			}]
@@ -105,24 +92,24 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01E00000000014"]
-			id: "8F01E00000000015"
+			dependencies: ["7F01E00000000014"]
+			id: "7F01E00000000015"
 			rewards: [{
 				count: 16
-				id: "8F01E00000000204"
+				id: "7F01E00000000204"
 				item: { count: 1, id: "minecraft:redstone" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 27L
-					id: "8F01E00000000105"
+					id: "7F01E00000000105"
 					item: { count: 1, id: "minecraft:iron_nugget" }
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "8F01E00000000106"
+					id: "7F01E00000000106"
 					item: { count: 1, id: "minecraft:redstone" }
 					type: "item"
 				}
@@ -131,17 +118,17 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01E00000000015"]
-			id: "8F01E00000000016"
+			dependencies: ["7F01E00000000015"]
+			id: "7F01E00000000016"
 			rewards: [{
 				count: 8
-				id: "8F01E00000000205"
+				id: "7F01E00000000205"
 				item: { count: 1, id: "tfmg:limesand" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 8L
-				id: "8F01E00000000107"
+				id: "7F01E00000000107"
 				item: { count: 1, id: "tfmg:limesand" }
 				type: "item"
 			}]
@@ -149,24 +136,24 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["8F01E00000000016"]
-			id: "8F01E00000000017"
+			dependencies: ["7F01E00000000016"]
+			id: "7F01E00000000017"
 			shape: "diamond"
 			rewards: [{
 				count: 8
-				id: "8F01E00000000206"
+				id: "7F01E00000000206"
 				item: { count: 1, id: "create:experience_nugget" }
 				type: "item"
 			}]
 			tasks: [
 				{
-					id: "8F01E00000000108"
+					id: "7F01E00000000108"
 					item: { count: 1, id: "create:mechanical_mixer" }
 					type: "item"
 				}
 				{
 					count: 10L
-					id: "8F01E00000000109"
+					id: "7F01E00000000109"
 					item: { count: 1, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
@@ -175,24 +162,24 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["8F01E00000000015"]
-			id: "8F01E00000000018"
+			dependencies: ["7F01E00000000015"]
+			id: "7F01E00000000018"
 			rewards: [{
 				count: 8
-				id: "8F01E00000000207"
+				id: "7F01E00000000207"
 				item: { count: 1, id: "minecraft:clay_ball" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 27L
-					id: "8F01E0000000010A"
+					id: "7F01E0000000010A"
 					item: { count: 1, id: "create:copper_nugget" }
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "8F01E0000000010B"
+					id: "7F01E0000000010B"
 					item: { count: 1, id: "minecraft:clay_ball" }
 					type: "item"
 				}
@@ -201,24 +188,24 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01E00000000017"]
-			id: "8F01E00000000019"
+			dependencies: ["7F01E00000000017"]
+			id: "7F01E00000000019"
 			rewards: [{
 				count: 4
-				id: "8F01E00000000208"
+				id: "7F01E00000000208"
 				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 10L
-					id: "8F01E0000000010C"
+					id: "7F01E0000000010C"
 					item: { count: 1, id: "minecraft:gold_ingot" }
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "8F01E0000000010D"
+					id: "7F01E0000000010D"
 					item: { count: 1, id: "minecraft:quartz" }
 					type: "item"
 				}
@@ -227,24 +214,24 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["8F01E00000000015"]
-			id: "8F01E0000000001A"
+			dependencies: ["7F01E00000000015"]
+			id: "7F01E0000000001A"
 			rewards: [{
 				count: 8
-				id: "8F01E00000000209"
+				id: "7F01E00000000209"
 				item: { count: 1, id: "minecraft:gunpowder" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 6L
-					id: "8F01E0000000010E"
+					id: "7F01E0000000010E"
 					item: { count: 1, id: "create:zinc_ingot" }
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "8F01E0000000010F"
+					id: "7F01E0000000010F"
 					item: { count: 1, id: "minecraft:gunpowder" }
 					type: "item"
 				}
@@ -253,24 +240,24 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01E00000000017"]
-			id: "8F01E0000000001B"
+			dependencies: ["7F01E00000000017"]
+			id: "7F01E0000000001B"
 			rewards: [{
 				count: 8
-				id: "8F01E0000000020A"
+				id: "7F01E0000000020A"
 				item: { count: 1, id: "tfmg:sulfur_dust" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 8L
-					id: "8F01E00000000110"
+					id: "7F01E00000000110"
 					item: { count: 1, id: "tfmg:sulfur_dust" }
 					type: "item"
 				}
 				{
 					count: 10L
-					id: "8F01E00000000111"
+					id: "7F01E00000000111"
 					item: { count: 1, id: "tfmg:lead_ingot" }
 					type: "item"
 				}
@@ -279,24 +266,24 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["8F01E00000000017"]
-			id: "8F01E0000000001C"
+			dependencies: ["7F01E00000000017"]
+			id: "7F01E0000000001C"
 			rewards: [{
 				count: 8
-				id: "8F01E0000000020B"
+				id: "7F01E0000000020B"
 				item: { count: 1, id: "tfmg:sulfur_dust" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 8L
-					id: "8F01E00000000112"
+					id: "7F01E00000000112"
 					item: { count: 1, id: "tfmg:sulfur_dust" }
 					type: "item"
 				}
 				{
 					count: 10L
-					id: "8F01E00000000113"
+					id: "7F01E00000000113"
 					item: { count: 1, id: "tfmg:nickel_ingot" }
 					type: "item"
 				}
@@ -305,24 +292,24 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["8F01E00000000017"]
-			id: "8F01E0000000001D"
+			dependencies: ["7F01E00000000017"]
+			id: "7F01E0000000001D"
 			rewards: [{
 				count: 4
-				id: "8F01E0000000020C"
+				id: "7F01E0000000020C"
 				item: { count: 1, id: "tfmg:cooling_fluid_bottle" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 6L
-					id: "8F01E00000000114"
+					id: "7F01E00000000114"
 					item: { count: 1, id: "tfmg:lithium_ingot" }
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "8F01E00000000115"
+					id: "7F01E00000000115"
 					item: { count: 1, id: "tfmg:cooling_fluid_bottle" }
 					type: "item"
 				}
@@ -331,15 +318,15 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["8F01E00000000014"]
-			id: "8F01E0000000001E"
+			dependencies: ["7F01E00000000014"]
+			id: "7F01E0000000001E"
 			rewards: [{
-				id: "8F01E0000000020D"
+				id: "7F01E0000000020D"
 				item: { count: 1, id: "createoreexcavation:vein_atlas" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01E00000000116"
+				id: "7F01E00000000116"
 				item: { count: 1, id: "createoreexcavation:vein_finder" }
 				type: "item"
 			}]
@@ -347,16 +334,16 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01E0000000001E"]
-			id: "8F01E0000000001F"
+			dependencies: ["7F01E0000000001E"]
+			id: "7F01E0000000001F"
 			rewards: [{
 				count: 4
-				id: "8F01E0000000020E"
+				id: "7F01E0000000020E"
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01E00000000117"
+				id: "7F01E00000000117"
 				item: { count: 1, id: "createoreexcavation:drill" }
 				type: "item"
 			}]
@@ -364,16 +351,16 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01E0000000001F"]
-			id: "8F01E00000000020"
+			dependencies: ["7F01E0000000001F"]
+			id: "7F01E00000000020"
 			rewards: [{
 				count: 8
-				id: "8F01E0000000020F"
+				id: "7F01E0000000020F"
 				item: { count: 1, id: "create:shaft" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01E00000000118"
+				id: "7F01E00000000118"
 				item: { count: 1, id: "createoreexcavation:drilling_machine" }
 				type: "item"
 			}]
@@ -381,29 +368,29 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01E00000000020"]
-			id: "8F01E00000000021"
+			dependencies: ["7F01E00000000020"]
+			id: "7F01E00000000021"
 			rewards: [{
 				count: 8
-				id: "8F01E00000000210"
+				id: "7F01E00000000210"
 				item: { count: 1, id: "create:experience_nugget" }
 				type: "item"
 			}]
 			tasks: [
 				{
 					count: 16L
-					id: "8F01E00000000119"
+					id: "7F01E00000000119"
 					item: { count: 1, id: "createoreexcavation:raw_redstone" }
 					type: "item"
 				}
 				{
 					count: 16L
-					id: "8F01E0000000011A"
+					id: "7F01E0000000011A"
 					item: { count: 1, id: "minecraft:lapis_lazuli" }
 					type: "item"
 				}
 				{
-					id: "8F01E0000000011B"
+					id: "7F01E0000000011B"
 					item: { count: 1, id: "createoreexcavation:raw_diamond" }
 					type: "item"
 				}
@@ -412,12 +399,12 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01E00000000017"]
-			id: "8F01E00000000022"
+			dependencies: ["7F01E00000000017"]
+			id: "7F01E00000000022"
 			optional: true
 			shape: "pentagon"
 			tasks: [{
-				id: "8F01E0000000011C"
+				id: "7F01E0000000011C"
 				type: "checkmark"
 			}]
 			x: 10.0d
@@ -425,23 +412,23 @@
 		}
 		{
 			dependencies: [
-				"8F01E00000000017"
-				"8F01E0000000001B"
-				"8F01E0000000001C"
-				"8F01E00000000020"
-				"8F01E00000000021"
+				"7F01E00000000017"
+				"7F01E0000000001B"
+				"7F01E0000000001C"
+				"7F01E00000000020"
+				"7F01E00000000021"
 			]
 			dependency_requirement: "one_completed"
-			id: "8F01E00000000026"
+			id: "7F01E00000000026"
 			rewards: [
 				{
 					count: 16
-					id: "8F01E00000000211"
+					id: "7F01E00000000211"
 					item: { count: 1, id: "create:experience_nugget" }
 					type: "item"
 				}
 				{
-					id: "8F01E00000000212"
+					id: "7F01E00000000212"
 					item: { count: 1, id: "tfmg:limesand" }
 					type: "item"
 				}
@@ -449,7 +436,7 @@
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
-				id: "8F01E0000000011D"
+				id: "7F01E0000000011D"
 				type: "checkmark"
 			}]
 			x: 4.0d

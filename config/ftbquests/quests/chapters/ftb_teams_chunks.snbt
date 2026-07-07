@@ -1,0 +1,84 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "ftb_teams_chunks"
+	group: "7F00D00000000002"
+	icon: {
+		id: "minecraft:filled_map"
+	}
+	id: "7F00D00000000004"
+	order_index: -4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7F00D00000000030"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "7F00D00000000130"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F00D00000000030"]
+			id: "7F00D00000000031"
+			shape: "diamond"
+			tasks: [{
+				id: "7F00D00000000131"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F00D00000000031"]
+			id: "7F00D00000000032"
+			rewards: [{
+				count: 4
+				id: "7F00D00000000230"
+				item: { count: 1, id: "minecraft:lantern" }
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F00D00000000132"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F00D00000000032"]
+			id: "7F00D00000000033"
+			tasks: [{
+				id: "7F00D00000000133"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F00D00000000033"]
+			id: "7F00D00000000034"
+			tasks: [{
+				id: "7F00D00000000134"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F00D00000000034"]
+			id: "7F00D00000000035"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "7F00D00000000135"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+}

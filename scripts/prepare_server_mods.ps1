@@ -65,8 +65,36 @@ Get-ChildItem $ModsSrc -Filter "*.jar" | ForEach-Object {
 
 foreach ($folder in @("config", "kubejs", "defaultconfigs", "datapacks")) {
     $src = Join-Path $Root $folder
+    $dst = Join-Path $ServerDir $folder
     if (Test-Path $src) {
-        Copy-Item $src (Join-Path $ServerDir $folder) -Recurse -Force
+        if ($folder -eq "config") {
+            foreach ($stale in @("ftbquests", "config")) {
+                $stalePath = Join-Path $dst $stale
+                if (Test-Path $stalePath) {
+                    Remove-Item $stalePath -Recurse -Force
+                }
+            }
+        }
+        Get-ChildItem $src -Force | Copy-Item -Destination $dst -Recurse -Force
+    }
+}
+
+$questsLang = Join-Path $ServerDir "config\ftbquests\quests\lang"
+if (Test-Path $questsLang) {
+    $splitLang = Join-Path $questsLang "en_us"
+    if (Test-Path $splitLang) {
+        Remove-Item $splitLang -Recurse -Force
+        Write-Host "Removed stale server lang/en_us/ split directory"
+    }
+    $langBak = Join-Path $questsLang "en_us.snbt.bak"
+    if (Test-Path $langBak) {
+        Remove-Item $langBak -Force
+        Write-Host "Removed stale server lang/en_us.snbt.bak"
+    }
+    $flatLang = Join-Path $questsLang "en_us.snbt"
+    if (-not (Test-Path $flatLang)) {
+        Write-Error "Missing server lang/en_us.snbt after config copy (required for FTB Quests 2101.1.x)"
+        exit 1
     }
 }
 

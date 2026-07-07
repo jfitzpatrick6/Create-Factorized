@@ -8,20 +8,7 @@
 	}
 	id: "4F034AC551FDF0D9"
 	order_index: 5
-	quest_links: [
-		{
-			id: "4F034AC551FDF0DA"
-			linked_quest: "8F01A0000000001D"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			id: "4F034AC551FDF0DB"
-			linked_quest: "8F01B00000000020"
-			x: 0.0d
-			y: 8.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			id: "728C8681F84E44B2"

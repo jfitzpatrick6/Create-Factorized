@@ -24,6 +24,7 @@ exports/
 .sable/
 .tmp_recipe_extract/
 local/
+.vscode/sftp.json
 downloads/
 dynamic-data-pack-cache/
 dynamic-resource-pack-cache/

@@ -2,30 +2,30 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
 	filename: "aeronautics_factory"
-	group: "8F01D00000000002"
+	group: "7F01D00000000002"
 	icon: {
 		id: "offroad:tire"
 	}
-	id: "8F01D00000000001"
+	id: "7F01D00000000001"
 	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			id: "8F01D00000000010"
+			id: "7F01D00000000010"
 			shape: "rsquare"
 			size: 1.1d
 			tasks: [{
-				id: "8F01D00000000100"
+				id: "7F01D00000000100"
 				type: "checkmark"
 			}]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["8F01D00000000010"]
-			id: "8F01D00000000020"
+			dependencies: ["7F01D00000000010"]
+			id: "7F01D00000000020"
 			tasks: [{
-				id: "8F01D00000000120"
+				id: "7F01D00000000120"
 				item: { count: 1, id: "simulated:physics_assembler" }
 				type: "item"
 			}]
@@ -33,10 +33,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8F01D00000000020"]
-			id: "8F01D00000000021"
+			dependencies: ["7F01D00000000020"]
+			id: "7F01D00000000021"
 			tasks: [{
-				id: "8F01D00000000121"
+				id: "7F01D00000000121"
 				item: { count: 1, id: "create:super_glue" }
 				type: "item"
 			}]
@@ -44,11 +44,11 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01D00000000021"]
-			id: "8F01D00000000022"
+			dependencies: ["7F01D00000000021"]
+			id: "7F01D00000000022"
 			tasks: [{
 				count: 2L
-				id: "8F01D00000000122"
+				id: "7F01D00000000122"
 				item: { count: 1, id: "simulated:spring" }
 				type: "item"
 			}]
@@ -56,11 +56,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01D00000000022"]
-			id: "8F01D00000000023"
+			dependencies: ["7F01D00000000022"]
+			id: "7F01D00000000023"
 			tasks: [{
 				count: 2L
-				id: "8F01D00000000123"
+				id: "7F01D00000000123"
 				item: { count: 1, id: "offroad:wheel_mount" }
 				type: "item"
 			}]
@@ -68,11 +68,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01D00000000023"]
-			id: "8F01D00000000024"
+			dependencies: ["7F01D00000000023"]
+			id: "7F01D00000000024"
 			tasks: [{
 				count: 2L
-				id: "8F01D00000000124"
+				id: "7F01D00000000124"
 				item: { count: 1, id: "offroad:tire" }
 				type: "item"
 			}]
@@ -80,10 +80,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01D00000000024"]
-			id: "8F01D00000000025"
+			dependencies: ["7F01D00000000024"]
+			id: "7F01D00000000025"
 			tasks: [{
-				id: "8F01D00000000125"
+				id: "7F01D00000000125"
 				item: { count: 1, id: "tfmg:regular_engine" }
 				type: "item"
 			}]
@@ -91,10 +91,10 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["8F01D00000000025"]
-			id: "8F01D00000000026"
+			dependencies: ["7F01D00000000025"]
+			id: "7F01D00000000026"
 			tasks: [{
-				id: "8F01D00000000126"
+				id: "7F01D00000000126"
 				item: { count: 1, id: "simulated:analog_transmission" }
 				type: "item"
 			}]
@@ -102,10 +102,10 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["8F01D00000000026"]
-			id: "8F01D00000000027"
+			dependencies: ["7F01D00000000026"]
+			id: "7F01D00000000027"
 			tasks: [{
-				id: "8F01D00000000127"
+				id: "7F01D00000000127"
 				item: { count: 1, id: "simulated:steering_wheel" }
 				type: "item"
 			}]
@@ -113,10 +113,10 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["8F01D00000000027"]
-			id: "8F01D00000000028"
+			dependencies: ["7F01D00000000027"]
+			id: "7F01D00000000028"
 			tasks: [{
-				id: "8F01D00000000128"
+				id: "7F01D00000000128"
 				item: { count: 1, id: "create:white_seat" }
 				type: "item"
 			}]
@@ -124,38 +124,38 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["8F01D00000000028"]
-			id: "8F01D00000000029"
+			dependencies: ["7F01D00000000028"]
+			id: "7F01D00000000029"
 			shape: "diamond"
 			tasks: [{
-				id: "8F01D00000000129"
+				id: "7F01D00000000129"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 20.0d
 		}
 		{
-			dependencies: ["8F01D00000000029"]
-			id: "8F01D0000000002D"
+			dependencies: ["7F01D00000000029"]
+			id: "7F01D0000000002D"
 			tasks: [{
-				id: "8F01D0000000012D"
+				id: "7F01D0000000012D"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 22.0d
 		}
 		{
-			dependencies: ["8F01D0000000002D"]
-			id: "8F01D0000000002E"
+			dependencies: ["7F01D0000000002D"]
+			id: "7F01D0000000002E"
 			rewards: [{
-				id: "8F01D0000000030A"
+				id: "7F01D0000000030A"
 				item: { count: 1, id: "offroad:tire" }
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
-				id: "8F01D0000000012E"
+				id: "7F01D0000000012E"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -163,12 +163,12 @@
 		}
 		{
 			dependencies: [
-				"8F01D00000000010"
-				"8F01D00000000023"
+				"7F01D00000000010"
+				"7F01D00000000023"
 			]
-			id: "8F01D00000000030"
+			id: "7F01D00000000030"
 			tasks: [{
-				id: "8F01D00000000130"
+				id: "7F01D00000000130"
 				item: { count: 1, id: "offroad:rockcutting_wheel" }
 				type: "item"
 			}]
@@ -176,10 +176,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01D00000000030"]
-			id: "8F01D00000000031"
+			dependencies: ["7F01D00000000030"]
+			id: "7F01D00000000031"
 			tasks: [{
-				id: "8F01D00000000131"
+				id: "7F01D00000000131"
 				item: { count: 1, id: "offroad:borehead_bearing" }
 				type: "item"
 			}]
@@ -187,45 +187,45 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["8F01D00000000031"]
-			id: "8F01D00000000032"
+			dependencies: ["7F01D00000000031"]
+			id: "7F01D00000000032"
 			shape: "diamond"
 			tasks: [{
-				id: "8F01D00000000132"
+				id: "7F01D00000000132"
 				type: "checkmark"
 			}]
 			x: 4.0d
 			y: 14.0d
 		}
 		{
-			dependencies: ["8F01D00000000032"]
-			id: "8F01D00000000033"
+			dependencies: ["7F01D00000000032"]
+			id: "7F01D00000000033"
 			rewards: [{
 				count: 4
-				id: "8F01D0000000030B"
+				id: "7F01D0000000030B"
 				item: { count: 1, id: "create:experience_nugget" }
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.1d
 			tasks: [{
-				id: "8F01D00000000133"
+				id: "7F01D00000000133"
 				type: "checkmark"
 			}]
 			x: 4.0d
 			y: 16.0d
 		}
 		{
-			dependencies: ["8F01D00000000010"]
-			id: "8F01D00000000011"
+			dependencies: ["7F01D00000000010"]
+			id: "7F01D00000000011"
 			rewards: [{
 				count: 4
-				id: "8F01D00000000200"
+				id: "7F01D00000000200"
 				item: { count: 1, id: "create:brass_ingot" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01D00000000101"
+				id: "7F01D00000000101"
 				item: { count: 1, id: "create:brass_casing" }
 				type: "item"
 			}]
@@ -233,10 +233,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8F01D00000000011"]
-			id: "8F01D00000000012"
+			dependencies: ["7F01D00000000011"]
+			id: "7F01D00000000012"
 			tasks: [{
-				id: "8F01D00000000102"
+				id: "7F01D00000000102"
 				item: { count: 1, id: "create:hand_crank" }
 				type: "item"
 			}]
@@ -244,17 +244,17 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8F01D00000000012"]
-			id: "8F01D0000000001B"
+			dependencies: ["7F01D00000000012"]
+			id: "7F01D0000000001B"
 			rewards: [{
 				count: 8
-				id: "8F01D00000000208"
+				id: "7F01D00000000208"
 				item: { count: 1, id: "minecraft:end_stone" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 4L
-				id: "8F01D0000000010B"
+				id: "7F01D0000000010B"
 				item: { count: 1, id: "aeronautics:end_stone_powder" }
 				type: "item"
 			}]
@@ -262,32 +262,32 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8F01D00000000012"]
-			id: "8F01D00000000013"
+			dependencies: ["7F01D00000000012"]
+			id: "7F01D00000000013"
 			rewards: [{
 				count: 4
-				id: "8F01D00000000201"
+				id: "7F01D00000000201"
 				item: { count: 1, id: "minecraft:compass" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01D00000000103"
+				id: "7F01D00000000103"
 				type: "checkmark"
 			}]
 			x: 14.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["8F01D00000000013"]
-			id: "8F01D00000000014"
+			dependencies: ["7F01D00000000013"]
+			id: "7F01D00000000014"
 			rewards: [{
 				count: 4
-				id: "8F01D00000000202"
+				id: "7F01D00000000202"
 				item: { count: 1, id: "aeronautics:wooden_propeller" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01D00000000104"
+				id: "7F01D00000000104"
 				item: { count: 1, id: "aeronautics:gyroscopic_propeller_bearing" }
 				type: "item"
 			}]
@@ -296,18 +296,18 @@
 		}
 		{
 			dependencies: [
-				"8F01D00000000014"
-				"8F01D0000000001B"
+				"7F01D00000000014"
+				"7F01D0000000001B"
 			]
-			id: "8F01D00000000015"
+			id: "7F01D00000000015"
 			rewards: [{
 				count: 4
-				id: "8F01D00000000203"
+				id: "7F01D00000000203"
 				item: { count: 1, id: "create:zinc_nugget" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01D00000000105"
+				id: "7F01D00000000105"
 				item: { count: 1, id: "aeronautics:levitite_blend_bucket" }
 				type: "item"
 			}]
@@ -315,71 +315,71 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01D00000000014"]
-			id: "8F01D0000000001C"
+			dependencies: ["7F01D00000000014"]
+			id: "7F01D0000000001C"
 			optional: true
 			rewards: [{
 				count: 4
-				id: "8F01D00000000209"
+				id: "7F01D00000000209"
 				item: { count: 1, id: "rechiseled:stone_smooth_large_tiles" }
 				type: "item"
 			}]
 			shape: "pentagon"
 			tasks: [{
-				id: "8F01D0000000010C"
+				id: "7F01D0000000010C"
 				type: "checkmark"
 			}]
 			x: 10.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01D00000000015"]
-			id: "8F01D00000000016"
+			dependencies: ["7F01D00000000015"]
+			id: "7F01D00000000016"
 			shape: "diamond"
 			tasks: [{
-				id: "8F01D00000000106"
+				id: "7F01D00000000106"
 				type: "checkmark"
 			}]
 			x: 16.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01D00000000016"]
-			id: "8F01D00000000017"
+			dependencies: ["7F01D00000000016"]
+			id: "7F01D00000000017"
 			rewards: [{
 				count: 16
-				id: "8F01D00000000204"
+				id: "7F01D00000000204"
 				item: { count: 1, id: "minecraft:smooth_stone" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01D00000000107"
+				id: "7F01D00000000107"
 				type: "checkmark"
 			}]
 			x: 14.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01D00000000017"]
-			id: "8F01D00000000018"
+			dependencies: ["7F01D00000000017"]
+			id: "7F01D00000000018"
 			rewards: [{
 				count: 4
-				id: "8F01D00000000205"
+				id: "7F01D00000000205"
 				item: { count: 1, id: "minecraft:chest" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01D00000000108"
+				id: "7F01D00000000108"
 				type: "checkmark"
 			}]
 			x: 12.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01D00000000018"]
-			id: "8F01D00000000019"
+			dependencies: ["7F01D00000000018"]
+			id: "7F01D00000000019"
 			tasks: [{
-				id: "8F01D00000000109"
+				id: "7F01D00000000109"
 				type: "checkmark"
 			}]
 			x: 10.0d
@@ -387,19 +387,19 @@
 		}
 		{
 			dependencies: [
-				"8F01D00000000019"
-				"8F01D00000000017"
+				"7F01D00000000019"
+				"7F01D00000000017"
 			]
-			id: "8F01D0000000001A"
+			id: "7F01D0000000001A"
 			rewards: [
 				{
 					count: 8
-					id: "8F01D00000000206"
+					id: "7F01D00000000206"
 					item: { count: 1, id: "create:experience_nugget" }
 					type: "item"
 				}
 				{
-					id: "8F01D00000000207"
+					id: "7F01D00000000207"
 					item: { count: 1, id: "aeronautics:aviators_goggles" }
 					type: "item"
 				}
@@ -407,7 +407,7 @@
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
-				id: "8F01D0000000010A"
+				id: "7F01D0000000010A"
 				type: "checkmark"
 			}]
 			x: 12.0d

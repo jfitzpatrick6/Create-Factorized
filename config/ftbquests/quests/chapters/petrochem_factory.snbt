@@ -2,43 +2,36 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: "square"
 	filename: "petrochem_factory"
-	group: "8F01A00000000002"
+	group: "7F01A00000000002"
 	icon: {
 		id: "tfmg:diesel_bucket"
 	}
-	id: "8F01A00000000001"
+	id: "7F01A00000000001"
 	order_index: 2
-	quest_links: [
-		{
-			id: "8F01A00000000030"
-			linked_quest: "8F01C00000000023"
-			x: 6.0d
-			y: 11.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
-			id: "8F01A00000000010"
+			id: "7F01A00000000010"
 			shape: "rsquare"
 			size: 1.1d
 			tasks: [{
-				id: "8F01A00000000100"
+				id: "7F01A00000000100"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["8F01A00000000010"]
-			id: "8F01A00000000011"
+			dependencies: ["7F01A00000000010"]
+			id: "7F01A00000000011"
 			rewards: [{
 				count: 4
-				id: "8F01A00000000200"
+				id: "7F01A00000000200"
 				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000101"
+				id: "7F01A00000000101"
 				item: { count: 1, id: "tfmg:surface_scanner" }
 				type: "item"
 			}]
@@ -46,26 +39,26 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8F01A00000000011"]
-			id: "8F01A00000000012"
+			dependencies: ["7F01A00000000011"]
+			id: "7F01A00000000012"
 			tasks: [{
-				id: "8F01A00000000102"
+				id: "7F01A00000000102"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01A00000000012"]
-			id: "8F01A00000000013"
+			dependencies: ["7F01A00000000012"]
+			id: "7F01A00000000013"
 			rewards: [{
 				count: 8
-				id: "8F01A00000000201"
+				id: "7F01A00000000201"
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000103"
+				id: "7F01A00000000103"
 				item: { count: 1, id: "tfmg:pumpjack_base" }
 				type: "item"
 			}]
@@ -73,16 +66,16 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01A00000000013"]
-			id: "8F01A00000000014"
+			dependencies: ["7F01A00000000013"]
+			id: "7F01A00000000014"
 			rewards: [{
-				id: "8F01A00000000202"
+				id: "7F01A00000000202"
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 4L
-				id: "8F01A00000000104"
+				id: "7F01A00000000104"
 				item: { count: 1, id: "tfmg:crude_oil_bucket" }
 				type: "item"
 			}]
@@ -90,16 +83,16 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01A00000000014"]
-			id: "8F01A00000000015"
+			dependencies: ["7F01A00000000014"]
+			id: "7F01A00000000015"
 			rewards: [{
 				count: 4
-				id: "8F01A00000000203"
+				id: "7F01A00000000203"
 				item: { count: 1, id: "tfmg:steel_ingot" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000105"
+				id: "7F01A00000000105"
 				item: { count: 1, id: "tfmg:steel_distillation_controller" }
 				type: "item"
 			}]
@@ -107,16 +100,16 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01A00000000015"]
-			id: "8F01A00000000016"
+			dependencies: ["7F01A00000000015"]
+			id: "7F01A00000000016"
 			rewards: [{
-				id: "8F01A00000000204"
+				id: "7F01A00000000204"
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 2L
-				id: "8F01A00000000106"
+				id: "7F01A00000000106"
 				item: { count: 1, id: "tfmg:diesel_bucket" }
 				type: "item"
 			}]
@@ -124,17 +117,17 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01A00000000016"]
-			id: "8F01A00000000017"
+			dependencies: ["7F01A00000000016"]
+			id: "7F01A00000000017"
 			shape: "diamond"
 			rewards: [{
 				count: 4
-				id: "8F01A00000000205"
+				id: "7F01A00000000205"
 				item: { count: 1, id: "create:shaft" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000107"
+				id: "7F01A00000000107"
 				item: { count: 1, id: "tfmg:regular_engine" }
 				type: "item"
 			}]
@@ -142,15 +135,15 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["8F01A00000000015"]
-			id: "8F01A00000000018"
+			dependencies: ["7F01A00000000015"]
+			id: "7F01A00000000018"
 			rewards: [{
-				id: "8F01A00000000206"
+				id: "7F01A00000000206"
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000108"
+				id: "7F01A00000000108"
 				item: { count: 1, id: "tfmg:heavy_oil_bucket" }
 				type: "item"
 			}]
@@ -158,16 +151,16 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01A00000000018"]
-			id: "8F01A00000000019"
+			dependencies: ["7F01A00000000018"]
+			id: "7F01A00000000019"
 			rewards: [{
 				count: 4
-				id: "8F01A00000000207"
+				id: "7F01A00000000207"
 				item: { count: 1, id: "minecraft:bone_meal" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000109"
+				id: "7F01A00000000109"
 				item: { count: 1, id: "tfmg:ethylene_bucket" }
 				type: "item"
 			}]
@@ -175,17 +168,17 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01A00000000019"]
-			id: "8F01A0000000001A"
+			dependencies: ["7F01A00000000019"]
+			id: "7F01A0000000001A"
 			rewards: [{
 				count: 4
-				id: "8F01A00000000208"
+				id: "7F01A00000000208"
 				item: { count: 1, id: "tfmg:plastic_sheet" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 4L
-				id: "8F01A0000000010A"
+				id: "7F01A0000000010A"
 				item: { count: 1, id: "tfmg:plastic_sheet" }
 				type: "item"
 			}]
@@ -193,17 +186,17 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01A0000000001A"]
-			id: "8F01A0000000001B"
+			dependencies: ["7F01A0000000001A"]
+			id: "7F01A0000000001B"
 			rewards: [{
 				count: 2
-				id: "8F01A00000000209"
+				id: "7F01A00000000209"
 				item: { count: 1, id: "tfmg:lithium_ingot" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 2L
-				id: "8F01A0000000010B"
+				id: "7F01A0000000010B"
 				item: { count: 1, id: "tfmg:cooling_fluid_bottle" }
 				type: "item"
 			}]
@@ -211,17 +204,17 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01A0000000001A"]
-			id: "8F01A0000000001C"
+			dependencies: ["7F01A0000000001A"]
+			id: "7F01A0000000001C"
 			rewards: [{
 				count: 4
-				id: "8F01A0000000020A"
+				id: "7F01A0000000020A"
 				item: { count: 1, id: "tfmg:rubber_sheet" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 4L
-				id: "8F01A0000000010C"
+				id: "7F01A0000000010C"
 				item: { count: 1, id: "tfmg:rubber_sheet" }
 				type: "item"
 			}]
@@ -229,17 +222,17 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01A00000000018"]
-			id: "8F01A0000000001D"
+			dependencies: ["7F01A00000000018"]
+			id: "7F01A0000000001D"
 			rewards: [{
 				count: 2
-				id: "8F01A0000000020B"
+				id: "7F01A0000000020B"
 				item: { count: 1, id: "tfmg:coal_coke" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 2L
-				id: "8F01A0000000010D"
+				id: "7F01A0000000010D"
 				item: { count: 1, id: "tfmg:coal_coke" }
 				type: "item"
 			}]
@@ -247,15 +240,15 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01A00000000016"]
-			id: "8F01A0000000001E"
+			dependencies: ["7F01A00000000016"]
+			id: "7F01A0000000001E"
 			rewards: [{
-				id: "8F01A0000000020C"
+				id: "7F01A0000000020C"
 				item: { count: 1, id: "tfmg:kerosene_bucket" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A0000000010E"
+				id: "7F01A0000000010E"
 				item: { count: 1, id: "tfmg:kerosene_bucket" }
 				type: "item"
 			}]
@@ -263,17 +256,17 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01A0000000001E"]
-			id: "8F01A0000000001F"
+			dependencies: ["7F01A0000000001E"]
+			id: "7F01A0000000001F"
 			shape: "diamond"
 			rewards: [{
 				count: 4
-				id: "8F01A0000000020D"
+				id: "7F01A0000000020D"
 				item: { count: 1, id: "create:experience_nugget" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A0000000010F"
+				id: "7F01A0000000010F"
 				item: { count: 1, id: "tfmg:radial_engine" }
 				type: "item"
 			}]
@@ -281,17 +274,17 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01A00000000018"]
-			id: "8F01A00000000020"
+			dependencies: ["7F01A00000000018"]
+			id: "7F01A00000000020"
 			rewards: [{
 				count: 4
-				id: "8F01A0000000020E"
+				id: "7F01A0000000020E"
 				item: { count: 1, id: "minecraft:sand" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 4L
-				id: "8F01A00000000110"
+				id: "7F01A00000000110"
 				item: { count: 1, id: "tfmg:bitumen" }
 				type: "item"
 			}]
@@ -299,17 +292,17 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["8F01A00000000020"]
-			id: "8F01A00000000021"
+			dependencies: ["7F01A00000000020"]
+			id: "7F01A00000000021"
 			rewards: [{
 				count: 8
-				id: "8F01A0000000020F"
+				id: "7F01A0000000020F"
 				item: { count: 1, id: "minecraft:gravel" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 16L
-				id: "8F01A00000000111"
+				id: "7F01A00000000111"
 				item: { count: 1, id: "tfmg:asphalt_mixture" }
 				type: "item"
 			}]
@@ -317,15 +310,15 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01A00000000021"]
-			id: "8F01A00000000022"
+			dependencies: ["7F01A00000000021"]
+			id: "7F01A00000000022"
 			rewards: [{
-				id: "8F01A00000000210"
+				id: "7F01A00000000210"
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000112"
+				id: "7F01A00000000112"
 				item: { count: 1, id: "tfmg:liquid_asphalt_bucket" }
 				type: "item"
 			}]
@@ -333,16 +326,16 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01A00000000022"]
-			id: "8F01A00000000023"
+			dependencies: ["7F01A00000000022"]
+			id: "7F01A00000000023"
 			rewards: [{
 				count: 4
-				id: "8F01A00000000211"
+				id: "7F01A00000000211"
 				item: { count: 1, id: "minecraft:hopper" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000113"
+				id: "7F01A00000000113"
 				item: { count: 1, id: "tfmg:casting_basin" }
 				type: "item"
 			}]
@@ -350,18 +343,18 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01A00000000023"]
-			id: "8F01A00000000024"
+			dependencies: ["7F01A00000000023"]
+			id: "7F01A00000000024"
 			shape: "diamond"
 			rewards: [{
 				count: 8
-				id: "8F01A00000000212"
+				id: "7F01A00000000212"
 				item: { count: 1, id: "tfmg:asphalt" }
 				type: "item"
 			}]
 			tasks: [{
 				count: 8L
-				id: "8F01A00000000114"
+				id: "7F01A00000000114"
 				item: { count: 1, id: "tfmg:asphalt" }
 				type: "item"
 			}]
@@ -369,16 +362,16 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01A00000000024"]
-			id: "8F01A00000000025"
+			dependencies: ["7F01A00000000024"]
+			id: "7F01A00000000025"
 			rewards: [{
 				count: 8
-				id: "8F01A00000000213"
+				id: "7F01A00000000213"
 				item: { count: 1, id: "tfmg:asphalt_stairs" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000115"
+				id: "7F01A00000000115"
 				item: { count: 1, id: "tfmg:asphalt_stairs" }
 				type: "item"
 			}]
@@ -386,29 +379,29 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["8F01A00000000018"]
-			id: "8F01A00000000027"
+			dependencies: ["7F01A00000000018"]
+			id: "7F01A00000000027"
 			optional: true
 			shape: "pentagon"
 			tasks: [{
-				id: "8F01A00000000117"
+				id: "7F01A00000000117"
 				type: "checkmark"
 			}]
 			x: 4.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01A00000000018"]
-			id: "8F01A00000000028"
+			dependencies: ["7F01A00000000018"]
+			id: "7F01A00000000028"
 			optional: true
 			shape: "pentagon"
 			rewards: [{
-				id: "8F01A00000000216"
+				id: "7F01A00000000216"
 				item: { count: 1, id: "tfmg:lubrication_oil_bucket" }
 				type: "item"
 			}]
 			tasks: [{
-				id: "8F01A00000000118"
+				id: "7F01A00000000118"
 				item: { count: 1, id: "tfmg:lubrication_oil_bucket" }
 				type: "item"
 			}]
@@ -416,17 +409,17 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["8F01A00000000016"]
-			id: "8F01A00000000029"
+			dependencies: ["7F01A00000000016"]
+			id: "7F01A00000000029"
 			optional: true
 			rewards: [{
-				id: "8F01A00000000217"
+				id: "7F01A00000000217"
 				item: { count: 1, id: "tfmg:lpg_bucket" }
 				type: "item"
 			}]
 			shape: "pentagon"
 			tasks: [{
-				id: "8F01A00000000119"
+				id: "7F01A00000000119"
 				item: { count: 1, id: "tfmg:lpg_bucket" }
 				type: "item"
 			}]
@@ -435,21 +428,21 @@
 		}
 		{
 			dependencies: [
-				"8F01A0000000001D"
-				"8F01A0000000001B"
-				"8F01A00000000025"
+				"7F01A0000000001D"
+				"7F01A0000000001B"
+				"7F01A00000000025"
 			]
 			dependency_requirement: "one_completed"
-			id: "8F01A00000000026"
+			id: "7F01A00000000026"
 			rewards: [
 				{
 					count: 16
-					id: "8F01A00000000214"
+					id: "7F01A00000000214"
 					item: { count: 1, id: "create:experience_nugget" }
 					type: "item"
 				}
 				{
-					id: "8F01A00000000215"
+					id: "7F01A00000000215"
 					item: { count: 1, id: "tfmg:diesel_bucket" }
 					type: "item"
 				}
@@ -457,7 +450,7 @@
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
-				id: "8F01A00000000116"
+				id: "7F01A00000000116"
 				type: "checkmark"
 			}]
 			x: 4.0d

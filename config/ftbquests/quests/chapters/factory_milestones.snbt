@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "factory_milestones"
+	group: "7F00D00000000002"
+	icon: {
+		id: "tfmg:asphalt"
+	}
+	id: "7F00D00000000006"
+	order_index: -2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7F00D00000000050"
+			shape: "rsquare"
+			size: 1.1d
+			tasks: [{
+				id: "7F00D00000000150"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F00D00000000050"]
+			id: "7F00D00000000051"
+			rewards: [{
+				count: 16
+				id: "7F00D00000000250"
+				item: { count: 1, id: "create:experience_nugget" }
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 10000L
+				id: "7F00D00000000151"
+				item: { count: 1, id: "tfmg:asphalt" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F00D00000000050"]
+			id: "7F00D00000000052"
+			rewards: [{
+				count: 16
+				id: "7F00D00000000251"
+				item: { count: 1, id: "create:experience_nugget" }
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 10000L
+				id: "7F00D00000000152"
+				item: { count: 1, id: "create:track" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F00D00000000050"]
+			id: "7F00D00000000053"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "7F00D00000000252"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 10000L
+				id: "7F00D00000000153"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F00D00000000050"]
+			id: "7F00D00000000054"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "7F00D00000000253"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 10000L
+				id: "7F00D00000000154"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F00D00000000050"]
+			id: "7F00D00000000055"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "7F00D00000000254"
+				item: { count: 1, id: "create:crushed_raw_iron" }
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 10000L
+				id: "7F00D00000000155"
+				item: { count: 1, id: "create:crushed_raw_iron" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7F00D00000000051"
+				"7F00D00000000052"
+			]
+			id: "7F00D00000000056"
+			rewards: [{
+				count: 32
+				id: "7F00D00000000255"
+				item: { count: 1, id: "create:golden_sheet" }
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "7F00D00000000156"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+}

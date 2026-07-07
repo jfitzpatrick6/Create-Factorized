@@ -41,5 +41,30 @@ if ($before -eq $after) {
     Write-Host "Restart Minecraft if the game is already open so configs and scripts reload."
 }
 
+$py = $null
+foreach ($candidate in @(
+    "$env:USERPROFILE\miniconda3\python.exe",
+    "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe",
+    "python"
+)) {
+    if ($candidate -eq "python") {
+        if (Get-Command python -ErrorAction SilentlyContinue) { $py = "python"; break }
+    } elseif (Test-Path $candidate) {
+        $py = $candidate
+        break
+    }
+}
+
+if ($py) {
+    & $py (Join-Path $PSScriptRoot "check_quest_lang.py")
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host ""
+        Write-Host "Quest files look corrupted. Run Repair-Quests.bat or:"
+        Write-Host "  git checkout HEAD -- config/ftbquests/"
+        Pop-Location
+        exit 1
+    }
+}
+
 Pop-Location
 exit 0
